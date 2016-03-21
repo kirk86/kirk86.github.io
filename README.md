@@ -1,2 +1,2 @@
-# Test
-Keeping track of changes and time!
+# Personal Blog
+Keep track of changes and time!
