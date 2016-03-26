@@ -12,10 +12,10 @@ redcarpet:
 url: https://kirk86.github.io
 permalink: /:year/:month/:title/
 owner:
-    name: #
-    twitter: #
-    github: #
-    disqus_shortname: #
+    name: kirk86
+    twitter: kirk86
+    github: kirk86
+    disqus_shortname: kirk86
 
 ga_id: #
 ga_username: #
