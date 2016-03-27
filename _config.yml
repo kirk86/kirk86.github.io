@@ -17,6 +17,8 @@ owner:
     github: kirk86
     disqus_shortname: kirk86
 
+exclude: [org/] # exclude org/ directory from jekyll
+
 ga_id: #
 ga_username: #
 
