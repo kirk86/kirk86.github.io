@@ -15,7 +15,7 @@ owner:
     name: kirk86
     twitter: kirk86
     github: kirk86
-    disqus_shortname: kirk86
+    disqus_shortname: experimental-thoughts
 
 exclude: [org/] # exclude org/ directory from jekyll
 
