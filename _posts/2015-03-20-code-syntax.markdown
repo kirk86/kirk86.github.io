@@ -1,5 +1,8 @@
 ---
-layout: post title: Code Syntax date: 2014-03-20 comments: true
+layout: post
+title: Code Syntax
+date: 2014-03-20
+comments: true
 archive: false
 ---
 To insert highlight code inside of a post, it's
