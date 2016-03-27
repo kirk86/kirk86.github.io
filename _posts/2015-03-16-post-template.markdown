@@ -3,7 +3,7 @@ layout: post
 title:  "Post template"
 date: 2014-03-03
 comments: true
-tags: tag1_example sample_post
+tags: sample_post tag1_example
 archive: false
 ---
 This is some lorem ipsum to fill the page with textThis is some lorem ipsum to fill the page with textThis is some lorem ipsum to fill the page with textThis is some lorem ipsum to fill the page with textThis is some lorem ipsum to fill the page with text
