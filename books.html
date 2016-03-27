@@ -9,7 +9,7 @@ title: Books
     <div class="page-content">
         <ul class="page-list">
             {% for post in site.posts %}
-                {% if post.archive %}
+                {% if post.books %}
                 <li>
                     <time class="timeago postlist-meta" datetime="{{ post.date |  date: "%A %-d %B %Y" }}">{{ post.date }}</time>
                     &mdash; <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
