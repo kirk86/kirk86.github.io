@@ -1,0 +1,60 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "How to write your first paper"
+date: 2016-03-31
+comments: true
+notes: true
+tags: notes
+excerpt: Thoughts and notes regarding how to write your first paper by Jeff Leek.
+---
+#+END_HTML
+
+Writing your first paper is a real important topic. I've recently come
+across a nice article by *Jeff Leek* who explains this topic in a
+really straight forward way [[https://github.com/jtleek/readingpapers][here]]. In this blog post I am trying to
+summarize the main points mostly to be used as a note reference to
+myself. *Jeff* brakes it down into concrete steps as part of a
+project. He starts by describing its *characteristics*:
+
+1. It should be concrete
+2. Should solve a scientific problem
+3. Gives you the opportunity to learn something new
+4. Something you feel ownership of
+5. Something you want to work on
+
+Having defined your problem next step is actually conducting the
+research. Here *Jeff* suggests following the usual data analytic
+process:
+
+1. Define the question
+2. Get/tidy the data
+3. Explore the data
+4. Build/borrow a model
+5. Perform the analysis
+6. Critique the results
+7. Write the paper
+
+As *Jeff* points out the **hardest part** is knowing *where to stop* and
+*start writing*.
+
+Don't strive for perfection not at least in the beginning! After all a
+published paper is better than a non published one.
+
+A result worth reporting ususally takes the form of between 1-5
+figures showing a coherent story that you could explain to someone in
+your field.
+
+In a sense these are the steps involved in writing a paper:
+
+1. Create 1-4 publication quality plots
+2. Write a story in the simplest language for the plots while still
+   reporting all the technical details
+3. Add references only after you have finished the whole first draft
+4. Add in additional technical detail in the supplementary material if
+   needed be
+5. Write up a reproducible version of your code that returns the
+   exactly same numbers/figures in your paper with no input
+   parameters needed

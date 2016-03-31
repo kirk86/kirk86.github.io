@@ -1,0 +1,9 @@
+#+BEGIN_HTML
+---
+layout: post
+title: Books
+excerpt: Suggestion on books and their topics.
+---
+#+END_HTML
+
+This is the books section regarding reviews and readen books

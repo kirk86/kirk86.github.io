@@ -1,0 +1,19 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "How to solve it by G. Polya"
+date: 2016-03-27
+comments: true
+books: true
+tags: books
+excerpt: Thoughts and notes regarding Polya's how to solve it book.
+---
+#+END_HTML
+
+*Polya* goes into great depths of revealing the intrinsic notions of
+heuristics and analogy and the role they played in solving problems of
+mathematical and non mathematical nature. In this journey *Polya*
+wanted to remind us that asking the right questions is even more
+important than the solution itself.

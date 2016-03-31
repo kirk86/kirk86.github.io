@@ -1,0 +1,85 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS:   TeX:t
+#+LaTeX: \usepackage{amsfonts}
+#+BEGIN_HTML
+---
+layout: post
+title: "Fundamental Theorem of Arithmetic"
+date: 2016-03-28
+comments: true
+theorems: true
+tags: theorems maths
+excerpt: A short description of the fundamental theorem of arithmetic.
+---
+#+END_HTML
+
+The *fundamental theorem of arithmetic* in number theory states that
+every positive integer number greater than 1, $x \in \mathbb{Z}$ where
+$x > 1$, is a prime number or it is comprised of the unique product of
+prime numbers up to the order of the factors.
+
+*Example:*
+
+$1250 = 2^{1} \times 5^{4} = 2\times 5\times 5\times 5\times 5\\$
+
+$1200 = 3^{1}\times 5^{2}\times 2^{4} = 3\times 5\times 5\times
+2\times 2\times 2\times 2\\$
+
+*In other words:*
+1. 1250 and 1200 can be represented as a product of primes
+2. there will always be a specific amount of primes in each product
+
+
+*Proof:*
+
+Using *Euclid's lemma* and *B`ezout's identity*. Let $p$ be a
+prime. Assume $p$ divides the product of two integers $a$ and $b$
+written as $(p|ab)$, and its negation is $\neg (p|ab)$.
+
+Then either $p$ divides $a$ $(p|a)$ or $p$ divides $b$ $(p|b)$ or
+both. Some equivalent statements:
+
+- if $\neg (p|a)$ and $\neg (p|b)$, then $\neg (p|ab)$.
+- if $\neg (p|a)$ and $(p|ab)$, then $(p|b)$.
+
+Generalization of *Euclid's lemma* from prime numbers to any integers:
+
+
+- if $(n|ab)$, and $n$ shares no common divisors other than 1 with
+  $a$, then $(n|b)$.
+
+If $n$ is prime, either:
+
+- $(n|a)$ or
+- $n$ shares no common divisors other than 1 (i.e. relatively prime)
+  with a, therefore, $\neg (n|a)$ so $(n|b)$.
+
+Thus, this is a generalization.
+
+
+*B`ezout's identity* states that if $a$ and $b$ share no common
+ divisor other than 1 (i.e. are relatively prime integers) then there
+ exist integers $\delta$ and $\gamma$ such that:
+
+$\delta a + \gamma b = 1$.
+
+Let a and b share no common divisor other than 1, and assume that
+$(n|ab)$. According to *B`ezout's identity* there exist $\delta$ and
+$\gamma$ which provide:
+
+$\delta n + \gamma a = 1$.
+
+Multiplying both sides by $b$:
+
+$\delta nb + \gamma ab = b$.
+
+$\delta nb$ is divisible by $n$ and $\gamma ab$ is divisible by $ab$
+which in turn is also divisible by $n$ as we state above in our
+assumption.
+
+Therefore, since we have shown that both terms in the addition of
+$\delta nb + \gamma ab$ are divisible by $n$ then it must be true that
+their sum $b$, is also divisible by $n$.
+
+This is also a generalization to *Euclid's lemma* mentioned above.

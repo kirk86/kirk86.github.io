@@ -1,0 +1,15 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Fundamental Theorem of Calculus"
+date: 2016-03-28
+comments: true
+theorems: true
+tags: theorems maths
+excerpt: A short description of the fundamental theorem of calculus.
+---
+#+END_HTML
+
+The *fundamental theorem of calculus* ...
