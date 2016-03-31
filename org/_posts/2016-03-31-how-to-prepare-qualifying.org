@@ -1,0 +1,20 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "How to prepare for you qulifying"
+date: 2016-03-31
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Thoughts and notes regarding preparation of qualifying exam
+---
+#+END_HTML
+
+*Qualifying*
+
+1. Coming up with broad topics that span the literature
+2. Putting together a list of about 30 readings per topic, broken down into subtopics
+3. Coming up with 2-3 proposed questions on each topic
