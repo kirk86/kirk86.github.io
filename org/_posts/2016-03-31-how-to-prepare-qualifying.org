@@ -3,7 +3,7 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: "How to prepare for you qulifying"
+title: "How to prepare for the qulifying"
 date: 2016-03-31
 comments: true
 archive: true
