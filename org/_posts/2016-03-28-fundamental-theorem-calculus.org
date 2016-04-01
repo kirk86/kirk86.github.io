@@ -26,7 +26,9 @@ different parts:
 
 - *Proof:*
   $F(x) = \int_{a}^{x}f(t)dt$
-  $$\forall x_{1}, x_{1}+\Delta x_{1} \in [a, b]$$
+  \begin{equation}
+  \forall x_{1}, x_{1}+\Delta x_{1} \in [a, b]
+  \end{equation}
 
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
