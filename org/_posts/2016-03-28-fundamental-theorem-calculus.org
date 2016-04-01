@@ -58,6 +58,55 @@ different parts:
   x} f(t) dt
   \end{equation}
 
+  The /Mean Value Theorem/ of integration tells us that there exists a
+  number $c(\Delta x) \in \mathbb{R}, \in [x_{1}, x_{1} + \Delta x]$
+  such that
+
+  $\int_{x_{1}}^{x_{1} + \Delta x} f(t) dt \;=\; f(c(\Delta x)) \Delta
+  x$
+
+  Substituting into equation \ref{eqn2}
+
+  $F(x_{1} + \Delta x) - F(x_{1}) = f(c(\Delta x)) \Delta x$
+
+  dividing both side by $\Delta x$
+
+  $\frac{x_{1} + \Delta x \;-\; F(x_{1})}{\Delta x} \;=\; f(c(\Delta
+  x))$
+
+  The left side is Newton's difference quotient for $F$ at $x_{1}$
+
+  $\lim_{\Delta x\rightarrow 0}\frac{x_{1} + \Delta x \;-\;
+  F(x_{1})}{\Delta x} \;=\; \lim_{\Delta x\rightarrow 0}f(c(\Delta
+  x))$
+
+  Expression on the left side is the definition of the derivative of
+  $F$ at $x_{1}$
+
+  \begin{equation}
+  \label{eqn3}
+  F'(x_{1}) \;=\; \lim_{\Delta x\rightarrow 0} f(c(\Delta x))
+  \end{equation}
+
+  We use /Squeeze Theorem/ to find the other limit. We know that $c
+  \in [x_{1}, x_{1}+\Delta x]$, so $x_{1}\le c(\Delta x)\le
+  x_{1}+\Delta x$
+
+  $\lim_{\Delta x\rightarrow 0} x_{1}$ and $\lim_{\Delta x\rightarrow
+  0} x_{1} + \Delta x = x_{1}$
+
+  According to the /Squeeze Theorem/
+
+  $\lim_{\Delta x\rightarrow 0} c(\Delta x) = x_{1}$
+
+  substituting into equation \ref{enq3}
+
+  $F'(x_{1}) = \lim_{c(\Delta x)\rightarrow x_{1}} f(c(\Delta x))$
+
+  Since $f$ is continuous at $c(\Delta x)$, therefore, the limit can
+  be taken inside the function
+
+  $F'(x_{1}) = f(x_{1})$.
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
   is defined by $F(x) = \int_{a}^{x}f(t) dt$ then $F'(x) = f(x)$ at
