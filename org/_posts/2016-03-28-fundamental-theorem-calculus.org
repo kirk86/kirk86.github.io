@@ -50,10 +50,13 @@ different parts:
   $\int_{a}^{x_{1} + \Delta x} f(t) dt \;-\; \int_{a}^{x_{1} \Delta x}
   f(t) dt \;=\; \int_{x_{1}}^{x_{1} + \Delta x} f(t) dt$
 
-  substituting into \ref{eqn1}
+  substituting into equation \ref{eqn1}
 
-  $F(x_{1} + \Delta x) - F(x_{1}) \;=\; \int_{x_{1}}^{x_{1} + \Delta
-  x} f(t) dt$
+  \begin{equation}
+  \label{eqn2}
+  F(x_{1} + \Delta x) - F(x_{1}) \;=\; \int_{x_{1}}^{x_{1} + \Delta
+  x} f(t) dt
+  \end{equation}
 
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
