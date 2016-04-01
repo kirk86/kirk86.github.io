@@ -28,7 +28,8 @@ different parts:
 
 
   $F(x) = \int_{a}^{x}f(t)dt$ $\forall x_{1}, x_{1}+\Delta x_{1} \in
-  [a, b]$, we have $F(x_{1}) = \int_{a}^{x_{1}} f(t) d(t)$ &
+  [a, b]$, we have
+  $F(x_{1}) = \int_{a}^{x_{1}} f(t) d(t)$ &
   $F(x_{1}+\Delta x) = \int_{a}^{x_{1}+\Delta x} f(t) dt$
 
 
