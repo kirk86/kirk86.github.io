@@ -44,6 +44,11 @@ different parts:
   $\int_{a}^{x_{1}} f(t) dt\; +\; \int_{x_{1}}^{x_{1} + \Delta x} f(t)
   dt \;=\; \int_{a}^{x_{1} + \Delta x} f(t) dt$
 
+  Rearranging the above equation we have:
+
+  $\int_{a}^{x_{1} + \Delta x} f(t) dt \;-\; \int_{a}^{x_{1} \Delta x}
+  f(t) dt \;=\; \int_{x_{1}}^{x_{1} + \Delta x} f(t) dt$
+
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
   is defined by $F(x) = \int_{a}^{x}f(t) dt$ then $F'(x) = f(x)$ at
