@@ -41,9 +41,7 @@ different parts:
   \end{equation}
 
   $\int_{a}^{x_{1}} f(t) dt\; +\; \int_{x_{1}}^{x_{1} + \Delta x} f(t)
-  dt$
-
-  $=\; \int_{a}^{x_{1} + \Delta x} f(t) dt$
+  dt \;=\; \int_{a}^{x_{1} + \Delta x} f(t) dt$
 
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
