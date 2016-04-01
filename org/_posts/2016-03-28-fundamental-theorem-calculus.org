@@ -23,8 +23,10 @@ different parts:
   /differentiation/. This guarantees the existence of /antiderivatives/
   for /continuous functions/.
 
+
 - *Proof:*
   $F(x) = \int_{a}^{x}f(t)dt$
+  $$\forall x_{1}, x_{1}+\Delta x_{1} \in [a, b]$$
 
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
