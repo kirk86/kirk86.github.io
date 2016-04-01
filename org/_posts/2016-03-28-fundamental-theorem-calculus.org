@@ -4,7 +4,7 @@
 ---
 layout: post
 title: "Fundamental Theorem of Calculus"
-date: 2016-03-28
+date: 2016-04-01
 comments: true
 theorems: true
 tags: theorems maths
@@ -12,4 +12,8 @@ excerpt: A short description of the fundamental theorem of calculus.
 ---
 #+END_HTML
 
-The *fundamental theorem of calculus* ...
+The *fundamental theorem of calculus* can be broken down into 2
+different parts:
+
+- *1st part: 1st fundamental theorem of calculus*
+- *2nd part: 2nd fundamental theorem of calculus*
