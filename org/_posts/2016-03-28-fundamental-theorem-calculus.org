@@ -76,7 +76,7 @@ different parts:
 
   The left side is Newton's difference quotient for $F$ at $x_{1}$
 
-  $\lim_{\Delta x\rightarrow 0}\frac{x_{1} + \Delta x \;-\;
+  $\lim_{\Delta x\rightarrow 0}\frac{F(x_{1} + \Delta x) \;-\;
   F(x_{1})}{\Delta x} \;=\; \lim_{\Delta x\rightarrow 0}f(c(\Delta
   x))$
 
@@ -92,14 +92,14 @@ different parts:
   \in [x_{1}, x_{1}+\Delta x]$, so $x_{1}\le c(\Delta x)\le
   x_{1}+\Delta x$
 
-  $\lim_{\Delta x\rightarrow 0} x_{1}$ and $\lim_{\Delta x\rightarrow
-  0} x_{1} + \Delta x = x_{1}$
+  $\lim_{\Delta x\rightarrow 0} x_{1} = x_{1}$ and $\lim_{\Delta
+  x\rightarrow 0} x_{1} + \Delta x = x_{1}$
 
   According to the /Squeeze Theorem/
 
   $\lim_{\Delta x\rightarrow 0} c(\Delta x) = x_{1}$
 
-  substituting into equation \ref{enq3}
+  substituting into equation \ref{eqn3}
 
   $F'(x_{1}) = \lim_{c(\Delta x)\rightarrow x_{1}} f(c(\Delta x))$
 
