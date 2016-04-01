@@ -23,6 +23,7 @@ different parts:
   /differentiation/. This guarantees the existence of /antiderivatives/
   for /continuous functions/.
 
+
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
   is defined by $F(x) = \int_{a}^{x}f(t) dt$ then $F'(x) = f(x)$ at
   each point on the open interval $I$ iff $f$ is a /continuous
