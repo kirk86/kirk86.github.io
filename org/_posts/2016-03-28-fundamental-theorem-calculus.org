@@ -24,7 +24,8 @@ different parts:
   for /continuous functions/.
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
-  is defined by $F(x) = \int_{a}^{x}f(t) dt$ then $\prime(F)(x) =
-  f(x)$ at each point on the open interval $I$ iff $f$ is a
-  /continuous function/ on that open interval $I$ and letting $a$ be
-  any point in $I$.
+  is defined by $F(x) = \int_{a}^{x}f(t) dt$ then $F'(x) = f(x)$ at
+  each point on the open interval $I$ iff $f$ is a /continuous
+  function/ on that open interval $I$ and letting $a$ be any point in
+  $I$. In other words the /definite integral/ of a function can be
+  computed by using any one of its infinitely-many /antiderivatives/.
