@@ -36,6 +36,10 @@ different parts:
 
   $F(x_{1}+\Delta x) = \int_{a}^{x_{1}+\Delta x} f(t) dt$
 
+  \begin{equation}
+  F(x_{1} + \Delta x) - F(x_{1}) = \int_{a}^{x_{1} + \Delta x} f(t) dt
+  \end{equation}
+
 
 - *2nd part: 2nd fundamental theorem of calculus* states that if $F$
   is defined by $F(x) = \int_{a}^{x}f(t) dt$ then $F'(x) = f(x)$ at
