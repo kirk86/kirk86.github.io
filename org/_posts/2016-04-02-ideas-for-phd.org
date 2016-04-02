@@ -40,6 +40,7 @@ and flexible models.
   clustering, topic models, Bayesian nonparametrics, causality and
   message passing
 
+
 - *deep learning* is about understanding how to use them efficiently
   and which are the limitations. /Statistical learning theory/ in this
   case is necessary to prove theorems about whether your algorithm
