@@ -23,12 +23,12 @@ nonparametric statistical test, generative modes, message passing,
 bandit algorithms and other things that need good statistical analysis
 and flexible models.
 
-=Problem which still remains to be solved, is how to incorporate model
-decompositions efficiently into deep learning?=
+=Problem which still remains to be solved, is how to incorporate model=
+=decompositions efficiently into deep learning?=
 
 
 =deep learning + spectral methods ==> How to combine them?=
 
-=This can be done e.g. using some of the objective functions for from
-graphical models .e.g. Conditional Random Fields, Structured loss,
-anything similar=
+=This can be done e.g. using some of the objective functions for from=
+=graphical models .e.g. Conditional Random Fields, Structured loss,=
+=anything similar=
