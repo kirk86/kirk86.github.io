@@ -21,18 +21,18 @@ steps we should follow in order to solve our problems:
 
 1. Understanding the problem
 
-|                                          | What is the unknown?                                  |
-| To understand the problem ask questions. | What are the data?                                    |
-|                                          | What is the condition?                                |
-|                                          | Is it possible to satisfy the condition?              |
-|                                          | Is the condition sufficient to determine the unknown? |
-|                                          | Or is it insufficient?                                |
-|                                          | Or redundant?                                         |
-|                                          | Or contradictory?                                     |
-|                                          | Draw a figure                                         |
-|                                          | Introduce suitable notation                           |
-|                                          | Separate the various parts of the condition           |
-|                                          | Can you write them down?                              |
+|                                          |        | What is the unknown?                                  |
+| To understand the problem ask questions. |        | What are the data?                                    |
+|                                          |        | What is the condition?                                |
+|                                          |        | Is it possible to satisfy the condition?              |
+|                                          |        | Is the condition sufficient to determine the unknown? |
+|                                          |        | Or is it insufficient?                                |
+|                                          |        | Or redundant?                                         |
+|                                          |        | Or contradictory?                                     |
+|                                          |        | Draw a figure                                         |
+|                                          |        | Introduce suitable notation                           |
+|                                          |        | Separate the various parts of the condition           |
+|                                          |        | Can you write them down?                              |
 
 
 
