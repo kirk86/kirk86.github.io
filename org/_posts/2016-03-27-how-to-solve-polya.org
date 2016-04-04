@@ -19,7 +19,6 @@ wanted to remind us that asking the right questions is even more
 important than the solution itself. According to *Polya* there are 4
 steps we should follow in order to solve our problems:
 
-this is a test
 
 |------------------------------------------+---+-------------------------------------------------------|
 | 1. Understanding the problem             |   |                                                       |
