@@ -64,6 +64,7 @@ steps we should follow in order to solve our problems:
 |                                                        | Have you taken into account all essential notions involved in the problem?                                                         |
 
 
+
 3. Carrying out the plan
 
 | Carry out the plan | Carrying out the plan of the solution, check each step. |
