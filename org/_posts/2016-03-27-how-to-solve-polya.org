@@ -16,4 +16,40 @@ excerpt: Thoughts and notes regarding Polya's how to solve it book.
 heuristics and analogy and the role they played in solving problems of
 mathematical and non mathematical nature. In this journey *Polya*
 wanted to remind us that asking the right questions is even more
-important than the solution itself.
+important than the solution itself. According to *Polya* there are 4
+steps we should follow in order to solve our problems:
+
+1. Understanding the problem
+
+|                                          | What is the unknown?                                  |
+| To understand the problem ask questions. | What are the data?                                    |
+|                                          | What is the condition?                                |
+|                                          | Is it possible to satisfy the condition?              |
+|                                          | Is the condition sufficient to determine the unknown? |
+|                                          | Or is it insufficient?                                |
+|                                          | Or redundant?                                         |
+|                                          | Or contradictory?                                     |
+|                                          | Draw a figure                                         |
+|                                          | Introduce suitable notation                           |
+|                                          | Separate the various parts of the condition           |
+|                                          | Can you write them down?                              |
+
+2. Devising a plan
+
+| Find the connection between the data and the unknown.  | Have you seen it before?                                                                            |
+| Consider auxiliary problems if an immediate connection | Or have you seen the same problem in a slightly different form?                                     |
+| cannot be found.                                       | /Do you know a related problem/?                                                                    |
+| Eventually obtain a plan of the solution.              | Do you know a theorem that could be useful?                                                         |
+|                                                        | /Look at the unknown/? And try to think of a familiar problem having the same or a similar unknown. |
+|                                                        | Here is a problem related to yours and solved before. Could you use it?                             |
+|                                                        | Could you use its result?                                                                           |
+|                                                        | Could you use its method?                                                                           |
+|                                                        | Should you introduce some auxiliary element in order to make its use possible?                      |
+|                                                        | Could you restate the problem?                                                                      |
+|                                                        | Could you restate it still differently?                                                             |
+|                                                        | Go back to definitions.                                                                             |
+
+3. Carrying out the plan
+
+
+4. Looking back
