@@ -23,7 +23,7 @@ steps we should follow in order to solve our problems:
 1. Understanding the problem
 
 
-|                                          |        | What is the unknown?                                  |
+| 1. understanding the problem             |        | What is the unknown?                                  |
 | To understand the problem ask questions. |        | What are the data?                                    |
 |                                          |        | What is the condition?                                |
 |                                          |        | Is it possible to satisfy the condition?              |
@@ -72,7 +72,7 @@ steps we should follow in order to solve our problems:
 3. Carrying out the plan
 
 | Carry out the plan |      | Carrying out the plan of the solution, check each step. |
-|                    |      | Can you see clearly that the step is correct?           |
+| 3. the plan        |      | Can you see clearly that the step is correct?           |
 |                    |      | Can you prove that it is correct?                       |
 
 
