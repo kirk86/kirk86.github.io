@@ -35,6 +35,7 @@ steps we should follow in order to solve our problems:
 |                                          | Can you write them down?                              |
 
 
+
 2. Devising a plan
 
 | Find the connection between the data and the unknown.  | Have you seen it before?                                                                                                           |
