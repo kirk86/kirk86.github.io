@@ -97,11 +97,11 @@ F_{true})^{2}}{2e^{2}_{i}}]$$
 Construct likelihood function = product of probabilities for each data
 point.
 
-$$\cal{L}(D | F_{true) = \prod^{N}_{i=1} P(D | F_{true})$$
+$$\cal{L}(D | F_{true) = \prod_{i=1}^{N} P(D | F_{true})$$
 
 Since $\cal{L}$ becomes very small to avoid underflow/overflow errors
 we compute the log-likelihood.
 
 
-$$log(\cal{L}) = -\frac{1}{2}\sum^{N}_{i=1}[log(2\pi e^{2}_{i}) +
-\frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]$$
+$$\text{log}(\cal{L}) = -\frac{1}{2}\sum^{N}_{i=1}[\text{log}(2\pi
+e^{2}_{i}) + \frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]$$
