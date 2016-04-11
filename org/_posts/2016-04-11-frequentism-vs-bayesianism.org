@@ -32,7 +32,7 @@ will be
 *Example:* Given a measurements of a photon flux $F$ from a given star
  estimate the true flux of the star.
 
-| Different views     |   |             |
-|---------------------+---+-------------|
-| *Frequentist view:* |   | explanation |
-| *Bayesian view:*    |   | explanaiton |
+| Different views     | <5>   |             |
+|---------------------+-------+-------------|
+| *Frequentist view:* |       | explanation |
+| *Bayesian view:*    |       | explanaiton |
