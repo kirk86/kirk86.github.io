@@ -43,6 +43,7 @@ will be
 |                                |   |   |   |            |
 
 
+
 _An example illustrating the different approaches:_
 
 _Notation:_
@@ -56,4 +57,4 @@ $F_{i}$ = photon flux
 $e_{i}$ = error related to $F_{i}$
 
 
-Assumptions regarding $e_{i}: $e_{i}$ \sim N(/mu, \sigma^{2})$
+Assumptions regarding $e_{i}$: $e_{i}$ \sim N(/mu, \sigma^{2})$
