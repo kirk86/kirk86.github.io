@@ -40,8 +40,6 @@ will be
 |                                |   |   |   | Can meaningfully talk about the probability that the true flux of a star lies in a given range |
 |                                |   |   |   | Probability codifies our knowledge of the value based on prior information and/or available data |
 | Philosophy difference leads to |   |   |   | different approaches to statistical analysis of data |
-|                                |   |   |   |            |
-
 
 
 ~An example illustrating the different approaches:~
