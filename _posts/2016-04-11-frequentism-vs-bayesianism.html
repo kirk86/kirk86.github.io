@@ -135,7 +135,8 @@ will be
 
 
 <p>
-Assumptions regarding \(e_{i}\): \(e_{i}\; \sim\; \cal{N}(\mu, \sigma^{2})\)
+Assumptions regarding \(e_{i}\): \(e_{i}\; \sim\; \cal{N}(\mu,
+\sigma^{2})\)
 </p>
 
 <p>
@@ -184,24 +185,25 @@ of photons measured in 1 sec.
 
 
 <ol class="org-ol">
-<li><b>Frequentist approach:</b></li>
-</ol>
-
-<p>
-Start classic maximum likelihood!  Given \(D_{i} = \{F_{i}, e_{i}\}\),
-compute the probability distribution of the measurement given the true
-\(F_{true}\) flux, given also the assumption of Gaussian errors.
+<li><p>
+<b>Frequentist approach:</b>
 </p>
 
 <p>
-\[P(D_{i} | F_{true}) =
-\frac{1}{\sqrt{2\pi e^{2}_{i}}}\text{exp}[-\frac{(F_{i} -
-F_{true})^{2}}{2e^{2}_{i}}]\]
+Start classic maximum likelihood!  Given \(D_{i} = \{F_{i},
+   e_{i}\}\), compute the probability distribution of the measurement
+given the true \(F_{true}\) flux, given also the assumption of
+Gaussian errors.
 </p>
 
 <p>
-Construct likelihood function = product of probabilities for each data
-point.
+\[P(D_{i} | F_{true}) = \frac{1}{\sqrt{2\pi
+   e^{2}_{i}}}\text{exp}[-\frac{(F_{i} - F_{true})^{2}}{2e^{2}_{i}}]\]
+</p>
+
+<p>
+Construct likelihood function = product of probabilities for each
+data point.
 </p>
 
 <p>
@@ -209,14 +211,13 @@ point.
 </p>
 
 <p>
-Since \(\cal{L}\) becomes very small to avoid underflow/overflow errors
-we compute the log-likelihood.
+Since \(\cal{L}\) becomes very small to avoid underflow/overflow
+errors we compute the log-likelihood.
 </p>
-
 
 <p>
 \[\text{log}(\cal{L}) = -\frac{1}{2}\sum^{N}_{i=1}[\text{log}(2\pi
-e^{2}_{i}) + \frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]\]
+   e^{2}_{i}) + \frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]\]
 </p>
 
 <p>
@@ -230,27 +231,28 @@ Computed analytically by setting
 
 <p>
 \(F_{est.} = \frac{\sum w_{i}F_{i}}{\sum w_{i}};\;\; w_{i} =
-\frac{1}{e^{2}_{i}}\;\; \text{if}\;\forall e_{i}\; \text{being equal}\)
+   \frac{1}{e^{2}_{i}}\;\; \text{if}\;\forall e_{i}\; \text{being
+   equal}\)
 </p>
 
 <p>
 this reduces to \(F_{est.} = \frac{1}{N}\sum_{i=1}^{N} F_{i}
-\rightarrow\; \text{simply the mean of the observed data when errors
-are eqaul}\)
+   \rightarrow\; \text{simply the mean of the observed data when
+   errors are equal}\)
 </p>
 
 <p>
 What is the error of \(F_{est.}\)? Identifying the error in the two
 different approaches.
+</p></li>
+
+<li><p>
+<b>Frequentist approach:</b>
 </p>
 
-<ol class="org-ol">
-<li><b>Frequentist approach:</b></li>
-</ol>
-
 <p>
-Accomplished by <span class="underline">fitting a Gaussian</span> approximation <span class="underline">to the likelihood</span>
-curve <span class="underline">at the maximum</span>.
+Accomplished by <span class="underline">fitting a Gaussian</span> approximation <span class="underline">to the
+likelihood</span> curve <span class="underline">at the maximum</span>.
 </p>
 
 <p>
@@ -259,8 +261,9 @@ For the simple case we can solve it analytically.
 
 <p>
 \(\sigma_{est.} = (\sum_{i=1}^{N} w_{i})^{-\frac{1}{2}}\rightarrow\;
-\text{std. of Gaussian approximation}\)
-</p>
+   \text{std. of Gaussian approximation}\)
+</p></li>
+</ol>
 
 <p>
 <b>2. Bayesian approach:</b>
@@ -411,7 +414,7 @@ Propose a simple 2-parameter \(\cal{N}(\mu, \sigma), \theta = [\mu,
 <p>
 \[\cal{L}(D | \theta) =
 \prod_{i=1}^{N}\frac{1}{\sqrt{2\pi(\sigma^{2} +
-e^{2}_{i})}}\text{exp}[-\frac{-(F_{i} - \mu)^{2}}{2(\simga^{2} +
+e^{2}_{i})}}\text{exp}[-\frac{-(F_{i} - \mu)^{2}}{2(\sigma^{2} +
 e^{2}_{i})}]\]
 </p>
 
@@ -436,12 +439,12 @@ optimal value of \(\sigma\).
 </p>
 
 <p>
-Reuslts are correlated \(\rightarrow\) no lnger possible to use analytic
+Reuslts are correlated \(\rightarrow\) no longer possible to use analytic
 methods to arrive at the <b>Frequentist</b> result.
 </p>
 
 <p>
-But we can use numerical optimization techqniues to determine the
+But we can use numerical optimization techniques to determine the
 maximum likelihood value.
 </p>
 
@@ -453,3 +456,99 @@ Maximum likelihood gives best estimate of the parameters \(\mu\) and
 <p>
 <span class="underline">We need to compute Error Bars on \(\mu\) and \(\sigma\)</span>.
 </p>
+
+<p>
+Several approaches to determine errors in a frequentist
+approach/paradigm.
+</p>
+
+<ol class="org-ol">
+<li>Fit a normal approximation to the maximum likelihood and report the
+covariance matrix (do thsi numerically rather than analytically)</li>
+
+<li>Alternatively, compute statistics \(\chi^{2}\) and
+\(\chi^{2}_{\text{dof}}\) to and standard tests to determine
+confidence limits, which also depends on strong assumptions about
+the Gaussianity of the likelihood.</li>
+
+<li>Alternatively, use randomized sampling aproaches such as
+<i>Jackknife</i> or <i>Bootstrap</i>, which maximize the likelihood
+randomized samples of the input data in order to explore the degree
+of certainty in the result.</li>
+</ol>
+
+<p>
+In bootstrapping or sampling techniques there is a potential for
+errors to be correlated or even non-Gaussian, neither of which is
+reflected by simply finding the mean and std. of each model parameter.
+</p>
+
+<ol class="org-ol">
+<li><p>
+<b>Bayesian approach:</b>
+</p>
+
+<p>
+Almost exactly the same as it was in the previous problem.
+</p>
+
+<p>
+The vast majority of commonly applied frequentist techniques make
+the explicit or implicit assumption of Gaussianity of the
+distribution.
+</p>
+
+<p>
+Bayesian approaches generally don't require such assumptions
+</p>
+
+<p>
+There are good arguements that a prior on \(\sigma\) subtley or
+subjectively biases the calculation in this case.
+</p></li>
+</ol>
+
+<p>
+<b>Conclusion:</b>
+</p>
+
+<p>
+<b>Bayesianism</b> and <b>Frequentism</b> are fundamentally different approaches
+ to simple problems which can yield similar or even identical results.
+</p>
+
+<p>
+<b>Differences:</b>
+</p>
+
+<p>
+<b>Frequentism</b> considers probabilities related to frequencies of real
+ or hypothetical events.
+</p>
+
+<p>
+<b>Bayesianism</b> considers probabilities as measurements of degrees of
+ knowledge
+</p>
+
+<p>
+<b>Frequentist</b> analyses generally proceeds through the use of point
+ estimates and maximum likelihood
+</p>
+
+<p>
+<b>Baysian</b> analyses generally compute the posterior either directly or
+ through some version of MCMC sampling
+</p>
+
+<p>
+In simple problems, the two approaches yield similar results. As data
+and models grow in complexity the two approaches can diverge
+greatly. This is clea in 2 situations.
+</p>
+
+<ol class="org-ol">
+<li>The handling of nuisance parameters</li>
+<li>The subtle (often overlooked) difference between <b>frequentist
+confidence intervals</b> and <b>Bayesian credible regions</b></li>
+</ol>
