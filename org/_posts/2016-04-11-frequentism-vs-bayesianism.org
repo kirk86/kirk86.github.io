@@ -17,4 +17,6 @@ The disagreement between Frequentism and Bayesianism concerns the
 definition of probability.
 
 Frequentism interprets probability as the limiting case of repeated
-measurements
+measurements.
+
+probabilites = fundamentally related frequency of any given value
