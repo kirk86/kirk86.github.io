@@ -103,5 +103,5 @@ Since $\cal{L}$ becomes very small to avoid underflow/overflow errors
 we compute the log-likelihood.
 
 
-$$log(\cal{L}) = -\fac{1}{2}\sum^{N}_{i=1}[log(2\pi e^{2}_{i}) +
+$$log(\cal{L}) = -\frac{1}{2}\sum^{N}_{i=1}[log(2\pi e^{2}_{i}) +
 \frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]$$
