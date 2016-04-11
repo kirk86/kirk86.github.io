@@ -55,4 +55,4 @@ $F_{i}$ = photon flux
 $e_{i}$ = error related to $F_{i}$
 
 
-Assumptions regarding $e_{i}$: $e_{i}$ \distas N(\mu, \sigma^{2})$
+Assumptions regarding $e_{i}$: $e_{i}\; \distras\; N(\mu, \sigma^{2})$
