@@ -28,3 +28,10 @@ probability = fundamentally related to our knowledge about an event
 
 probability = statement of my knowledge of what the measurement result
 will be
+
+*Example:* Given a measurements of a photon flux $F$ from a given star
+ estimate the true flux of the star.
+
+| *Frequentist view:* | explanation |
+|---------------------+-------------|
+| *Bayesian view:*    | explanation |
