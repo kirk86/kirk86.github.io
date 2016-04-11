@@ -244,10 +244,6 @@ this reduces to \(F_{est.} = \frac{1}{N}\sum_{i=1}^{N} F_{i}
 <p>
 What is the error of \(F_{est.}\)? Identifying the error in the two
 different approaches.
-</p></li>
-
-<li><p>
-<b>Frequentist approach:</b>
 </p>
 
 <p>
@@ -270,20 +266,20 @@ For the simple case we can solve it analytically.
 </p>
 
 <p>
-Begins and ends with probabilities. We want to compute our knowledge
-of the parameters in question,
+Begins and ends with probabilities. We want to compute our
+knowledge of the parameters in question,
 i.e. \(P(F_{true}|D)\rightarrow\;\text{Bayesian} \neq P(D |
-F_{true})\rightarrow\;\text{Frequentist}\)
+   F_{true})\rightarrow\;\text{Frequentist}\)
 </p>
 
 <p>
 Formulation of the problem is fundamentally contrary to the
-frequentist philoshophy.
+frequentist philosophy.
 </p>
 
 <p>
-It says that the <span class="underline">probabilities have no meaning for model parameters</span>
-like \(F_{true}\).
+It says that the <span class="underline">probabilities have no meaning for model
+parameters</span> like \(F_{true}\).
 </p>
 
 <p>
@@ -408,29 +404,30 @@ Propose a simple 2-parameter \(\cal{N}(\mu, \sigma), \theta = [\mu,
 
 
 <ol class="org-ol">
-<li><b>Frequentist approach:</b></li>
-</ol>
+<li><p>
+<b>Frequentist approach:</b>
+</p>
 
 <p>
 \[\cal{L}(D | \theta) =
-\prod_{i=1}^{N}\frac{1}{\sqrt{2\pi(\sigma^{2} +
-e^{2}_{i})}}\text{exp}[-\frac{-(F_{i} - \mu)^{2}}{2(\sigma^{2} +
-e^{2}_{i})}]\]
+   \prod_{i=1}^{N}\frac{1}{\sqrt{2\pi(\sigma^{2} +
+   e^{2}_{i})}}\text{exp}[-\frac{-(F_{i} - \mu)^{2}}{2(\sigma^{2} +
+   e^{2}_{i})}]\]
 </p>
 
 <p>
-<b>Likelihood</b> is the convolution of the intrinsic distribution with the
- error distribution.
+<b>Likelihood</b> is the convolution of the intrinsic distribution with
+the error distribution.
 </p>
 
 <p>
-Analytically maximize the above likelihood to find the best estimate
-for \(\mu\):
+Analytically maximize the above likelihood to find the best
+estimate for \(\mu\):
 </p>
 
 <p>
 \(\mu_{est.} = \frac{\sum w_{i}F_{i}}{\sum w_{i}}\;; w_{i} =
-\frac{1}{\sigma^{2} + e^{2}_{i}}\)
+   \frac{1}{\sigma^{2} + e^{2}_{i}}\)
 </p>
 
 <p>
@@ -439,8 +436,8 @@ optimal value of \(\sigma\).
 </p>
 
 <p>
-Reuslts are correlated \(\rightarrow\) no longer possible to use analytic
-methods to arrive at the <b>Frequentist</b> result.
+Results are correlated \(\rightarrow\) no longer possible to use
+analytic methods to arrive at the <b>Frequentist</b> result.
 </p>
 
 <p>
@@ -451,7 +448,8 @@ maximum likelihood value.
 <p>
 Maximum likelihood gives best estimate of the parameters \(\mu\) and
 \(\sigma\) governing our model. This is only half the answer.
-</p>
+</p></li>
+</ol>
 
 <p>
 <span class="underline">We need to compute Error Bars on \(\mu\) and \(\sigma\)</span>.
