@@ -43,13 +43,17 @@ will be
 |                                |   |   |   |            |
 
 
-=An example illustrating the different approaches:=
+_An example illustrating the different approaches:_
 
-Notation:
+_Notation:_
 
 $N$ = measurements
+
 $i^{th}$ = observation
+
 $F_{i}$ = photon flux
+
 $e_{i}$ = error related to $F_{i}$
 
-Assumptions regarding $e_{i} \sim N(/mu, \sigma^{2})$
+
+Assumptions regarding $e_{i}: $e_{i}$ \sim N(/mu, \sigma^{2})$
