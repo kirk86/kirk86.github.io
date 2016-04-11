@@ -68,5 +68,5 @@ $e_{i} = \frac{\sigma}{std}$ of (Gaussian) probability distribution
 describing our knowledge of that particular measurement given its
 observed value.
 
-Given $D = {F_{i}, e_{i}}$ find the best estimate of teh true
+Given $D = \{F_{i}, e_{i}\}$ find the best estimate of the true
 F_{true}?
