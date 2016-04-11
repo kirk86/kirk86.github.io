@@ -41,3 +41,15 @@ will be
 |                                |   |   |   | Probability codifies our knowledge of the value based on prior information and/or available data |
 | Philosophy difference leads to |   |   |   | different approaches to statistical analysis of data |
 |                                |   |   |   |            |
+
+
+=An example illustrating the different approaches:=
+
+Notation:
+
+$N$ = measurements
+$i^{th}$ = observation
+$F_{i}$ = photon flux
+$e_{i}$ = error related to $F_{i}$
+
+Assumptions regarding $e_{i} \sim N(/mu, \sigma^{2})$
