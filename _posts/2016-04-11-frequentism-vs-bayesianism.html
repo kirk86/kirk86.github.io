@@ -261,3 +261,195 @@ For the simple case we can solve it analytically.
 \(\sigma_{est.} = (\sum_{i=1}^{N} w_{i})^{-\frac{1}{2}}\rightarrow\;
 \text{std. of Gaussian approximation}\)
 </p>
+
+<p>
+<b>2. Bayesian approach:</b>
+</p>
+
+<p>
+Begins and ends with probabilities. We want to compute our knowledge
+of the parameters in question,
+i.e. \(P(F_{true}|D)\rightarrow\;\text{Bayesian} \neq P(D |
+F_{true})\rightarrow\;\text{Frequentist}\)
+</p>
+
+<p>
+Formulation of the problem is fundamentally contrary to the
+frequentist philoshophy.
+</p>
+
+<p>
+It says that the <span class="underline">probabilities have no meaning for model parameters</span>
+like \(F_{true}\).
+</p>
+
+<p>
+To compute $P(F<sub>true</sub> | D) they apply Bayes Rule.$
+</p>
+
+<p>
+\[P(F_{true} | D) = \frac{P(D | F_{true}) P(F_{true})}{P(D)}\]
+</p>
+
+<p>
+What is controversial is not the Bayes law but instead the Bayesian
+interpretation of probability by the term \(P(F_{true} | D)\).
+</p>
+
+<ul class="org-ul">
+<li>\(P(F_{true} | D):\) posterior/probability of the model parameters
+given data. Result we want to compute.</li>
+
+<li>\(P(D | F_{true}):\) likelihood, proportional to \(\cal{L}(D |
+   F_{true})\) in the frequentist approach above.</li>
+
+<li>\(P(F_{true}):\) model prior, encodes what we knew about the mdoel
+prior to the application of the data \(D\).</li>
+
+<li>\(P(D):\) data probability, in practice amounts to a normalization
+term</li>
+</ul>
+
+
+<p>
+Setting \(P(F_{true})\;\propto\) 1 (a flat prior), we find \(P(F_{true} |
+D)\propto\;\cal{L}(D | F_{true})\). For a flat prior the <b>Bayesian</b> and
+the <b>Frequentist</b> become similar to each other.
+</p>
+
+<p>
+The prior \(P(F_{true})\) allows inclusion of other information into the
+computation, useful in cases of combining multiple measurement
+strategies.
+</p>
+
+<p>
+One of the most controversial pieces of <b>Bayesian</b> analysis is to
+specify the necessity of a prior.
+</p>
+
+<p>
+<b>Frequentist</b> will point out that the prior is problematic when no
+ true prior information is available. In many situations a trully
+ non-informative prior doesn't exist.
+</p>
+
+<p>
+<b>Frequentists</b> say the choice of prior necessarily biases your results
+ and therefore has no place in statistical data analysis.
+</p>
+
+<p>
+<b>Bayesian</b> would say that frequentism can be viewed as a simple case
+ of the <b>Bayesian</b> approach for some (implicit) choice of the prior:
+</p>
+
+<p>
+<b>Bayesians</b> argue that it would be better to make this implicit choice
+ explicit, even if the choice might include some subjectivity.
+</p>
+
+<p>
+How <b>Bayesian</b> results are computed in practice?
+</p>
+
+<p>
+For a one parameter problem compute the posterior probability
+\(P(F_{true} | D)\) as a function of \(F_{true}\).
+</p>
+
+<p>
+In other words compute the distribution reflecting our knowledge of
+the parameter \(F_{true}\).
+</p>
+
+<p>
+The direct approach becomes increasingly intractable as the dimension
+of the model grows.
+</p>
+
+<p>
+<b>Bayesian</b> calculations often depend on sampling methods such as
+ Markov Chain Monte Carlo (MCMC).
+</p>
+
+<p>
+The <b>Goal</b> is to <span class="underline">generate a set of points draw from the posterior
+probability distribution</span> and use them to determine the answer we seek.
+</p>
+
+<p>
+In pure <b>Bayesianism</b> the answer to a question is not a single number
+with error bars; the answer is the posterior distribution over the
+model parameters.
+</p>
+
+<p>
+<b>Exploring a more sophisticated model: Adding a Dimension</b>
+</p>
+
+<p>
+Assume our observing object has some stochastic variation, i.e. it
+varies with time.
+</p>
+
+<p>
+Propose a simple 2-parameter \(\cal{N}(\mu, \sigma), \theta = [\mu,
+\sigma]\) of the variability intrinsic to the object.
+</p>
+
+<p>
+<b>Model:</b> \(F_{true}\;\sim\;\frac{1}{\sqrt{2\pi
+ \sigma^{2}}}\text{exp}[\frac{(F - \mu)^{2}}{2\sigma^{2}}]\)
+</p>
+
+
+<ol class="org-ol">
+<li><b>Frequentist approach:</b></li>
+</ol>
+
+<p>
+\[\cal{L}(D | \theta) =
+\prod_{i=1}^{N}\frac{1}{\sqrt{2\pi(\sigma^{2} +
+e^{2}_{i})}}\text{exp}[-\frac{-(F_{i} - \mu)^{2}}{2(\simga^{2} +
+e^{2}_{i})}]\]
+</p>
+
+<p>
+<b>Likelihood</b> is the convolution of the intrinsic distribution with the
+ error distribution.
+</p>
+
+<p>
+Analytically maximize the above likelihood to find the best estimate
+for \(\mu\):
+</p>
+
+<p>
+\(\mu_{est.} = \frac{\sum w_{i}F_{i}}{\sum w_{i}}\;; w_{i} =
+\frac{1}{\sigma^{2} + e^{2}_{i}}\)
+</p>
+
+<p>
+Here we have <b>a problem</b>: The optimal value of \(\mu\) depends on the
+optimal value of \(\sigma\).
+</p>
+
+<p>
+Reuslts are correlated \(\rightarrow\) no lnger possible to use analytic
+methods to arrive at the <b>Frequentist</b> result.
+</p>
+
+<p>
+But we can use numerical optimization techqniues to determine the
+maximum likelihood value.
+</p>
+
+<p>
+Maximum likelihood gives best estimate of the parameters \(\mu\) and
+\(\sigma\) governing our model. This is only half the answer.
+</p>
+
+<p>
+<span class="underline">We need to compute Error Bars on \(\mu\) and \(\sigma\)</span>.
+</p>
