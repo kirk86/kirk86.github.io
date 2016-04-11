@@ -75,3 +75,21 @@ Since $N \in \mathbb{N}$ thus a Poisson distribution is a good
 approximation to the measurement process.
 
 $F \;\sim\; \text{Pois}(\lambda_{i}), i = 1,\dots,n$
+$F \;\sim\; \text{Pois}(\lambda)$
+
+$\{N_{i}, e_{i}\}$ is estimated from Poisson statistics using the
+standard square-root rule.
+
+The true $F_{true}$ flux is already known: $F_{true} = 1000$, numbers
+of photons measured in 1 sec.
+
+
+1. *Frequentist approach:*
+
+Start classic maximum likelihood!  Given $D_{i} = \{F_{i}, e_{i}\}$,
+compute teh probability distribution of teh measurement given the true
+$F_{true}$ flux, given also the assumption of Gaussian errors.
+
+$$P(D_{i} | F_{true}) =
+\frac{1}{\sqrt{2\pie^{2}_{i}}}exp\[-\frac{(F_{i} -
+F_{true})^{2}}{2e^{2}_{i}}\]$$

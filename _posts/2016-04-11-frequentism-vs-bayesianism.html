@@ -169,4 +169,32 @@ approximation to the measurement process.
 
 <p>
 \(F \;\sim\; \text{Pois}(\lambda_{i}), i = 1,\dots,n\)
+\(F \;\sim\; \text{Pois}(\lambda)\)
+</p>
+
+<p>
+\(\{N_{i}, e_{i}\}\) is estimated from Poisson statistics using the
+standard square-root rule.
+</p>
+
+<p>
+The true \(F_{true}\) flux is already known: \(F_{true} = 1000\), numbers
+of photons measured in 1 sec.
+</p>
+
+
+<ol class="org-ol">
+<li><b>Frequentist approach:</b></li>
+</ol>
+
+<p>
+Start classic maximum likelihood!  Given \(D_{i} = \{F_{i}, e_{i}\}\),
+compute teh probability distribution of teh measurement given the true
+\(F_{true}\) flux, given also the assumption of Gaussian errors.
+</p>
+
+<p>
+\[P(D_{i} | F_{true}) =
+\frac{1}{\sqrt{2\pie^{2}_{i}}}exp\[-\frac{(F_{i} -
+F_{true})^{2}}{2e^{2}_{i}}\]\]
 </p>
