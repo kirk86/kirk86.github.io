@@ -70,3 +70,8 @@ observed value.
 
 Given $D = \{F_{i}, e_{i}\}$ find the best estimate of the true
 F_{true}?
+
+Since $N \in \mathbb{N}$ thus a Poisson distribution is a good
+approximation to the measurement process.
+
+$F \;\sim\; \text{Pois}(\lambda_{i}), i = 1,\dots,n$
