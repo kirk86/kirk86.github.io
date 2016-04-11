@@ -218,3 +218,46 @@ we compute the log-likelihood.
 \[\text{log}(\cal{L}) = -\frac{1}{2}\sum^{N}_{i=1}[\text{log}(2\pi
 e^{2}_{i}) + \frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]\]
 </p>
+
+<p>
+Determine \(F_{true}\) susch that the likelihood is maximized.
+</p>
+
+<p>
+Computed analytically by setting
+\([\frac{d\text{log}\cal{L}}{dF_{true}} = 0]\)
+</p>
+
+<p>
+\(F_{est.} = \frac{\sum w_{i}F_{i}{\sum w_{i}};\;\; w_{i} =
+\frac{1}{e^{2}_{i}}\;\; if \forall e_{i} \text{being equal}\)
+</p>
+
+<p>
+this reduces to \(F_{est.} = \frac{1}{N}\sum_{i=1}^{N} F_{i}
+\rightarrow\; \text{simply the mean of the observed data when errors
+are eqaul}\)
+</p>
+
+<p>
+What is the error of \(F_{est.}\)? Identifying the error in the two
+different approaches.
+</p>
+
+<ol class="org-ol">
+<li><b>Frequentist approach:</b></li>
+</ol>
+
+<p>
+Accomplished by <span class="underline">fitting a Gaussian</span> approximation <span class="underline">to the likelihood</span>
+curve <span class="underline">at the maximum</span>.
+</p>
+
+<p>
+For the simple case we can solve it analytically.
+</p>
+
+<p>
+\(\sigma_{est.} = (\sum_{i=1}^{N} w_{i})^{-\frac{1}{2}}\rightarrow\;
+\text{std. of Gaussian approximation}\)
+</p>
