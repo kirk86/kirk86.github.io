@@ -1,0 +1,16 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Frequentism vs Bayesianism"
+date: 2016-04-11
+comments: true
+notes: true
+tags: notes
+excerpt: Thoughts regarding the subtle differences between Frequentism and Bayesianism.
+---
+#+END_HTML
+
+The disagreement between Frequentism and Bayesianism concerns the
+definition of probability.
