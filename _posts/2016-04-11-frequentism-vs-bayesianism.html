@@ -189,7 +189,7 @@ of photons measured in 1 sec.
 
 <p>
 Start classic maximum likelihood!  Given \(D_{i} = \{F_{i}, e_{i}\}\),
-compute teh probability distribution of teh measurement given the true
+compute the probability distribution of the measurement given the true
 \(F_{true}\) flux, given also the assumption of Gaussian errors.
 </p>
 
@@ -197,4 +197,24 @@ compute teh probability distribution of teh measurement given the true
 \[P(D_{i} | F_{true}) =
 \frac{1}{\sqrt{2\pi e^{2}_{i}}}\text{exp}[-\frac{(F_{i} -
 F_{true})^{2}}{2e^{2}_{i}}]\]
+</p>
+
+<p>
+Construct likelihood function = product of probabilities for each data
+point.
+</p>
+
+<p>
+\[\cal{L}(D | F_{true) = \prod^{N}_{i=1} P(D | F_{true})\]
+</p>
+
+<p>
+Since \(\cal{L}\) becomes very small to avoid underflow/overflow errors
+we compute the log-likelihood.
+</p>
+
+
+<p>
+\[log(\cal{L}) = -\fac{1}{2}\sum^{N}_{i=1}[log(2\pi e^{2}_{i}) +
+\frac{(F_{i} - F_{true})^2}{e^{2}_{i}}]\]
 </p>
