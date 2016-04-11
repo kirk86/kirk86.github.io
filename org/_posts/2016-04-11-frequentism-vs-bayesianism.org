@@ -32,7 +32,12 @@ will be
 *Example:* Given a measurements of a photon flux $F$ from a given star
  estimate the true flux of the star.
 
-| Different views     |   |   |   |             |
-|---------------------+---+---+---+-------------|
-| *Frequentist view:* |   |   |   | explanation |
-| *Bayesian view:*    |   |   |   | explanaiton |
+| Different views                |   |   |   |            |
+|--------------------------------+---+---+---+------------|
+|                                |   |   |   | <10>       |
+| *Frequentist view:*            |   |   |   | Since by definition the probability of the true flux of a star is a fixed value then it is meaningless for the frequentist to talk about the probability. Talking about frequency distribution for a fixed value is nonsense. |
+| *Bayesian view:*               |   |   |   | Claims to measure the flux $F$ of a star with some probability $P(F)$. Although the probability can be estimated from frequencies of repeated experiments it is not fundamental. |
+|                                |   |   |   | Can meaningfully talk about the probability that the true flux of a star lies in a given range |
+|                                |   |   |   | Probability codifies our knowledge of the value based on prior information and/or available data |
+| Philosophy difference leads to |   |   |   | different approaches to statistical analysis of data |
+|                                |   |   |   |            |
