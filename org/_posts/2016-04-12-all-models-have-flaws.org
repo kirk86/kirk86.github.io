@@ -1,0 +1,20 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "All models of learning have flaws"
+date: 2016-04-12
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Thoughts regarding flaws in most existing learning models.
+---
+#+END_HTML
+
+
+| Name              | Methodology |   |   | What's right      | What's wrong |
+|-------------------+------------+---+---+-------------------+--------------|
+
+|                   |            |   |   |                   |              |
