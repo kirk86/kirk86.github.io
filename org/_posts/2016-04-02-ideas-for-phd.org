@@ -55,7 +55,7 @@ and flexible models.
 Adverserial Environments hard to handle
 
 
-*Mastering Algorithm* by P.Domingos:
+*The Master Algorithm by P.Domingos:*
 
 At the time of writing it has been identified that there are 5
 different tribes, schools/paradigms regarding machine learning related
@@ -71,14 +71,14 @@ How do computers discover new knowledge?
 5. Notice similarities between old and new
 
 
-| Tribe          | Origins              | Master Algorithm        | People |
-|----------------+----------------------+-------------------------+----|
-|                |                      |                         | <2> |
-| Symbolists     | Logic, philosophy    | Inverse deduction       | Tom Mitchel, Steve Muggleton, Ross Quinlan |
-| Connectionists | Neuroscience         | Backpropagation         | LeCun, Hinton, Bengio |
-| Evolutionaries | Evolutionary Biology | Genetic programming     | John Koza, John Holland, Hod Lipson |
-| Bayesians      | Statistics           | Probabilistic inference | David Heckerman, Judea Pearl, Michael Jordan |
-| Analogizers    | Psychology           | Kernel machines         | Peter Hart, V.Vapnik, Douglas Hofstadter |
+| Tribe          |   | Origins              |   | Master Algorithm        |   | People |
+|----------------+---+----------------------+---+-------------------------+---+----|
+|                |   |                      |   |                         |   | <2> |
+| Symbolists     |   | Logic, philosophy    |   | Inverse deduction       |   | Tom Mitchel, Steve Muggleton, Ross Quinlan |
+| Connectionists |   | Neuroscience         |   | Backpropagation         |   | LeCun, Hinton, Bengio |
+| Evolutionaries |   | Evolutionary Biology |   | Genetic programming     |   | John Koza, John Holland, Hod Lipson |
+| Bayesians      |   | Statistics           |   | Probabilistic inference |   | David Heckerman, Judea Pearl, Michael Jordan |
+| Analogizers    |   | Psychology           |   | Kernel machines         |   | Peter Hart, V.Vapnik, Douglas Hofstadter |
 
 
 Putting pieces together:
