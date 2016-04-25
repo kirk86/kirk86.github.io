@@ -97,3 +97,19 @@ Putting pieces together:
 
 - Towards a universal learner
  - New ideas and tribes are needed ==> ?
+
+Grand unifying theory => unify all 5 learning tribes
+
+Unifying representations => starting from theorist and Bayesians
+(logic and graphical models => has been done => Markov Logic Networks)
+
+1. Start with a FOL rule if...then...
+2. Give each rule a weight depending whether you believe it or not
+3. Evaluation function. Find in the hypotheses space the candidate
+   that maximizes or minimizes my evaluation function. In this case
+   that's just the posterior that Bayesians use. It shouldn't be part
+   of the algorithm. It should be provided by the user. The objective
+   function to optimize should be given by the user.
+4. How do we find the model to optimize the algorithm. When you have
+   your formulas you have to come up with weights for optimizing those
+   formulas i.e. Backprop.
