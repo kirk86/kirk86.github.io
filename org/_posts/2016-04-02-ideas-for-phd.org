@@ -53,3 +53,47 @@ and flexible models.
  tuning to deal with vanishing gradients
 
 Adverserial Environments hard to handle
+
+
+*Mastering Algorithm* by P.Domingos:
+
+At the time of writing it has been identified that there are 5
+different tribes, schools/paradigms regarding machine learning related
+to the way that each school or technique uses they preferred
+methodology or algorithm inside the machine learning community.
+
+How do computers discover new knowledge?
+
+1. Fill in gaps in existing knowledge
+2. Emulate the brain
+3. Simulate evolution
+4. Systematically reduce uncertainty
+5. Notice similarities between old and new
+
+
+| Tribe          | Origins              | Master Algorithm        | People |
+|----------------+----------------------+-------------------------+----|
+|                |                      |                         | <2> |
+| Symbolists     | Logic, philosophy    | Inverse deduction       | Tom Mitchel, Steve Muggleton, Ross Quinlan |
+| Connectionists | Neuroscience         | Backpropagation         | LeCun, Hinton, Bengio |
+| Evolutionaries | Evolutionary Biology | Genetic programming     | John Koza, John Holland, Hod Lipson |
+| Bayesians      | Statistics           | Probabilistic inference | David Heckerman, Judea Pearl, Michael Jordan |
+| Analogizers    | Psychology           | Kernel machines         | Peter Hart, V.Vapnik, Douglas Hofstadter |
+
+
+Putting pieces together:
+
+- Representation
+ - Probabilistic logic (e.g. Markov logic networks)
+ - Weighted formulas --> Distriubtion over states
+
+- Evaluation
+ - Posterior probability
+ - User defined objective function
+
+- Optimization
+ - Formula discovery: Genetic programming
+ - Weight learning: Backpropagation
+
+- Towards a universal learner
+ - New ideas and tribes are needed ==> ?
