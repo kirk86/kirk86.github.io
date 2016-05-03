@@ -17,13 +17,13 @@ excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
 
 1.) DeMorgan's law:
 
-$\neg(P\land Q) \eq \ne P \lor \neg Q$
-$\neg(P\lor Q) \eq \neg P \land \neg Q$
+$\neg (P \land Q) = \neg P \lor \neg Q\\$
+$\neg (P \lor Q) = \neg P \land \neg Q\\$
 
 2.) Commutative law:
 
-$P \land Q = Q \land P$
-$P \lor Q = Q \lor P$
+$P \land Q = Q \land P\\$
+$P \lor Q = Q \lor P\\$
 
 
 
