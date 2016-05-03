@@ -1,0 +1,27 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "How to prove it by D. Velleman"
+date: 2016-05-03
+comments: true
+books: true
+tags: books
+excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
+---
+#+END_HTML
+
+
+*Laws of Logic*
+
+1.) DeMorgan's law:
+$\ne(P\and Q) = \ne P \or \ne Q$
+$\not(P\or Q) = \notP \and \notQ$
+2.) Commutative law:
+$P \and Q = Q\and P$
+$P\or Q = Q\or P$
+
+
+
+*Proof solving strategies the big picture*
