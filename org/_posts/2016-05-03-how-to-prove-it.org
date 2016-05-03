@@ -29,7 +29,7 @@ $P \lor Q = Q \lor P\\$
 
 3). Associative law:
 
-$P \land (Q \land R) = (P \and Q) \and R$
+$P \land (Q \land R) = (P \land Q) \land R$
 
 $P \lor (Q \lor R) = (P \lor Q) \lor R$
 
