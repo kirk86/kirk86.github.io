@@ -62,13 +62,13 @@ $\neg \neg P = P$
 
 *Truth table*
 
-| P |   | Q |   | $P \lor (Q \lor \neg P)$ |   | $P \land (Q \lor \neg Q)$ |   | $P \lor \neg (Q \lor \neg Q)$ |
-|---+---+---+---+--------------------------+---+---------------------------+---+-------------------------------|
-| F |   | F |   | T                        |   | F                         |   | F                             |
-| F |   | T |   | T                        |   | F                         |   | F                             |
-| T |   | F |   | T                        |   | F                         |   | T                             |
-| T |   | T |   | T                        |   | F                         |   | T                             |
-|   |   |   |   | Tautology                |   | Contradiction             |   | Neither                       |
+| $P$ |   | $Q$ |   | $P \lor (Q \lor \neg P)$ |   | $P \land (Q \lor \neg Q)$ |   | $P \lor \neg (Q \lor \neg Q)$ |
+|-----+---+-----+---+--------------------------+---+---------------------------+---+-------------------------------|
+| F   |   | F   |   | T                        |   | F                         |   | F                             |
+| F   |   | T   |   | T                        |   | F                         |   | F                             |
+| T   |   | F   |   | T                        |   | F                         |   | T                             |
+| T   |   | T   |   | T                        |   | F                         |   | T                             |
+|     |   |     |   | Tautology                |   | Contradiction             |   | Neither                       |
 
 
 *Tautology laws:*
