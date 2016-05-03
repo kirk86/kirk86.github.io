@@ -19,45 +19,44 @@ excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
 
 $\neg (P \land Q) = \neg P \lor \neg Q$
 
-$\neg (P \lor Q) = \neg P \land \neg Q$
+$\neg (P \lor Q) = \neg P \land \neg Q\\$
 
 2). Commutative law:
 
-$P \land Q = Q \land P\\$
-
+$P \land Q = Q \land P$
 $P \lor Q = Q \lor P\\$
 
 3). Associative law:
 
 $P \land (Q \land R) = (P \land Q) \land R$
 
-$P \lor (Q \lor R) = (P \lor Q) \lor R$
+$P \lor (Q \lor R) = (P \lor Q) \lor R\\$
 
 4). Idempotent law:
 
 $P \land P = P$
 
-$ P \lor P = P$
+$ P \lor P = P\\$
 
 5). Distributive law:
 
 $P \land (Q \lor R) = (P \land Q) \lor (P \land R)$
 
-$P \lor (Q \land R) = (P \lor Q) \land (P \lor R)$
+$P \lor (Q \land R) = (P \lor Q) \land (P \lor R)\\$
 
 6). Absorption law:
 
 $P \land (Q \lor R) = P$
 
-$P \lor (Q \land R) = P$
+$P \lor (Q \land R) = P\\$
 
 7). Double negation:
 
-$\neg \neg P = P$
+$\neg \neg P = P\\$
 
-8). Modus Ponen's: ...
+8). Modus Ponen's: ...$\\$
 
-9). Modus Tollens: ...
+9). Modus Tollens: ...$\\$
 
 
 *Truth table*
