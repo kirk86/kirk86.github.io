@@ -24,6 +24,7 @@ $\neg (P \lor Q) = \neg P \land \neg Q\\$
 2). Commutative law:
 
 $P \land Q = Q \land P$
+
 $P \lor Q = Q \lor P\\$
 
 3). Associative law:
@@ -82,10 +83,29 @@ $\neg (\text{a tautology}) = \text{a contradiction}$
 
 $P \land (\text{a contradiction}) = \text{a contradiction}$
 
-*Proof solving strategies the big picture*
-
-$P \land (\text{a contradiction}) = \text{a contradiction}$
-
 $P \lor (\text{a contradiction}) = P$
 
 $\neg (\text{a contradiction}) = \text{a tautology}$
+
+
+*Proof solving strategies the big picture*
+
+1). Writing a proof drawing inference from hypothesis
+
+ - To prove a goal of the form $P \to Q$
+  - Assume Q is false then prove $P$ is false $\}$ contrapositive of
+    the goal
+
+2). Writing a proof drawing inference from conclusion
+
+ - To prove a conclusion of the form $P \to Q$
+  - Assume $P$ is true then prove $Q$
+
+3). Writing a proof drawing inference from contradiction
+ - To prove a goal of the form $\neg P$:
+
+  a). Reexpress teh goal in some other form and then use one of the
+   proof strategies above
+
+  b). Assume $P$ is true and try to reach a contradiction. Once you've
+   reached it you can conclude that $P$ must be false

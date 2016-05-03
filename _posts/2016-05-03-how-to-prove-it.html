@@ -31,6 +31,9 @@ excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
 
 <p>
 \(P \land Q = Q \land P\)
+</p>
+
+<p>
 \(P \lor Q = Q \lor P\\\)
 </p>
 
@@ -227,17 +230,56 @@ excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
 </p>
 
 <p>
-<b>Proof solving strategies the big picture</b>
-</p>
-
-<p>
-\(P \land (\text{a contradiction}) = \text{a contradiction}\)
-</p>
-
-<p>
 \(P \lor (\text{a contradiction}) = P\)
 </p>
 
 <p>
 \(\neg (\text{a contradiction}) = \text{a tautology}\)
 </p>
+
+
+<p>
+<b>Proof solving strategies the big picture</b>
+</p>
+
+<p>
+1). Writing a proof drawing inference from hypothesis
+</p>
+
+<ul class="org-ul">
+<li>To prove a goal of the form \(P \to Q\)
+<ul class="org-ul">
+<li>Assume Q is false then prove \(P\) is false \(\}\) contrapositive of
+the goal</li>
+</ul></li>
+</ul>
+
+<p>
+2). Writing a proof drawing inference from conclusion
+</p>
+
+<ul class="org-ul">
+<li>To prove a conclusion of the form \(P \to Q\)
+<ul class="org-ul">
+<li>Assume \(P\) is true then prove \(Q\)</li>
+</ul></li>
+</ul>
+
+<p>
+3). Writing a proof drawing inference from contradiction
+</p>
+<ul class="org-ul">
+<li><p>
+To prove a goal of the form \(\neg P\):
+</p>
+
+<p>
+a). Reexpress teh goal in some other form and then use one of the
+ proof strategies above
+</p>
+
+<p>
+b). Assume \(P\) is true and try to reach a contradiction. Once you've
+ reached it you can conclude that \(P\) must be false
+</p></li>
+</ul>
