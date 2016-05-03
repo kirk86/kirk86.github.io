@@ -15,16 +15,78 @@ excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
 
 *Laws of Logic*
 
-1.) DeMorgan's law:
+1). DeMorgan's law:
 
-$\neg (P \land Q) = \neg P \lor \neg Q\\$
-$\neg (P \lor Q) = \neg P \land \neg Q\\$
+$\neg (P \land Q) = \neg P \lor \neg Q$
 
-2.) Commutative law:
+$\neg (P \lor Q) = \neg P \land \neg Q$
+
+2). Commutative law:
 
 $P \land Q = Q \land P\\$
+
 $P \lor Q = Q \lor P\\$
 
+3). Associative law:
 
+$P \land (Q \land R) = (P \and Q) \and R$
+
+$P \lor (Q \lor R) = (P \lor Q) \lor R$
+
+4). Idempotent law:
+
+$P \land P = P$
+
+$ P \lor P = P$
+
+5). Distributive law:
+
+$P \land (Q \lor R) = (P \land Q) \lor (P \land R)$
+
+$P \lor (Q \land R) = (P \lor Q) \land (P \lor R)$
+
+6). Absorption law:
+
+$P \land (Q \lor R) = P$
+
+$P \lor (Q \land R) = P$
+
+7). Double negation:
+
+$\neg \neg P = P$
+
+8). Modus Ponen's: ...
+
+9). Modus Tollens: ...
+
+
+*Truth table*
+
+| P | Q | $P \lor (Q \lor \neg P)$ | $P \land (Q \lor \neg Q$)$ | $P \lor \neg (Q \lor \neg Q)$ |
+|---+---+--------------------------+----------------------------+-------------------------------|
+| F | F | T                        | F                          | F                             |
+| F | T | T                        | F                          | F                             |
+| T | F | T                        | F                          | T                             |
+| T | T | T                        | F                          | T                             |
+|   |   | Tautology                | Contradiction              | Neither                       |
+
+
+*Tautology laws:*
+
+$P \and (\text{a tautology}) = P$
+
+$P \lor (\text{a tautology}) = \text{a tautology}$
+
+$\neg (\text{a tautology}) = \text{a contradiction}$
+
+*Contradiction laws:*
+
+$P \land (\text{a contradiction}) = \text{a contradiction}$
 
 *Proof solving strategies the big picture*
+
+$P \land (\text{a contradiction}) = \text{a contradiction}$
+
+$P \lor (\text{a contradiction}) = P$
+
+$\neg (\text{a contradiction}) = \text{a tautology}$

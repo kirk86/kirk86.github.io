@@ -14,25 +14,201 @@ excerpt: Thoughts and notes regarding Vellemans's how to prove it book.
 </p>
 
 <p>
-1.) DeMorgan's law:
+1). DeMorgan's law:
 </p>
 
 <p>
-\(\neg (P \land Q) = \neg P \lor \neg Q\\\)
-\(\neg (P \lor Q) = \neg P \land \neg Q\\\)
+\(\neg (P \land Q) = \neg P \lor \neg Q\)
 </p>
 
 <p>
-2.) Commutative law:
+\(\neg (P \lor Q) = \neg P \land \neg Q\)
+</p>
+
+<p>
+2). Commutative law:
 </p>
 
 <p>
 \(P \land Q = Q \land P\\\)
+</p>
+
+<p>
 \(P \lor Q = Q \lor P\\\)
 </p>
 
+<p>
+3). Associative law:
+</p>
+
+<p>
+\(P \land (Q \land R) = (P \and Q) \and R\)
+</p>
+
+<p>
+\(P \lor (Q \lor R) = (P \lor Q) \lor R\)
+</p>
+
+<p>
+4). Idempotent law:
+</p>
+
+<p>
+\(P \land P = P\)
+</p>
+
+<p>
+\( P \lor P = P\)
+</p>
+
+<p>
+5). Distributive law:
+</p>
+
+<p>
+\(P \land (Q \lor R) = (P \land Q) \lor (P \land R)\)
+</p>
+
+<p>
+\(P \lor (Q \land R) = (P \lor Q) \land (P \lor R)\)
+</p>
+
+<p>
+6). Absorption law:
+</p>
+
+<p>
+\(P \land (Q \lor R) = P\)
+</p>
+
+<p>
+\(P \lor (Q \land R) = P\)
+</p>
+
+<p>
+7). Double negation:
+</p>
+
+<p>
+\(\neg \neg P = P\)
+</p>
+
+<p>
+8). Modus Ponen's: &#x2026;
+</p>
+
+<p>
+9). Modus Tollens: &#x2026;
+</p>
 
 
 <p>
+<b>Truth table</b>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">P</th>
+<th scope="col" class="org-left">Q</th>
+<th scope="col" class="org-left">\(P \lor (Q \lor \neg P)\)</th>
+<th scope="col" class="org-left">\(P \land (Q \lor \neg Q\))$</th>
+<th scope="col" class="org-left">\(P \lor \neg (Q \lor \neg Q)\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">F</td>
+<td class="org-left">T</td>
+<td class="org-left">F</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">T</td>
+<td class="org-left">T</td>
+<td class="org-left">F</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-left">T</td>
+<td class="org-left">F</td>
+<td class="org-left">T</td>
+<td class="org-left">F</td>
+<td class="org-left">T</td>
+</tr>
+
+<tr>
+<td class="org-left">T</td>
+<td class="org-left">T</td>
+<td class="org-left">T</td>
+<td class="org-left">F</td>
+<td class="org-left">T</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Tautology</td>
+<td class="org-left">Contradiction</td>
+<td class="org-left">Neither</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>Tautology laws:</b>
+</p>
+
+<p>
+\(P \and (\text{a tautology}) = P\)
+</p>
+
+<p>
+\(P \lor (\text{a tautology}) = \text{a tautology}\)
+</p>
+
+<p>
+\(\neg (\text{a tautology}) = \text{a contradiction}\)
+</p>
+
+<p>
+<b>Contradiction laws:</b>
+</p>
+
+<p>
+\(P \land (\text{a contradiction}) = \text{a contradiction}\)
+</p>
+
+<p>
 <b>Proof solving strategies the big picture</b>
+</p>
+
+<p>
+\(P \land (\text{a contradiction}) = \text{a contradiction}\)
+</p>
+
+<p>
+\(P \lor (\text{a contradiction}) = P\)
+</p>
+
+<p>
+\(\neg (\text{a contradiction}) = \text{a tautology}\)
 </p>
