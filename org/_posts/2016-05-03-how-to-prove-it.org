@@ -57,14 +57,14 @@ $\neg \neg P = P\\$
 
 8). Modus Ponens: $\\$
 
-if $P \to Q$\\:
+if $P \to Q$:
 
 If you know tha both $P$ and the implication $P \to Q$ are true, you
 can conclude tha $Q$ must also be true.
 
 9). Modus Tollens: $\\$
 
-if $P \to Q$\\:
+if $P \to Q$:
 
 if you know that the implication $P \to Q$ is true, and $Q$ is false,
 you can conclude that $P$ must must also be false.
