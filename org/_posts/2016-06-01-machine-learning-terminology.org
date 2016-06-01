@@ -13,7 +13,7 @@ excerpt: Frequent machine learning terminology.
 ---
 #+END_HTML
 
-*CAP:* Credit Assignment Problem
+1. *CAP:* Credit Assignment Problem
 
 The assignment problem is one of the fundamental combinatorial
 optimization problems in the branch of optimization or operations
@@ -96,13 +96,13 @@ The formal definition of the assignment problem (or linear assignment
 problem) is:
 
 Given two sets, $A$ and $T$, of equal size, together with a weight
-function $C: A \cross T\rightarrow\mathbb{R}$. Find a bijection $f:
-A\rightarrow T$ such that the cost function: $\sum_{a\in A} C(a,
+function $C: A \times\; T\rightarrow\mathbb{R}$. Find a bijection $f:
+A\rightarrow T$ such that the cost function: $\sum_{a\in A} C(a,\;
 f(a))$ is minimized.
 
 Usually the weight function is viewed as a square real-valued matrix
 $C$, so that the cost function is written down as: $\sum_{a\in A}
-C_{a, f(a)}$
+C_{a,\; f(a)}$
 
 The problem is "linear" because the cost function to be optimized as
 well as all the constraints contain only linear terms.
@@ -112,11 +112,11 @@ objective function $\sum_{i\in A}\sum_{j\in T} C(i, j)x_{ij}$
 
 subject to the constraints
 
-$\sum_{j\in T} x_{ij} = 1 \text{for} i\in A$,
+$\sum_{j\in T} x_{ij} = 1 \;\text{for}\; i\in A$,
 
-$sum_{i\in A} x_{ij} = 1 \text{for} j\in T$,
+$sum_{i\in A} x_{ij} = 1 \;\text{for}\; j\in T$,
 
-$x_{ij} \ge 0 \text{for} i,j\in A,T$.
+$x_{ij} \ge 0 \;\text{for}\; i,j\in A,T$.
 
 The variable x_{ij} represents the assignment of agent $i$ to task $j$,
 taking value 1 if the assignment is done and 0 otherwise. This
@@ -129,7 +129,7 @@ task is assigned exactly one agent.
 
 
 
-*MDL:* Minimum Description Length
+2. *MDL:* Minimum Description Length
 
 The *minimum description length (MDL) principle* is a *formalization of
 Occam's razor* in which the best hypothesis for a given set of data is
