@@ -1,0 +1,404 @@
+---
+layout: post
+title: "Machine learning terminology"
+date: 2016-06-01
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Frequent machine learning terminology.
+---
+
+<p>
+<b>CAP:</b> Credit Assignment Problem
+</p>
+
+<p>
+The assignment problem is one of the fundamental combinatorial
+optimization problems in the branch of optimization or operations
+research in mathematics. It consists of finding a maximum weight
+matching (or minimum weight perfect matching) in a weighted bipartite
+graph.
+</p>
+
+<p>
+In its most general form, the problem is as follows:
+</p>
+
+<ul class="org-ul">
+<li>The problem instance has a number of agents and a number of
+tasks. Any agent can be assigned to perform any task, incurring some
+cost that may vary depending on the agent-task assignment. It is
+required to perform all tasks by assigning exactly one agent to each
+task and exactly one task to each agent in such a way that the total
+cost of the assignment is minimized.</li>
+</ul>
+
+<p>
+If the numbers of agents and tasks are equal and the total cost of the
+assignment for all tasks is equal to the sum of the costs for each
+agent (or the sum of the costs for each task, which is the same thing
+in this case), then the problem is called the linear assignment
+problem. Commonly, when speaking of the assignment problem without any
+additional qualification, then the linear assignment problem is meant.
+</p>
+
+<p>
+<b>Alogrithms and generalizations</b>
+</p>
+
+<p>
+The Hungarian algorithm is one of many algorithms that have been
+devised that solve the linear assignment problem within time bounded
+by a polynomial expression of the number of agents. Other algorithms
+include adaptations of the primal simplex algorithm, and the auction
+algorithm.
+</p>
+
+<p>
+The assignment problem is a special case of the transportation
+problem, which is a special case of the minimum cost flow problem,
+which in turn is a special case of a linear program. While it is
+possible to solve any of these problems using the simplex algorithm,
+each specialization has more efficient algorithms designed to take
+advantage of its special structure. If the cost function involves
+quadratic inequalities it is called the quadratic assignment problem.
+</p>
+
+<p>
+When a number of agents and tasks is very large, a parallel algorithm
+with randomization can be applied. The problem of finding minimum
+weight maximum matching can be converted to finding a minimum weight
+perfect matching. A bipartite graph can be extended to a complete
+bipartite graph by adding artificial edges with large weights. These
+weights should exceed the weights of all existing matchings to prevent
+appearance of artificial edges in the possible solution. As shown by
+Mulmuley, Vazirani &amp; Vazirani (1987), the problem of minimum weight
+perfect matching is converted to finding minors in the adjacency
+matrix of a graph. Using the isolation lemma, a minimum weight perfect
+matching in a graph can be found with probability at least
+\(\frac{1}{2}\). For a graph with n vertices, it requires \(O(\log^2(n))\)
+time.
+</p>
+
+<p>
+<b>Example</b>
+</p>
+
+<p>
+Suppose that a taxi firm has three taxis (the agents) available, and
+three customers (the tasks) wishing to be picked up as soon as
+possible. The firm prides itself on speedy pickups, so for each taxi
+the "cost" of picking up a particular customer will depend on the time
+taken for the taxi to reach the pickup point. The solution to the
+assignment problem will be whichever combination of taxis and
+customers results in the least total cost.
+</p>
+
+<p>
+However, the assignment problem can be made rather more flexible than
+it first appears. In the above example, suppose that there are four
+taxis available, but still only three customers. Then a fourth dummy
+task can be invented, perhaps called "sitting still doing nothing",
+with a cost of 0 for the taxi assigned to it. The assignment problem
+can then be solved in the usual way and still give the best solution
+to the problem.
+</p>
+
+<p>
+Similar tricks can be played in order to allow more tasks than agents,
+tasks to which multiple agents must be assigned (for instance, a group
+of more customers than will fit in one taxi), or maximizing profit
+rather than minimizing cost.
+</p>
+
+<p>
+<b>Formal mathematical definition</b>
+</p>
+
+<p>
+The formal definition of the assignment problem (or linear assignment
+problem) is:
+</p>
+
+<p>
+Given two sets, \(A\) and \(T\), of equal size, together with a weight
+function \(C: A \cross T\rightarrow\mathbb{R}\). Find a bijection \(f:
+A\rightarrow T\) such that the cost function: \(\sum_{a\in A} C(a,
+f(a))\) is minimized.
+</p>
+
+<p>
+Usually the weight function is viewed as a square real-valued matrix
+\(C\), so that the cost function is written down as: \(\sum_{a\in A}
+C_{a, f(a)}\)
+</p>
+
+<p>
+The problem is "linear" because the cost function to be optimized as
+well as all the constraints contain only linear terms.
+</p>
+
+<p>
+The problem can be expressed as a standard linear program with the
+objective function \(\sum_{i\in A}\sum_{j\in T} C(i, j)x_{ij}\)
+</p>
+
+<p>
+subject to the constraints
+</p>
+
+<p>
+\(\sum_{j\in T} x_{ij} = 1 \text{for} i\in A\),
+</p>
+
+<p>
+\(sum_{i\in A} x_{ij} = 1 \text{for} j\in T\),
+</p>
+
+<p>
+\(x_{ij} \ge 0 \text{for} i,j\in A,T\).
+</p>
+
+<p>
+The variable x<sub>ij</sub> represents the assignment of agent \(i\) to task \(j\),
+taking value 1 if the assignment is done and 0 otherwise. This
+formulation allows also fractional variable values, but there is
+always an optimal solution where the variables take integer
+values. This is because the constraint matrix is totally
+unimodular. The first constraint requires that every agent is assigned
+to exactly one task, and the second constraint requires that every
+task is assigned exactly one agent.
+</p>
+
+
+
+<p>
+<b>MDL:</b> Minimum Description Length
+</p>
+
+<p>
+The <b>minimum description length (MDL) principle</b> is a <b>formalization of
+Occam's razor</b> in which the best hypothesis for a given set of data is
+the one that leads to the best compression of the data. MDL was
+introduced by Jorma Rissanen in 1978. It is an important concept in
+information theory and computational learning theory.
+</p>
+
+<p>
+<b>Overview</b>
+</p>
+
+<p>
+Any set of data can be represented by a string of symbols from a
+finite (say, binary) alphabet.
+</p>
+
+<p>
+[The MDL Principle] is based on the following insight: any regularity
+in a given set of data can be used to compress the data, i.e. to
+describe it using fewer symbols than needed to describe the data
+literally." (Grünwald, 1998).
+</p>
+
+<p>
+To select the hypothesis that captures the most regularity in the
+data, scientists look for the hypothesis with which the best
+compression can be achieved. In order to do this, a code is fixed to
+compress the data, most generally with a (Turing-complete) computer
+language. A program to output the data is written in that language;
+thus the program effectively represents the data. The length of the
+shortest program that outputs the data is called the Kolmogorov
+complexity of the data. This is the central idea of Ray Solomonoff's
+idealized theory of inductive inference.
+</p>
+
+<p>
+<b>Inference</b>
+</p>
+
+<p>
+However, this mathematical theory does not provide a practical way of
+reaching an inference. The most important reasons for this are:
+</p>
+
+<ul class="org-ul">
+<li>Kolmogorov complexity is uncomputable: there exists no algorithm
+that, when input an arbitrary sequence of data, outputs the shortest
+program that produces the data.</li>
+
+<li>Kolmogorov complexity depends on what computer language is
+used. This is an arbitrary choice, but it does influence the
+complexity up to some constant additive term. For that reason,
+constant terms tend to be disregarded in Kolmogorov complexity
+theory. In practice, however, where often only a small amount of
+data is available, such constants may have a very large influence on
+the inference results: good results cannot be guaranteed when one is
+working with limited data.</li>
+</ul>
+
+<p>
+MDL attempts to remedy these, by:
+</p>
+
+<ul class="org-ul">
+<li>Restricting the set of allowed codes in such a way that it becomes
+possible (computable) to find the shortest codelength of the data,
+relative to the allowed codes, and</li>
+
+<li>Choosing a code that is reasonably efficient, whatever the data at
+hand. This point is somewhat elusive and much research is still
+going on in this area.</li>
+</ul>
+
+<p>
+Rather than "programs", in MDL theory one usually speaks of candidate
+hypotheses, models or codes. The set of allowed codes is then called
+the model class. (Some authors refer to the model class as the model.)
+The code is then selected for which the sum of the description of the
+code and the description of the data using the code is minimal.
+</p>
+
+<p>
+One of the important properties of MDL methods is that they provide a
+natural safeguard against overfitting, because they implement a
+tradeoff between the complexity of the hypothesis (model class) and
+the complexity of the data given the hypothesis. An illustration is
+given in the following example.
+</p>
+
+
+<p>
+<b>Example of MDL</b>
+</p>
+
+<p>
+A coin is flipped 1,000 times and the numbers of heads and tails are
+recorded. Consider two model classes:
+</p>
+
+<ul class="org-ul">
+<li>The first is a code that represents outcomes with a 0 for heads or a
+1 for tails. This code represents the hypothesis that the coin is
+fair. The code length according to this code is always exactly 2,000
+bits.</li>
+
+<li>The second consists of all codes that are efficient for a coin with
+some specific bias, representing the hypothesis that the coin is not
+fair. Say that we observe 510 heads and 490 tails. Then the code
+length according to the best code in the second model class is
+shorter than 1,000 bits.</li>
+</ul>
+
+<p>
+For this reason a naive statistical method might choose the second
+model as a better explanation for the data. However, an MDL approach
+would construct a single code based on the hypothesis, instead of just
+using the best one. To do this, it is simplest to use a two-part code
+in which the element of the model class with the best performance is
+specified. Then the data is specified using that code. A lot of bits
+are needed to specify which code to use; thus the total codelength
+based on the second model class could be larger than 1,000
+bits. Therefore the conclusion when following an MDL approach is
+inevitably that there is not enough evidence to support the hypothesis
+of the biased coin, even though the best element of the second model
+class provides better fit to the data.
+</p>
+
+
+<p>
+<b>MDL Notation</b>
+</p>
+
+<p>
+Central to MDL theory is the one-to-one correspondence between code
+length functions and probability distributions. (This follows from the
+Kraft–McMillan inequality.) For any probability distribution \(P\), it
+is possible to construct a code \(C\) such that the length (in bits) of
+\(C(x)\) is equal to − \(\log_{2} P(x)\); this code minimizes the expected
+code length. Vice versa, given a code \(C\), one can construct a
+probability distribution \(P\) such that the same holds. (Rounding
+issues are ignored here.) In other words, searching for an efficient
+code reduces to searching for a good probability distribution, and
+vice versa.
+</p>
+
+<p>
+<b>Related concepts</b>
+</p>
+
+<p>
+MDL is very strongly connected to probability theory and statistics
+through the correspondence between codes and probability distributions
+mentioned above. This has led some researchers to view MDL as
+equivalent to Bayesian inference: code length of model and data
+together in MDL correspond to prior probability and marginal
+likelihood, respectively, in the Bayesian framework.
+</p>
+
+<p>
+While Bayesian machinery is often useful in constructing efficient MDL
+codes, the MDL framework also accommodates other codes that are not
+Bayesian. An example is the Shtarkov normalized maximum likelihood
+code, which plays a central role in current MDL theory, but has no
+equivalent in Bayesian inference. Furthermore, Rissanen stresses that
+we should make no assumptions about the true data generating process:
+in practice, a model class is typically a simplification of reality
+and thus does not contain any code or probability distribution that is
+true in any objective sense. In the last mentioned reference
+Rissanen bases the mathematical underpinning of MDL on the Kolmogorov
+structure function.
+</p>
+
+<p>
+According to the MDL philosophy, Bayesian methods should be dismissed
+if they are based on unsafe priors that would lead to poor
+results. The priors that are acceptable from an MDL point of view also
+tend to be favored in so-called objective Bayesian analysis; there,
+however, the motivation is usually different.
+</p>
+
+<p>
+<b>Other systems</b>
+</p>
+
+<p>
+MDL was not the first information-theoretic approach to learning; as
+early as 1968 Wallace and Boulton pioneered a related concept called
+Minimum Message Length (MML). The difference between MDL and MML is a
+source of ongoing confusion. Superficially, the methods appear mostly
+equivalent, but there are some significant differences, especially in
+interpretation:
+</p>
+
+<ul class="org-ul">
+<li>MML is a fully subjective Bayesian approach: it starts from the idea
+that one represents one's beliefs about the data generating process
+in the form of a prior distribution. MDL avoids assumptions about
+the data generating process.</li>
+
+<li>Both methods make use of two-part codes: the first part always
+represents the information that one is trying to learn, such as the
+index of a model class (model selection), or parameter values
+(parameter estimation); the second part is an encoding of the data
+given the information in the first part. The difference between the
+methods is that, in the MDL literature, it is advocated that
+unwanted parameters should be moved to the second part of the code,
+where they can be represented with the data by using a so-called
+one-part code, which is often more efficient than a two-part
+code. In the original description of MML, all parameters are encoded
+in the first part, so all parameters are learned.</li>
+
+<li>Within the MML framework, each parameter is stated to exactly that
+precision which results in the optimal overall message length: the
+preceding example might arise if some parameter was originally
+considered "possibly useful" to a model but was subsequently found
+to be unable to help to explain the data (such a parameter will be
+assigned a code length corresponding to the (Bayesian) prior
+probability that the parameter would be found to be unhelpful). In
+the MDL framework, the focus is more on comparing model classes than
+models, and it is more natural to approach the same question by
+comparing the class of models that explicitly include such a
+parameter against some other class that doesn't. The difference lies
+in the machinery applied to reach the same conclusion.</li>
+</ul>
