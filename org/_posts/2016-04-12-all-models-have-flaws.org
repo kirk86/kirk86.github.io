@@ -13,11 +13,4 @@ excerpt: Thoughts regarding flaws in most existing learning models.
 ---
 #+END_HTML
 
-
-| Name              | Methodology |   |   | What's right      | What's wrong |
-|-------------------+------------+---+---+-------------------+--------------|
-
-|                   |            |   |   |                   |              |
-
-
 [[http://hunch.net/?p=224][All learning models have flaws]]
