@@ -11,11 +11,13 @@ title: Archive
             {% for post in site.posts %}
                 {% if post.archive %}
                 <li>
-                    <time class="timeago postlist-meta" datetime="{{ post.date |  date: "%A %-d %B %Y" }}">{{ post.date }}</time>
-                    &mdash; <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+                    <time class="timeago postlist-meta" datetime="{{
+                    post.date | date: "%A %-d %B %Y" }}">{{ post.date
+                    }}</time> &mdash; <a href="{{ post.url | prepend:
+                    site.url }}">{{ post.title }}</a>
                 </li>
                 {% endif %}
-            {% endfor %} 
+            {% endfor %}
         </ul>
     </div>
 </div>
