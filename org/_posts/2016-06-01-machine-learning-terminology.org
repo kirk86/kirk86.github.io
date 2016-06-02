@@ -14,6 +14,8 @@ excerpt: Frequent machine learning terminology.
 #+END_HTML
 
 1. *CAP:* Credit Assignment Problem
+2. *Test*
+3. *Anothter Test*
 
 The assignment problem is one of the fundamental combinatorial
 optimization problems in the branch of optimization or operations
