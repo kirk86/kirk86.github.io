@@ -202,113 +202,113 @@ excerpt: Frequent machine learning terminology.
    given in the following example.
 
 
-   *Example of MDL*
+*Example of MDL*
 
-   A coin is flipped 1,000 times and the numbers of heads and tails
-   are recorded. Consider two model classes:
+A coin is flipped 1,000 times and the numbers of heads and tails
+are recorded. Consider two model classes:
 
-   - The first is a code that represents outcomes with a 0 for heads
-     or a 1 for tails. This code represents the hypothesis that the
-     coin is fair. The code length according to this code is always
-     exactly 2,000 bits.
+- The first is a code that represents outcomes with a 0 for heads
+or a 1 for tails. This code represents the hypothesis that the
+coin is fair. The code length according to this code is always
+exactly 2,000 bits.
 
-   - The second consists of all codes that are efficient for a coin
-     with some specific bias, representing the hypothesis that the
-     coin is not fair. Say that we observe 510 heads and 490
-     tails. Then the code length according to the best code in the
-     second model class is shorter than 1,000 bits.
+- The second consists of all codes that are efficient for a coin
+with some specific bias, representing the hypothesis that the
+coin is not fair. Say that we observe 510 heads and 490
+tails. Then the code length according to the best code in the
+second model class is shorter than 1,000 bits.
 
-   For this reason a naive statistical method might choose the second
-   model as a better explanation for the data. However, an MDL
-   approach would construct a single code based on the hypothesis,
-   instead of just using the best one. To do this, it is simplest to
-   use a two-part code in which the element of the model class with
-   the best performance is specified. Then the data is specified using
-   that code. A lot of bits are needed to specify which code to use;
-   thus the total codelength based on the second model class could be
-   larger than 1,000 bits. Therefore the conclusion when following an
-   MDL approach is inevitably that there is not enough evidence to
-   support the hypothesis of the biased coin, even though the best
-   element of the second model class provides better fit to the data.
+For this reason a naive statistical method might choose the second
+model as a better explanation for the data. However, an MDL
+approach would construct a single code based on the hypothesis,
+instead of just using the best one. To do this, it is simplest to
+use a two-part code in which the element of the model class with
+the best performance is specified. Then the data is specified using
+that code. A lot of bits are needed to specify which code to use;
+thus the total codelength based on the second model class could be
+larger than 1,000 bits. Therefore the conclusion when following an
+MDL approach is inevitably that there is not enough evidence to
+support the hypothesis of the biased coin, even though the best
+element of the second model class provides better fit to the data.
 
 
-   *MDL Notation*
+*MDL Notation*
 
-   Central to MDL theory is the one-to-one correspondence between code
-   length functions and probability distributions. (This follows from
-   the Kraft–McMillan inequality.) For any probability distribution
-   $P$, it is possible to construct a code $C$ such that the length
-   (in bits) of $C(x)$ is equal to − $\log_{2} P(x)$; this code
-   minimizes the expected code length. Vice versa, given a code $C$,
-   one can construct a probability distribution $P$ such that the same
-   holds. (Rounding issues are ignored here.) In other words,
-   searching for an efficient code reduces to searching for a good
-   probability distribution, and vice versa.
+Central to MDL theory is the one-to-one correspondence between code
+length functions and probability distributions. (This follows from
+the Kraft–McMillan inequality.) For any probability distribution
+$P$, it is possible to construct a code $C$ such that the length
+(in bits) of $C(x)$ is equal to − $\log_{2} P(x)$; this code
+minimizes the expected code length. Vice versa, given a code $C$,
+one can construct a probability distribution $P$ such that the same
+holds. (Rounding issues are ignored here.) In other words,
+searching for an efficient code reduces to searching for a good
+probability distribution, and vice versa.
 
-   *Related concepts*
+*Related concepts*
 
-   MDL is very strongly connected to probability theory and statistics
-   through the correspondence between codes and probability
-   distributions mentioned above. This has led some researchers to
-   view MDL as equivalent to Bayesian inference: code length of model
-   and data together in MDL correspond to prior probability and
-   marginal likelihood, respectively, in the Bayesian framework.
+MDL is very strongly connected to probability theory and statistics
+through the correspondence between codes and probability
+distributions mentioned above. This has led some researchers to
+view MDL as equivalent to Bayesian inference: code length of model
+and data together in MDL correspond to prior probability and
+marginal likelihood, respectively, in the Bayesian framework.
 
-   While Bayesian machinery is often useful in constructing efficient
-   MDL codes, the MDL framework also accommodates other codes that are
-   not Bayesian. An example is the Shtarkov normalized maximum
-   likelihood code, which plays a central role in current MDL theory,
-   but has no equivalent in Bayesian inference. Furthermore, Rissanen
-   stresses that we should make no assumptions about the true data
-   generating process: in practice, a model class is typically a
-   simplification of reality and thus does not contain any code or
-   probability distribution that is true in any objective sense. In
-   the last mentioned reference Rissanen bases the mathematical
-   underpinning of MDL on the Kolmogorov structure function.
+While Bayesian machinery is often useful in constructing efficient
+MDL codes, the MDL framework also accommodates other codes that are
+not Bayesian. An example is the Shtarkov normalized maximum
+likelihood code, which plays a central role in current MDL theory,
+but has no equivalent in Bayesian inference. Furthermore, Rissanen
+stresses that we should make no assumptions about the true data
+generating process: in practice, a model class is typically a
+simplification of reality and thus does not contain any code or
+probability distribution that is true in any objective sense. In
+the last mentioned reference Rissanen bases the mathematical
+underpinning of MDL on the Kolmogorov structure function.
 
-   According to the MDL philosophy, Bayesian methods should be
-   dismissed if they are based on unsafe priors that would lead to
-   poor results. The priors that are acceptable from an MDL point of
-   view also tend to be favored in so-called objective Bayesian
-   analysis; there, however, the motivation is usually different.
+According to the MDL philosophy, Bayesian methods should be
+dismissed if they are based on unsafe priors that would lead to
+poor results. The priors that are acceptable from an MDL point of
+view also tend to be favored in so-called objective Bayesian
+analysis; there, however, the motivation is usually different.
 
-   *Other systems*
+*Other systems*
 
-   MDL was not the first information-theoretic approach to learning;
-   as early as 1968 Wallace and Boulton pioneered a related concept
-   called Minimum Message Length (MML). The difference between MDL and
-   MML is a source of ongoing confusion. Superficially, the methods
-   appear mostly equivalent, but there are some significant
-   differences, especially in interpretation:
+MDL was not the first information-theoretic approach to learning;
+as early as 1968 Wallace and Boulton pioneered a related concept
+called Minimum Message Length (MML). The difference between MDL and
+MML is a source of ongoing confusion. Superficially, the methods
+appear mostly equivalent, but there are some significant
+differences, especially in interpretation:
 
-   - MML is a fully subjective Bayesian approach: it starts from the
-     idea that one represents one's beliefs about the data generating
-     process in the form of a prior distribution. MDL avoids
-     assumptions about the data generating process.
+- MML is a fully subjective Bayesian approach: it starts from the
+idea that one represents one's beliefs about the data generating
+process in the form of a prior distribution. MDL avoids
+assumptions about the data generating process.
 
-   - Both methods make use of two-part codes: the first part always
-     represents the information that one is trying to learn, such as
-     the index of a model class (model selection), or parameter values
-     (parameter estimation); the second part is an encoding of the
-     data given the information in the first part. The difference
-     between the methods is that, in the MDL literature, it is
-     advocated that unwanted parameters should be moved to the second
-     part of the code, where they can be represented with the data by
-     using a so-called one-part code, which is often more efficient
-     than a two-part code. In the original description of MML, all
-     parameters are encoded in the first part, so all parameters are
-     learned.
+- Both methods make use of two-part codes: the first part always
+represents the information that one is trying to learn, such as
+the index of a model class (model selection), or parameter values
+(parameter estimation); the second part is an encoding of the
+data given the information in the first part. The difference
+between the methods is that, in the MDL literature, it is
+advocated that unwanted parameters should be moved to the second
+part of the code, where they can be represented with the data by
+using a so-called one-part code, which is often more efficient
+than a two-part code. In the original description of MML, all
+parameters are encoded in the first part, so all parameters are
+learned.
 
-   - Within the MML framework, each parameter is stated to exactly
-     that precision which results in the optimal overall message
-     length: the preceding example might arise if some parameter was
-     originally considered "possibly useful" to a model but was
-     subsequently found to be unable to help to explain the data (such
-     a parameter will be assigned a code length corresponding to the
-     (Bayesian) prior probability that the parameter would be found to
-     be unhelpful). In the MDL framework, the focus is more on
-     comparing model classes than models, and it is more natural to
-     approach the same question by comparing the class of models that
-     explicitly include such a parameter against some other class that
-     doesn't. The difference lies in the machinery applied to reach
-     the same conclusion.
+- Within the MML framework, each parameter is stated to exactly
+that precision which results in the optimal overall message
+length: the preceding example might arise if some parameter was
+originally considered "possibly useful" to a model but was
+subsequently found to be unable to help to explain the data (such
+a parameter will be assigned a code length corresponding to the
+(Bayesian) prior probability that the parameter would be found to
+be unhelpful). In the MDL framework, the focus is more on
+comparing model classes than models, and it is more natural to
+approach the same question by comparing the class of models that
+explicitly include such a parameter against some other class that
+doesn't. The difference lies in the machinery applied to reach
+the same conclusion.
