@@ -131,7 +131,7 @@ excerpt: Frequent machine learning terminology.
 
 
 
-2. *MDL:* Minimum Description Length
+1. *MDL:* Minimum Description Length
 
    The *minimum description length (MDL) principle* is a
    *formalization of Occam's razor* in which the best hypothesis for a
@@ -230,7 +230,6 @@ excerpt: Frequent machine learning terminology.
    support the hypothesis of the biased coin, even though the best
    element of the second model class provides better fit to the data.
 
-
    *MDL Notation*
 
    Central to MDL theory is the one-to-one correspondence between code
@@ -287,16 +286,16 @@ excerpt: Frequent machine learning terminology.
 
    - Both methods make use of two-part codes: the first part always
      represents the information that one is trying to learn, such as
-     the index of a model class (model selection), or parameter values
-     (parameter estimation); the second part is an encoding of the
-     data given the information in the first part. The difference
-     between the methods is that, in the MDL literature, it is
-     advocated that unwanted parameters should be moved to the second
-     part of the code, where they can be represented with the data by
-     using a so-called one-part code, which is often more efficient
-     than a two-part code. In the original description of MML, all
-     parameters are encoded in the first part, so all parameters are
-     learned.
+     the index of a model class (model selection), or parameter
+     values (parameter estimation); the second part is an encoding
+     of the data given the information in the first part. The
+     difference between the methods is that, in the MDL literature,
+     it is advocated that unwanted parameters should be moved to the
+     second part of the code, where they can be represented with the
+     data by using a so-called one-part code, which is often more
+     efficient than a two-part code. In the original description of
+     MML, all parameters are encoded in the first part, so all
+     parameters are learned.
 
    - Within the MML framework, each parameter is stated to exactly
      that precision which results in the optimal overall message
