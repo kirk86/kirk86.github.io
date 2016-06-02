@@ -131,7 +131,7 @@ excerpt: Frequent machine learning terminology.
 
 
 
-1. *MDL:* Minimum Description Length
+2. *MDL:* Minimum Description Length
 
    The *minimum description length (MDL) principle* is a
    *formalization of Occam's razor* in which the best hypothesis for a
