@@ -13,9 +13,7 @@ excerpt: Frequent machine learning terminology.
 ---
 #+END_HTML
 
-1. *CAP:* Credit Assignment Problem
-2. *Test*
-3. *Anothter Test*
+A) *CAP:* Credit Assignment Problem
 
 The assignment problem is one of the fundamental combinatorial
 optimization problems in the branch of optimization or operations
@@ -133,7 +131,7 @@ that every task is assigned exactly one agent.
 
 
 
-2. *MDL:* Minimum Description Length
+B) *MDL:* Minimum Description Length
 
 The *minimum description length (MDL) principle* is a
 *formalization of Occam's razor* in which the best hypothesis for a
