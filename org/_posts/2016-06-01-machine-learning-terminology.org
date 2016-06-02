@@ -201,11 +201,10 @@ excerpt: Frequent machine learning terminology.
    the complexity of the data given the hypothesis. An illustration is
    given in the following example.
 
+    *Example of MDL*
 
-   *Example of MDL*
-
-   A coin is flipped 1,000 times and the numbers of heads and tails
-   are recorded. Consider two model classes:
+    A coin is flipped 1,000 times and the numbers of heads and tails
+    are recorded. Consider two model classes:
 
    - The first is a code that represents outcomes with a 0 for heads
      or a 1 for tails. This code represents the hypothesis that the
