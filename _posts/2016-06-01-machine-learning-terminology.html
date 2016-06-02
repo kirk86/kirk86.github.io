@@ -269,9 +269,7 @@ a natural safeguard against overfitting, because they implement a
 tradeoff between the complexity of the hypothesis (model class) and
 the complexity of the data given the hypothesis. An illustration is
 given in the following example.
-</p></li>
-</ol>
-
+</p>
 
 <p>
 <b>Example of MDL</b>
@@ -293,7 +291,8 @@ with some specific bias, representing the hypothesis that the
 coin is not fair. Say that we observe 510 heads and 490
 tails. Then the code length according to the best code in the
 second model class is shorter than 1,000 bits.</li>
-</ul>
+</ul></li>
+</ol>
 
 <p>
 For this reason a naive statistical method might choose the second
@@ -377,12 +376,18 @@ differences, especially in interpretation:
 </p>
 
 <ul class="org-ul">
-<li>MML is a fully subjective Bayesian approach: it starts from the
+<li>MML is a fully subjective Bayesian approach: it starts from the</li>
+</ul>
+<p>
 idea that one represents one's beliefs about the data generating
 process in the form of a prior distribution. MDL avoids
-assumptions about the data generating process.</li>
+assumptions about the data generating process.
+</p>
 
-<li>Both methods make use of two-part codes: the first part always
+<ul class="org-ul">
+<li>Both methods make use of two-part codes: the first part always</li>
+</ul>
+<p>
 represents the information that one is trying to learn, such as
 the index of a model class (model selection), or parameter values
 (parameter estimation); the second part is an encoding of the
@@ -393,9 +398,13 @@ part of the code, where they can be represented with the data by
 using a so-called one-part code, which is often more efficient
 than a two-part code. In the original description of MML, all
 parameters are encoded in the first part, so all parameters are
-learned.</li>
+learned.
+</p>
 
-<li>Within the MML framework, each parameter is stated to exactly
+<ul class="org-ul">
+<li>Within the MML framework, each parameter is stated to exactly</li>
+</ul>
+<p>
 that precision which results in the optimal overall message
 length: the preceding example might arise if some parameter was
 originally considered "possibly useful" to a model but was
@@ -407,5 +416,5 @@ comparing model classes than models, and it is more natural to
 approach the same question by comparing the class of models that
 explicitly include such a parameter against some other class that
 doesn't. The difference lies in the machinery applied to reach
-the same conclusion.</li>
-</ul>
+the same conclusion.
+</p>
