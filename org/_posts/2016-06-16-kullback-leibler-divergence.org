@@ -1,0 +1,35 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Kullback-Leibler Divergence"
+date: 2016-06-16
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Kullback-Leibler Divergence.
+---
+#+END_HTML
+
+The really interesting thing is the difference between the entropy and
+the cross-entropy. That difference is how much longer our messages are
+because we used a code optimized for a different distribution. If the
+distributions are the same, this difference will be zero. As the
+difference grows, it will get bigger.
+
+We call this difference the Kullback–Leibler divergence, or just the
+KL divergence. The KL divergence of $p$ with respect to $q$,
+$D_{q}(p)$, is defined as $D_{q}(p) = H_{q}(p) - H(p)$. The really
+neat thing about KL divergence is that it’s like a distance between
+two distributions. It measures how different they are! (If you take
+that idea seriously, you end up with information geometry.)
+
+Cross-Entropy and KL divergence are incredibly useful in machine
+learning. Often, we want one distribution to be close to another. For
+example, we might want a predicted distribution to be close to the
+ground truth. KL divergence gives us a natural way to do this, and so
+it shows up everywhere.
+
+[[http://colah.github.io/posts/2015-09-Visual-Information/][Source]]
