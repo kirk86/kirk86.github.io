@@ -24,7 +24,7 @@ KL divergence. The KL divergence of $p$ with respect to $q$,
 $D_{q}(p)$, is defined as
 
 \begin{equation}
-$D_{q}(p) = H_{q}(p) - H(p)$.
+D_{q}(p) = H_{q}(p) - H(p).
 \end{equation}
 
 The really neat thing about KL divergence is that it’s like a distance
