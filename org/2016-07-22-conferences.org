@@ -6,10 +6,9 @@ layout: post
 title: "Conferences"
 date: 2016-07-22
 comments: true
-tags: conferences
 excerpt: Conferences that I'm interested in publishing
 ---
-#+END_HTML
+#+End_HTML
 
 *Conferences listed alphabetically*
 
