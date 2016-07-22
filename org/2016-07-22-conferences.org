@@ -26,6 +26,7 @@ excerpt: Conferences that I'm interested in publishing
 11. [[http://www.icpr2016.org/site/][PATTERN]]
 
 *Vision related*
+
 1. [[http://cvpr2016.thecvf.com][CVPR]]
 2. [[http://pamitc.org][ICCV]]
 3. [[http://www.icrv.org/][ICRV]]
