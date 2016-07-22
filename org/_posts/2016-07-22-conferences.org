@@ -7,7 +7,8 @@ title: "Conferences"
 date: 2016-07-22
 comments: true
 archive: false
-excerpt: Conferences that I'm interested in publishing
+tags: confereces
+excerpt: Conferences of interest
 ---
 #+End_HTML
 
