@@ -1,0 +1,32 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Conferences"
+date: 2016-07-22
+comments: true
+archive: false
+excerpt: Conferences that I'm interested in publishing
+---
+#+End_HTML
+
+*Conferences listed alphabetically*
+
+1. [[http://www.aaai.org/home.html][AAAI]]
+2. [[http://www.kdd.org][ACM SIGKDD]]
+2. [[http://www.aistats.org][AISTATS]]
+3. [[http://www.auai.org][UAI]]
+4. [[http://www.ecai2016.org][ECAI]]
+6. [[http://www.ecmlpkdd.org][ECML-PKDD]]
+7. [[http://www.iclr.cc/][ICLR]]
+8. [[http://icml.cc/][ICML]]
+9. [[http://jmlr.org][JMLR]]
+10. [[https://nips.cc][NIPS]]
+11. [[http://www.icpr2016.org/site/][PATTERN]]
+
+*Vision related*
+
+1. [[http://cvpr2016.thecvf.com][CVPR]]
+2. [[http://pamitc.org][ICCV]]
+3. [[http://www.icrv.org/][ICRV]]
