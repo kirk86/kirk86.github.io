@@ -6,6 +6,7 @@ layout: post
 title: "Conferences"
 date: 2016-07-22
 comments: true
+archive: false
 excerpt: Conferences that I'm interested in publishing
 ---
 #+End_HTML
