@@ -14,17 +14,19 @@ excerpt: Conferences of interest
 
 *Conferences listed alphabetically*
 
-1. [[http://www.aaai.org/home.html][AAAI]]
-2. [[http://www.kdd.org][ACM SIGKDD]]
-2. [[http://www.aistats.org][AISTATS]]
-3. [[http://www.auai.org][UAI]]
-4. [[http://www.ecai2016.org][ECAI]]
-6. [[http://www.ecmlpkdd.org][ECML-PKDD]]
-7. [[http://www.iclr.cc/][ICLR]]
-8. [[http://icml.cc/][ICML]]
-9. [[http://jmlr.org][JMLR]]
-10. [[https://nips.cc][NIPS]]
-11. [[http://www.icpr2016.org/site/][PATTERN]]
+| Nr. | Conference | Date      | Submission Deadline   |
+|-----+------------+-----------+-----------------------|
+|  1. | [[http://www.aaai.org/home.html][AAAI]]       | February  | September 9th,JulyReg |
+|  2. | [[http://www.kdd.org][ACM SIGKDD]] | May       | June 30th             |
+|  3. | [[http://www.aistats.org][AISTATS]]    | May       | October 9th           |
+|  4. | [[http://www.auai.org][UAI]]        | March     |                       |
+|  5. | [[http://www.ecai2016.org][ECAI]]       |           |                       |
+|  6. | [[http://www.ecmlpkdd.org][ECML-PKDD]]  | September | August 30th           |
+|  7. | [[http://www.iclr.cc/][ICLR]]       | April     | November 4th 5:00 pm  |
+|  8. | [[http://icml.cc/][ICML]]       | June      | February 5th          |
+|  9. | [[https://nips.cc][NIPS]]       | December  | May 20th              |
+| 10. | [[http://www.icpr2016.org/site/][PATTERN]]    |           |                       |
+
 
 *Vision related*
 
