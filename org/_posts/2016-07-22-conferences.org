@@ -31,8 +31,8 @@ excerpt: Conferences of interest
 
 *Vision related*
 
-| Nr. | Conference | Date    | Submission Deadline |
-|-----+------------+---------+---------------------|
-|  1. | [[http://cvpr2016.thecvf.com][CVPR]]       | June    | November 6th        |
-|  2. | [[http://pamitc.org][ICCV]]       | January | August 13th         |
-|  3. | [[http://www.icrv.org/][ICRV]]       | May     | March 5th           |
+| Nr. | Conference |   | Date    |   | Submission Deadline |
+|-----+------------+---+---------+---+---------------------|
+|  1. | [[http://cvpr2016.thecvf.com][CVPR]]       |   | June    |   | November 6th        |
+|  2. | [[http://pamitc.org][ICCV]]       |   | January |   | August 13th         |
+|  3. | [[http://www.icrv.org/][ICRV]]       |   | May     |   | March 5th           |
