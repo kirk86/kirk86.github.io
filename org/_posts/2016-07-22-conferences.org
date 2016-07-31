@@ -28,6 +28,7 @@ excerpt: Conferences of interest
 | 10. | [[http://www.icpr2016.org/site/][PATTERN]]    |           |                       |
 
 
+
 *Vision related*
 
 1. [[http://cvpr2016.thecvf.com][CVPR]]
