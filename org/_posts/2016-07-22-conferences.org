@@ -25,7 +25,7 @@ excerpt: Conferences of interest
 |  7. |   | [[http://icml.cc/][ICML]]       |   | June      |   | February 5th          |
 |  8. |   | [[https://nips.cc][NIPS]]       |   | December  |   | May 20th              |
 |  9. |   | [[http://www.icpr2016.org/site/][PATTERN]]    |   |           |   |                       |
-| 10. |   | [[http://www.auai.org][UAI]]        |   | March     |   |                       |
+| 10. |   | [[http://www.auai.org][UAI]]        |   | June      |   | March 1st             |
 
 
 
