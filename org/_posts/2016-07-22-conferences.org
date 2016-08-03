@@ -28,7 +28,7 @@ excerpt: Conferences of interest
 |  9. |   | [[http://www.icpr2016.org/site/][PATTERN]]    |   |           |   |                       |
 | 10. |   | [[http://www.auai.org][UAI]]        |   | June      |   | March 1st             |
 
-*
+
 
 *Vision related*
 
