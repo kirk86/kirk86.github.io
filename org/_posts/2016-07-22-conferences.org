@@ -19,6 +19,7 @@ excerpt: Conferences of interest
 |  1. |   | [[http://www.aaai.org/home.html][AAAI]]       |   | February  |   | September 9th,JulyReg |
 |  2. |   | [[http://www.kdd.org][ACM SIGKDD]] |   | May       |   | June 30th             |
 |  3. |   | [[http://www.aistats.org][AISTATS]]    |   | May       |   | October 9th           |
+|  4. |   | [[http://www.learningtheory.org][COLT]]       |   | June      |   | February 12           |
 |  4. |   | [[http://www.ecai2016.org][ECAI]]       |   |           |   |                       |
 |  5. |   | [[http://www.ecmlpkdd.org][ECML-PKDD]]  |   | September |   | August 30th           |
 |  6. |   | [[http://www.iclr.cc/][ICLR]]       |   | April     |   | November 4th 5:00 pm  |
