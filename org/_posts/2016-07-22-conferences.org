@@ -29,6 +29,7 @@ excerpt: Conferences of interest
 | 10. |   | [[http://www.auai.org][UAI]]        |   | June      |   | March 1st             |
 
 -----
+*
 
 *Vision related*
 
