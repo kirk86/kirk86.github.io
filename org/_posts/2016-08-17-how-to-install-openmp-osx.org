@@ -20,7 +20,7 @@ removed from official homebrew repositories. But that is not a big
 problem, because we can install even removed packages. The only thing
 that we need to know is where the package resides in the homebrew
 directory structure. In our case it is located
-`homebrew/boneyard/clang-omp`.
+```homebrew/boneyard/clang-omp```.
 
 Let's install it:
 
