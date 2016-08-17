@@ -36,3 +36,4 @@ Then follow instructions on the following websites
 - [[http://stackoverflow.com/questions/20321988/error-enabling-openmp-ld-library-not-found-for-lgomp-and-clang-errors/21789869#21789869][stackoverflow]]
 - [[http://kylehalladay.com/all/blog/2014/07/15/Setting-Up-OpenMP-Mavericks.html][kylehalladay]]
 - [[http://thecoatlessprofessor.com/programming/openmp-in-r-on-os-x/][thecoatlesprofessor]]
+- [[https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda][important and easy intel-python installation on anaconda]]
