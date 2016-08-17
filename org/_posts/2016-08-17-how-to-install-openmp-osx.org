@@ -37,3 +37,5 @@ Then follow instructions on the following websites
 - [[http://kylehalladay.com/all/blog/2014/07/15/Setting-Up-OpenMP-Mavericks.html][kylehalladay]]
 - [[http://thecoatlessprofessor.com/programming/openmp-in-r-on-os-x/][thecoatlesprofessor]]
 - [[https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda][important and easy intel-python installation on anaconda]]
+- [[https://software.intel.com/en-us/articles/numpyscipy-with-intel-mkl][building numpy+scipy with intel-mkl]]
+- [[https://software.intel.com/en-us/forums/intel-math-kernel-library/topic/383942][building numpy+scipy with intel-mkl 2]]
