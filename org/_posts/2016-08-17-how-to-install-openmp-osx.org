@@ -1,0 +1,29 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "How to install opemp support for clang in osx 10.11 el capitan"
+date: 2016-08-17
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Installation instructions regarding openmp support for clang
+---
+#+END_HTML
+
+The easiest way to install opemp support for llvm clang compilesrs on
+a mac osx 10.11 el capitan is via homebrew. We will use clang-omp
+package from homebrew. The only problem is that clang-omp has been
+removed from official homebrew repositories. But that is not a big
+problem, because we can install even removed packages. The only thing
+that we need to know is where the package resides in the homebrew
+directory structure. In our case it is located
+`homebrew/boneyard/clang-omp`.
+
+Let's install it:
+
+`brew install homebrew/boneyard/clang-omp`
+
+[[http://hunch.net/?p=224][All learning models have flaws]]
