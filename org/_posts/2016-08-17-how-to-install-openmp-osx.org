@@ -33,3 +33,6 @@ Then follow instructions on the following websites
 - [[http://stackoverflow.com/questions/33668323/clang-omp-in-xcode-under-el-capitan][stackoverflow]]
 - [[https://forum.openframeworks.cc/t/openmp-under-osx/23999/2][openframworks]]
 - [[http://superuser.com/questions/1110414/install-a-deleted-homebrew-formulae][stackexchange]]
+- [[http://stackoverflow.com/questions/20321988/error-enabling-openmp-ld-library-not-found-for-lgomp-and-clang-errors/21789869#21789869][stackoverflow]]
+- [[http://kylehalladay.com/all/blog/2014/07/15/Setting-Up-OpenMP-Mavericks.html][kylehalladay]]
+- [[http://thecoatlessprofessor.com/programming/openmp-in-r-on-os-x/][thecoatlesprofessor]]
