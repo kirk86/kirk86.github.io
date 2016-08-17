@@ -26,4 +26,10 @@ Let's install it:
 
 =brew install homebrew/boneyard/clang-omp=
 
-[[http://hunch.net/?p=224][All learning models have flaws]]
+
+Then follow instructions on the following websites
+
+-[[https://clang-omp.github.io][ clang-omp website]]
+- [[http://stackoverflow.com/questions/33668323/clang-omp-in-xcode-under-el-capitan][stackoverflow]]
+- [[https://forum.openframeworks.cc/t/openmp-under-osx/23999/2][openframworks]]
+- [[http://superuser.com/questions/1110414/install-a-deleted-homebrew-formulae][stackexchange]]
