@@ -39,3 +39,5 @@ Then follow instructions on the following websites
 - [[https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda][important and easy intel-python installation on anaconda]]
 - [[https://software.intel.com/en-us/articles/numpyscipy-with-intel-mkl][building numpy+scipy with intel-mkl]]
 - [[https://software.intel.com/en-us/forums/intel-math-kernel-library/topic/383942][building numpy+scipy with intel-mkl 2]]
+- [[https://thelostelectron.wordpress.com/tag/el-capitan/][install mkl compilers and libraries]]
+- [[https://thelostelectron.wordpress.com/tag/el-capitan/][julia with mkl-intel]]
