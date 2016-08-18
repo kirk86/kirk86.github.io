@@ -42,3 +42,6 @@ Then follow instructions on the following websites
 - [[https://thelostelectron.wordpress.com/tag/el-capitan/][install mkl compilers and libraries]]
 - [[https://thelostelectron.wordpress.com/tag/el-capitan/][julia with mkl-intel]]
 - [[http://quantlabs.net/blog/2015/12/instruction-to-get-python-data-science-working-on-mac/][install python, numpy-with-openblas]]
+- [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][install python, numpy-with-openblas2]]
+- [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][install python, numpy-with-openblas3]]
+- [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][haswell issues with openblas]]
