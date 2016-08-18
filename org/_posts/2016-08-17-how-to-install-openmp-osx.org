@@ -41,3 +41,4 @@ Then follow instructions on the following websites
 - [[https://software.intel.com/en-us/forums/intel-math-kernel-library/topic/383942][building numpy+scipy with intel-mkl 2]]
 - [[https://thelostelectron.wordpress.com/tag/el-capitan/][install mkl compilers and libraries]]
 - [[https://thelostelectron.wordpress.com/tag/el-capitan/][julia with mkl-intel]]
+- [[http://quantlabs.net/blog/2015/12/instruction-to-get-python-data-science-working-on-mac/][install python, numpy-with-openblas]]
