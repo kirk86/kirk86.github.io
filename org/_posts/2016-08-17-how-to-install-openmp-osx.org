@@ -45,5 +45,5 @@ Then follow instructions on the following websites
 - [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][install python, numpy-with-openblas2]]
 - [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][install python, numpy-with-openblas3]]
 - [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][haswell issues with openblas]]
-- [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][detailed description installing torch against openblas and mkl-intel]]
-- [[http://dedupe.readthedocs.io/en/latest/OSX-Install-Notes.html][integrating intel-mkl into xcode]]
+- [[https://github.com/torch/dok/blob/master/docinstall/blas.md][detailed description installing torch against openblas and mkl-intel]]
+- [[http://blog.yannisassael.com/2016/03/mkl-library-not-found-torch7/][install torch with intel-mkl]]
