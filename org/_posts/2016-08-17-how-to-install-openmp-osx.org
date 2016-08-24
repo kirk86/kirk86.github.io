@@ -65,3 +65,4 @@ Then follow instructions on the following websites
 - [[https://christoph-conrads.name/building-numpy-and-scipy-with-intel-compilers-and-intel-mkl/][another greate tutorial on installing only numpy and scipy with intel-mkl, no python]]
 - [[http://deweeselab.berkeley.edu/Home/lab-members/chris-rodgers/compiling-numpy-and-scipy-with-mkl][another guide]]
 - [[http://hpcwiki.uark.edu/doku.php/python][mkl hpc cluster]]
+- [[http://deeplearning.net/software/theano/install.html][install numpy and scipy --with-openblas via brew]]
