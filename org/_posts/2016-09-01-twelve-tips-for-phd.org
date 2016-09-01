@@ -16,11 +16,17 @@ excerpt: Tweleve tips for PhD students
 *12 tips for PhD students from [[http://pgbovine.net/PhD-grind-tldr.htm][Philip Guo]]:*
 
 **Tip 1.** Start simple
+
 **Tip 2.** Look at raw data
+
 **Tip 3.** Be concrete
+
 **Tip 4.** Incremental results
+
 **Tip 5.** Find something interesting
+
 **Tip 6.** Push hard on clean signals
+
 **Tips 7.** Actionable
 **Tips 8.** Comparative advantage is key
 **Tip 9.** Find solid levers to pull
