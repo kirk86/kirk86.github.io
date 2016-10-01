@@ -145,7 +145,7 @@ different parts:
   looks like this:
 
   \begin{equation}
-  \label(eqn_fdl_cal)
+  \label{eqn_fdl_cal}
    F(b) - F(a) = \sum_{n=1}^{N} [F(x_{n}) - F(x_{n-1})]
   \end{equation}
 
