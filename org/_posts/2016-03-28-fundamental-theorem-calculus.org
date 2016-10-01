@@ -157,5 +157,29 @@ different parts:
   expressed as $\Delta_{x}$ of partition $n$.
 
   \begin{equation}
+  \label{eqn_2nd}
    F(b) - F(a) = \sum_{n=1}^{N}[f(c_{n})(\Delta x_{n})].
   \end{equation}
+
+  We are describing the area of a rectangle, with the width times the
+  height, and we are adding the areas together. Each rectangle, by
+  virtue of the mean value theorem, describes an approximation of the
+  curve section it is drawn over. Also $\Delta x_{n}$ need not be the
+  same for all values of n, or in other words that the width of the
+  rectangles can differ. What we have to do is approximate the curve
+  with n rectangles. Now, as the size of the partitions get smaller
+  and n increases, resulting in more partitions to cover the space, we
+  get closer and closer to the actual area of the curve.
+
+  By taking the limit of the expression as the norm of the partitions
+  approaches zero, we arrive at the /Riemann/ integral. We know that
+  this limit exists because $f$ was assumed to be integrable. That is,
+  we take the limit as the largest of the partitions approaches zero
+  in size, so that all other partitions are smaller and the number of
+  partitions approaches infinity.
+
+  Taking the limit of both sides of \ref{eqn_2nd}, gives us
+
+  $$\lim_{\Vert\Delta x_{n}\Vert\rightarrow 0} F(b) - F(a) =
+  \lim_{\Vert\Delta x_{n}\Vert\rightarrow 0}
+  \sum_{n=1}^{N}[f(c_{n})(\Delta x_{n})].$$
