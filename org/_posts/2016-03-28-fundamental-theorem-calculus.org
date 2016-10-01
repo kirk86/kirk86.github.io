@@ -151,8 +151,8 @@ different parts:
   differentiable and continuous on each interval $[x_{n-1},
   x_{n}]$. According to the /mean value theorem/ we have $F(x_{n}) -
   F(x_{n-1}) = F'(c_{n})(x_{n} - x_{n-1})$. Substituting into
-  \ref{eqn_fdl_cal}, we get $F(b)$ $- F(a) =$
-  $\sum_{n=1}^{N}[F'(c_{n})(x_{n} - x_{n-1})].$ The assumption implies
+  \ref{eqn_fdl_cal}, we get $F(b)$ $- F(a) =
+  \sum_{n=1}^{N}[F'(c_{n})(x_{n} - x_{n-1})]$. The assumption implies
   that $F'(c_{n}) = f(x_{n})$. Also, $x_{n} - x_{n-1}$ can be
   expressed as $\Delta_{x}$ of partition $n$.
 
