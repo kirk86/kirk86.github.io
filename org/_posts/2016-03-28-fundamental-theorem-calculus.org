@@ -128,4 +128,15 @@ different parts:
 
 
   Lets denote the numbers $x_{1}, \dots, x_{n}$ such that
-  $a = x_{0} < x_{1} < x_{2} < \dots < x_{n-1} < x_{n} = b$
+
+  $a = x_{0} < x_{1} < x_{2} < \dots < x_{n-1} < x_{n} = b$. Thus
+
+  $F(b) - F(a) = F(x_{n}) - F(x_{0})$. Adding each $F(x_{i})$  along
+
+  with its additive inverse we get:
+
+  $F(b) - F(a) = F(x_{n}) + [-F(x_{n-1}) + F(x_{n-1})] + \dots +$
+
+  $[-F(x_{1}) + F(x_{1})] - F(x_{0})$
+
+               = $f + b + a$
