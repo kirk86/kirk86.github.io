@@ -126,23 +126,15 @@ different parts:
 
   We begin with the quantity $F(b) - F(a)$.
 
-  Lets denote the numbers $x_{1}, \dots, x_{n}$ such that
+  Lets denote the numbers $x_{1}, \dots, x_{n}$ such that $a = x_{0} <
+  x_{1} < x_{2} < \dots < x_{n-1} < x_{n} = b$. Thus, $F(b) - F(a) =
+  F(x_{n}) - F(x_{0})$. Adding each $F(x_{i})$ along with its additive
+  inverse we get:
 
-  $a = x_{0} < x_{1} < x_{2} < \dots < x_{n-1} < x_{n} = b$. Thus
-
-  $F(b) - F(a) = F(x_{n}) - F(x_{0})$. Adding each $F(x_{i})$  along
-
-  with its additive inverse we get:
-
-  $F(b) - F(a) = F(x_{n}) + [-F(x_{n-1}) + F(x_{n-1})] + \dots +$
-
-  $[-F(x_{1}) + F(x_{1})] - F(x_{0})$
-
-  = $[F(x_{n}) - F(x_{n-1})] + [F(x_{n-1}) - F(x_{n-2})] + \dots + $
-
-  $[F(x_{2}) - F(x_{1})] + [F(x_{1}) - F(x_{0})]$. Written as a sum
-
-  looks like this:
+  $F(b) - F(a) = F(x_{n}) + [-F(x_{n-1}) + F(x_{n-1})] + \dots +
+  [-F(x_{1}) + F(x_{1})] - F(x_{0}) = [F(x_{n}) - F(x_{n-1})] +
+  [F(x_{n-1}) - F(x_{n-2})] + \dots + [F(x_{2}) - F(x_{1})] +
+  [F(x_{1}) - F(x_{0})]$. Written as a sum looks like this:
 
   \begin{equation}
   \label{eqn_fdl_cal}
@@ -152,26 +144,18 @@ different parts:
   Using the /mean value theorem/ we have:
 
   Let $F$ be continuous on the closed interval $[a, b]$ and
-
   differentiable on the open interval (a, b). Then there exists some
-
-  $c$ in $(a, b)$ such that $F'(c) = \frac{F(b) - F(a)}{b - a}$.
-
-  It follows that $F'(c)(b - a) = F(b) - F(a)$.
-
-  The function $F$ is differentiable on the interval $[a, b]$,
-
-  terefore, it is also differentiable and continuous on each interval
-
-  $[x_{n-1}, x_{n}]$. According to the /mean value theorem/ we have
-
-  $F(x_{n}) - F(x_{n-1}) = F'(c_{n})(x_{n} - x_{n-1})$. Substituting
-
-  into \ref{eqn_fdl_cal}, we get $F(b) - F(a) = \sum_{n=1}^{N}[F'(c_{n})(x_{n} - x_{n-1})].$
-
-  The assumption implies that $F'(c_{n}) = f(x_{n})$. Also, $x_{n} - x_{n-1}$
-
-  can be expressed as $Delta_{x}$ of partition $n$.
+  $c$ in $(a, b)$ such that $F'(c) = \frac{F(b) - F(a)}{b - a}$. It
+  follows that $F'(c)(b - a) = F(b) - F(a)$. The function $F$ is
+  differentiable on the interval $[a, b]$, terefore, it is also
+  differentiable and continuous on each interval $[x_{n-1},
+  x_{n}]$. According to the /mean value theorem/ we have $F(x_{n}) -
+  F(x_{n-1}) = F'(c_{n})(x_{n} - x_{n-1})$. Substituting into
+  \ref{eqn_fdl_cal}, we get $F(b) - F(a) =
+  \sum_{n=1}^{N}[F'(c_{n})(x_{n} - x_{n-1})].$ The assumption implies
+  that $F'(c_{n}) = f(x_{n})$. Also, $x_{n} - x_{n-1}$ can be
+  expressed as $Delta_{x}$ of partition $n$.
 
   \begin{equation}
    F(b) - F(a) = \sum_{n=1}^{N}[f(c_{n})(\Delta x_{n})].
+  \end{equation}
