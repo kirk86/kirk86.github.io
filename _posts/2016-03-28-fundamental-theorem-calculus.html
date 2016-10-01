@@ -218,6 +218,72 @@ with its additive inverse we get:
 </p>
 
 <p>
-= \(f + b + a\)
+= $[F(x<sub>n</sub>) - F(x<sub>n-1</sub>)] + [F(x<sub>n-1</sub>) - F(x<sub>n-2</sub>)] + &hellip; + $
+</p>
+
+<p>
+\([F(x_{2}) - F(x_{1})] + [F(x_{1}) - F(x_{0})]\). Written as a sum
+</p>
+
+<p>
+looks like this:
+</p>
+
+\begin{equation}
+\label(eqn_fdl_cal)
+ F(b) - F(a) = \sum_{n=1}^{N} [F(x_{n}) - F(x_{n-1})]
+\end{equation}
+
+<p>
+Using the <i>mean value theorem</i> we have:
+</p>
+
+<p>
+Let \(F\) be continuous on the closed interval \([a, b]\) and
+</p>
+
+<p>
+differentiable on the open interval (a, b). Then there exists some
+</p>
+
+<p>
+\(c\) in \((a, b)\) such that \(F'(c) = \frac{F(b) - F(a)}{b - a}\).
+</p>
+
+<p>
+It follows that \(F'(c)(b - a) = F(b) - F(a)\).
+</p>
+
+<p>
+The function \(F\) is differentiable on the interval \([a, b]\),
+</p>
+
+<p>
+terefore, it is also differentiable and continuous on each interval
+</p>
+
+<p>
+\([x_{n-1}, x_{n}]\). According to the <i>mean value theorem</i> we have
+</p>
+
+<p>
+\(F(x_{n}) - F(x_{n-1}) = F'(c_{n})(x_{n} - x_{n-1})\). Substituting
+</p>
+
+<p>
+into \ref{eqn_fdl_cal}, we get $F(b) - F(a) = &sum;<sub>n=1</sub><sup>N</sup>[F'(c<sub>n</sub>)(x<sub>n</sub> - x<sub>n-1</sub>)].$
+</p>
+
+<p>
+The assumption implies that \(F'(c_{n}) = f(x_{n})\). Also, \(x_{n} - x_{n-1}\)
+</p>
+
+<p>
+can be expressed as \(Delta_{x}\) of partition \(n\).
+</p>
+
+<p>
+\begin{equation}
+ F(b) - F(a) = &sum;<sub>n=1</sub><sup>N</sup>[f(c<sub>n</sub>)(&Delta; x<sub>n</sub>)].
 </p></li>
 </ul>
