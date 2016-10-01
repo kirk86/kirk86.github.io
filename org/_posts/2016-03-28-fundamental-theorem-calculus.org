@@ -183,3 +183,33 @@ different parts:
   $$\lim_{\Vert\Delta x_{n}\Vert\rightarrow 0} F(b) - F(a) =
   \lim_{\Vert\Delta x_{n}\Vert\rightarrow 0}
   \sum_{n=1}^{N}[f(c_{n})(\Delta x_{n})].$$
+
+  Both $F(b)$ and $F(a)$ are not dependent on $\Vert\Delta x_{n}\Vert$,
+  so the limit on the left side remains $F(b) - F(a)$.
+
+  $$F(b) - F(a) = \lim_{\Vert\Delta x_{n}\Vert\rightarrow 0}
+  \sum_{n=1}^{N}[f(c_{n})(\Delta x_{n})].$$
+
+  The expression on the right side of the equation defines the
+  integral over $f$ from $a$ to $b$. Therefore, we obtain
+
+  $$F(b) - F(a) = \int_{a}^{b}f(x)dx$$
+
+  Suppose $G$ is an antiderivative of $f$. Then by the second theorem,
+  we have $G(x) - G(a) = \int _{a}^{x}f(t) dt.$ Now, suppose
+  $F(x)=\int _{a}^{x}f(t) dt = G(x) - G(a)$. Then $F$ has the same
+  derivative as $G$, and therefore $F' = f$. This argument only works,
+  if we already know that $f$ has an antiderivative, and the only way
+  we know that all continuous functions have antiderivatives first
+  part of the Fundamental Theorem. For example, if $f(x) = e^{-x^{2}}$
+  then $f$ has an antiderivative, namely
+
+  $$G(x)=\int _{0}^{x}f(t) dt$$
+
+  and there is no simpler expression for this function. It is
+  therefore important not to interpret the second part of the theorem
+  as the definition of the integral. Indeed, there are many functions
+  that are integrable but lack elementary antiderivatives, and
+  discontinuous functions can be integrable but lack any
+  antiderivatives at all. Conversely, many functions that have
+  antiderivatives are not Riemann integrable (Volterra's function).
