@@ -114,3 +114,10 @@ different parts:
   function/ on that open interval $I$ and letting $a$ be any point in
   $I$. In other words the /definite integral/ of a function can be
   computed by using any one of its infinitely-many /antiderivatives/.
+
+
+- *Proof:*
+
+  Limit proof by Riemann sums.
+
+  Let $f$ be Riemann integrable on the interval $[a, b]$
