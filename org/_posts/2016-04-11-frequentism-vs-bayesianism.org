@@ -309,3 +309,5 @@ greatly. This is clea in 2 situations.
 1. The handling of nuisance parameters
 2. The subtle (often overlooked) difference between *frequentist
    confidence intervals* and *Bayesian credible regions*
+
+Credits to [[http://jakevdp.github.io/blog/2014/03/11/frequentism-and-bayesianism-a-practical-intro/][Jake VanderPlas]]
