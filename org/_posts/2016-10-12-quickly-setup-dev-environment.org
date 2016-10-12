@@ -1,0 +1,98 @@
+---
+layout: post
+title: Code Syntax
+date: 2016-10-12
+comments: true
+archive: false
+---
+*How to quickly setup a linux development environment*
+
+Everyone these days is using virtual machines or some sort of a server
+using linux. Sine I'm also one of those people where my day to day
+laptop runs OS X, my home computer runs Arch and my work computer runs
+Ubuntu and CentoOS, so I decide that it would be a good idea to
+automate somehow this workflow whenever I would have to create or
+destroy a virtual machine for my developent environment without too
+much of a hassle. Thus, for this purpose I crated an automated script
+to quickly setup a developemnt environment on debian based distros
+such as ubuntu for now.
+
+What exactly does it do? Well, first it starts by updating your system
+including the installed packages and kernel. It also installs all the
+necessary tools for building software from source including but not
+limited to ~gcc, g++ and gortran~.
+
+Later it sets up a minimalistic desktop environment for you to work on
+based on lxde, which is fast and light. Be aware that this is indeed
+very minimalistic, in that it does not include a web browser or pdf
+reader and many other stuffs. You would have to install them by
+yourself if you want that or alternatively modify the script to
+install the full fledged lxde if that's what you want. This should be
+easier and quicker than installing additional software as you go along
+and feel the need for them.
+
+Next, it installs a vnc server for you to have access to your linux
+box using remote desktop. In this case its using ~tighervnc~ for this
+purpose which also operates ~Xvnc~, meaning more secure
+connections. During the installation the script creates a user
+~tigervncuser~ which is used as the deafult user when you vnc into
+your linux box. The script also sets a password for that user. During
+the installation you'll be asked to provide a password for the new
+user `tigervncuser` and also a password for accessing your vnc box
+when you remote desktop into it.
+
+If you feel that you need more security then you can always tunnel
+your connection prior to vnc-ing into your box.
+
+Last but not least the script installs high performance libraries such
+as ~OpenBLAS~ and development software from which the user can choose
+to either install miniconda or anaconda. It also installs ~Theano~ and
+~Torch7~.
+
+In the end you'll have a python and torch developemnt environment
+ready to go. I'm also trying to port the script to arch linux and also
+add some nice additions for the terminal in general. In the end I'm
+afraid I'm gonna have to also have an additional port of it for OS X
+so that everything is consistent.
+
+
+To insert highlight code inside of a post, it's
+enough to use some specific tags, has directly described into the
+[Jekyll documentation](http://jekyllrb.com/docs/templates/#code-snippet-highlighting). In
+this way the code will be included into a ``.highlight`` CSS class and
+will be highlight according to the
+[syntax.scss](https://github.com/mojombo/tpw/blob/master/css/syntax.css)
+file. This is the standard style adopted by **Github** to highlight
+the code.
+
+This is a CSS example:
+{% highlight css linenos %}
+
+body {
+  background-color: #fff;
+  }
+
+h1 {
+  color: #ffaa33;
+  font-size: 1.5em;
+  }
+
+{% endhighlight %}
+
+And this is a HTML example, with a linenumber:
+{% highlight html linenos %}
+
+<html>
+  <a href="example.com">Example</a>
+</html>
+
+{% endhighlight %}
+
+Last, a Ruby example:
+{% highlight ruby linenos %}
+
+def hello
+  puts "Hello World!"
+end
+
+{% endhighlight %}
