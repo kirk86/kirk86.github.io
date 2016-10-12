@@ -63,4 +63,4 @@ also add some nice additions for the terminal in general. In the end
 I'm afraid I'm gonna have to also have an additional port of it for ~OS
 X~ so that everything is consistent between my environments.
 
-You can downlaod the script from **[[https://github.com/kirk86/devdotfiles][here]]**.
+You can download the script from **[[https://github.com/kirk86/devdotfiles][here]]**.
