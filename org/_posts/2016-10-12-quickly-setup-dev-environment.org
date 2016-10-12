@@ -1,10 +1,17 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
 ---
 layout: post
-title: Code Syntax
+title: "How to quickly setup and dev. envrionment on linux"
 date: 2016-10-12
 comments: true
 archive: false
+tags: confereces
+excerpt: Setting up dev. environment for linux
 ---
+#+End_HTML
+
 *How to quickly setup a linux development environment*
 
 Everyone these days is using virtual machines or some sort of a server
