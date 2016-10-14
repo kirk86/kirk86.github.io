@@ -12,7 +12,7 @@ excerpt: Favourite quotes from Aristotle.
 ---
 #+END_HTML
 
-- Learning is not a child's play; we cannot learni without pain
+- Learning is not a child's play; we cannot learn without pain
 
 
 - A common danger unites even the biggest enemies
