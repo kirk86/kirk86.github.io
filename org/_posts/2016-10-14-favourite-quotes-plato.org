@@ -13,7 +13,7 @@ excerpt: Favourite quotes from Plato
 #+END_HTML
 
 
-- If a man neglects education, he walks lame to the end of his life
+- If a man neglects education, he walks lame to the end of his life \\
 
 
 - The city is what it is because our citizens are what they are
