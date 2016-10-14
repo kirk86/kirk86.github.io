@@ -1,0 +1,23 @@
+---
+layout: default
+title: Favourite Quotes
+---
+<div class="col-sm-12">
+    <div class="page-title">
+        {{ page.title }}
+    </div>
+    <div class="page-content">
+        <ul class="page-list">
+            {% for post in site.posts %}
+                {% if post.quotes %}
+                <li>
+                    <time class="timeago postlist-meta" datetime="{{
+                    post.date | date: "%A %-d %B %Y" }}">{{ post.date
+                    }}</time> &mdash; <a href="{{ post.url | prepend:
+                    site.url }}">{{ post.title }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
