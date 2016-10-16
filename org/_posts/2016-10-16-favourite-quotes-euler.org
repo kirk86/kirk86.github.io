@@ -1,0 +1,16 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Leonhard Euler 1707 - 1783"
+date: 2016-10-16
+comments: true
+quotes: true
+tags: quotes
+excerpt: Favourite quotes from Leonhard Euler
+---
+#+END_HTML
+
+- Nothing takes place in the world whose meaning is not that of some
+  maximum of minimum
