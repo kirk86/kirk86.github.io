@@ -1,0 +1,454 @@
+#+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Summary of papers"
+date: 2016-10-21
+comments: true
+archive: false
+tags: papers
+excerpt: Summary of some papers
+---
+#+End_HTML
+
+* Summary of papers
+** Papers
+*** Completed
+**** Optimization                                                     :OP:
+**** Nerual Networks                                                  :NN:
+
+- Title: /Volumetric and Multi-View CNNs for Object Classification on
+  3D Data/
+
+- Notes:
+
+  here
+
+
+- Title: /Combining Markov Random Fields and Convolutional Neural
+  Networks for Image Synthesis/
+
+
+- Notes:
+
+  here
+
+
+- Title: /Unsupervised Representation Learning with Deep Convolutional
+  Generative Adversarial Networks/
+
+- Notes:
+
+  here
+
+
+- Title: /ACDC: A STRUCTURED EFFICIENT LINEAR LAYER/
+
+- Notes:
+
+  here
+
+
+- Title: /Exploring the space of Adversarial Images/
+
+- Notes:
+
+  here
+
+
+- Title: /Deep Residual Learning for Image Recognition/
+
+- Notes:
+
+  ~Main Idea:~ How to ease the trainig of deeper networks by
+  reformulating the layers as learning functions with reference to the
+  layer inputs, instead of learning unreferenced functions. This way
+  the neworks are easier to optimize you don't have more parameters
+  but actually less than some counterpart network architectures, for
+  instance VGG. In addition there is no degradastion on accuracy, on
+  the contrary, you can gain accuracy from the incrased depth.
+
+  The building block of the residual learning can be discribed as
+  follows: We have a function
+  $F(\vec{x})\leftarrow\vec{x}\rightarrow\mbox{weight
+  layer}\rightarrow\mbox{relu}\rightarrow\mbox{weight
+  layer}\rightarrow\oplus\leftarrow\vec{x}\;\;\mbox{this is the
+  identity}\rightarrow\mbox{relu}$. Instead of hoping each few stacked
+  layers directly fit a desired underlying mapping, they explicitly
+  let these layers fit a residual mapping. Formally, denoting the
+  desired underlying mapping as $H(\vec{x})$, they let the stacked
+  nonlinear layers fit another mapping of $F(\vec{x}) := H(\vec{x}) -
+  \vec{x}$. The original mapping is recast into $F(\vec{x}) + \vec{x}$
+
+  ~Identity Mapping by Shortcuts:~ $\vec{y} = F(\vec{x},
+  {\mathbf{W}_{i}}) + \vec{x}$ or perform a linear projection
+  $\mathbf{W}_{x}$ by the shorcut connections to match the dimensions
+  $\vec{y} = F(\vec{x}, {\mathbf{W}_{i}}) + \mathbf{W}_{x}\vec{x}$
+
+
+- Title: /Learning Deep Representations of Fine-Grained Visual Descriptors/
+
+  State-of-the-art methods for zero-shot visual recognition formulate
+  learning as a joint embedding problem of images and side
+  information.
+
+
+- Title: /OverFeat: Integrated Recognition, Localization and Detection
+  using Convolutional Networks/ cite:sermanet2013::overfeat:-integrated-reco
+
+- Summary:
+
+  ~Main Idea:~ An integrated framework using convolutional networks
+  for classification, localizaiton and detection. They use a
+  multiscale and sliding window approach which can be efficiently
+  implemented in a convolutional network. They introduce an approach
+  to localization by learning to predict object boundaries. In this
+  approach bounding boxes are accumulated rather than suppressed in
+  order to increase detection confidence. They also show that
+  different tasks can be learned simultaneously using a single shared
+  network. The main point of the paper is to show that training a
+  convolutional network to simultaneously classify, locate and detect
+  objects in images can boost the of classification, detection and
+  localization of all tasks. \\
+
+  ~Pros:~ Using a single conv net for classification, detection and
+  localization. They introduce a novel method for localization and
+  detection by accumulating predicted bounding boxes. They suggest
+  that if you combine many localization predictions then detection can
+  be performed without trainig on background samples and that way one
+  can avoid possible time-consuming and complicated bootstrapping
+  trainig phases, which ultimately allows the network to focus solely
+  on positive classes for higher accuracy. How do they achieve that?
+  Since objects of interest sometimes vary significantly in size and
+  position within the image, they combine three different ideas
+  experessed below. Regarding the terms localization and detection in
+  this paper the only difference is the evaluation criterion used and
+  usually both involve predicting the bounding box for each object in
+  the image.
+
+  1. First idea, dating back to '90s, apply a convolutional network at
+     multiple locations in the image, in a sliding window fashion, and
+     over multiple scales. Many viewing windows may contain an
+     identifiable portion of the object but not the entire object,
+     which leads to descent classification but poor localization and
+     detection.
+
+  2. Second idea, train the system to not only produce a distribution
+     over categories for each window, but to also produce a prediction
+     of the localization and size of the bounding box containing the
+     object relative to the window.
+
+  3. Third idea, accumulate the evidence for each category at each
+     location and size using their own dense sliding window method.
+
+  The localization task is usually a convenient intermediate step
+  between classification and detection which allows to evaluate the
+  localization method independently of challenges specific to
+  detection. Another important information is that classification and
+  localization share the same dataset, while detection alos has
+  additional data where objects can be smaller. Detection data also
+  contains a set of images where certain objects are absent.
+
+  The filters in the feature extraction layers (1-5) are convolved
+  across the entire image in one pass rather than sliding a fixed-size
+  feature extractor over the image and then aggregating the results
+  from different locations.
+
+  Many bounding boxes are fused into a single very high confidence
+  box, while false positives disappear below the detection threshold
+  due their lack of bounding box coherence and confidence. This
+  suggests that their approach is naturally more robust to false
+  positives coming from the pure-classification model than traditional
+  non-maximum suppression, by rewarding bounding box coherence.
+
+  ~Cons:~ Some of the training features in Krizhevsky's model were not
+  explored due to time constraints. Also they do not train the
+  regressor on bounding boxes with less than 50% overlap with the
+  input field of view. \\
+
+  ~Methodology:~
+
+  1. Model design and trainig
+
+     Network trained on 1.2 million images with 1000 classes in total
+     (ImageNet). The network model uses the same fixed input size as
+     proposed by Krizhevsky et al. during traininig but turns to
+     multi-scale for classification. Each image is downsampled with
+     smallest dimesion 256 pixels. Then, they extract 5 random crops
+     and their horizontal flips of size 221x221 pixels. These are then
+     fed into the network as mini-batches of size 128. The weights are
+     randomly initialized with $(\mu, \sigma) = (0.1 \times 10^{-2})$
+     and updated by SGD (stochastic gradient descent) with momentum of
+     0.6 and $\el_{2}$ weight decay of $1 \times 10^{-5}$, which is
+     successively decreased by a factor of 0.5 after (30, 50, 60,
+     70, 80) epochs. Dropout with a rate of 0.5 is used on the fully
+     connected layers (6th and 7th) in the classifier. Network
+     architecture is described in the table below.
+
+#+CAPTION: Fast network model architecture
+#+NAME: tab:fast-model
+
+| Layer | 1        | 2        | 3       | 4       | 5        | 6    | 7    | 8    |
+|-------+----------+----------+---------+---------+----------+------+------+------|
+| <l5>  | <l>      | <l>      | <l>     | <l>     | <l>      | <l>  | <l>  | <l>  |
+| Stage | conv+max | conv+max | conv    | conv    | conv+max | full | full | full |
+| #channels | 96       | 256      | 512     | 1024    | 1024     | 3072 | 4096 | 1000 |
+| Filter size | 11x11    | 5x5      | 3x3     | 3x3     | 3x3      | -    | -    | -    |
+| Conv. stride | 4x4      | 1x1      | 1x1     | 1x1     | 1x1      | -    | -    | -    |
+| Pooling size | 2x2      | 2x2      | -       | -       | 2x2      | -    | -    | -    |
+| Pooling stride | 2x2      | 2x2      | -       | -       | 2x2      | -    | -    | -    |
+| Zero-padding size | -        | -        | 1x1x1x1 | 1x1x1x1 | 1x1x1x1  | -    | -    | -    |
+| Spatial input size | 231x231  | 24x24    | 12x12   | 12x12   | 12x12    | 6x6  | 1x1  | 1x1  |
+|       |          |          |         |         |          |      |      |      |
+
+#+CAPTION: Accurate network model architecture
+#+NAME: tab:accurate-model
+
+| Layer | 1        | 2        | 3       | 4       | 5       | 6        | 7    | 8    | 9    |
+|-------+----------+----------+---------+---------+---------+----------+------+------+------|
+| <l5>  | <l>      | <l>      | <l>     | <l>     | <l>     | <l>      | <l>  | <l>  | <l>  |
+| Stage | conv+max | conv+max | conv    | conv    | conv    | conv+max | full | full | full |
+| #channels | 96       | 256      | 512     | 512     | 1024    | 1024     | 4096 | 4096 | 1000 |
+| Filter size | 7x7      | 7x7      | 3x3     | 3x3     | 3x3     | 3x3      | -    | -    | -    |
+| Conv. stride | 2x2      | 1x1      | 1x1     | 1x1     | 1x1     | 1x1      | -    | -    | -    |
+| Pooling size | 3x3      | 2x2      | -       | -       | -       | 2x2      | -    | -    | -    |
+| Pooling stride | 3x3      | 2x2      | -       | -       | -       | 2x2      | -    | -    | -    |
+| Zero-padding size | -        | -        | 1x1x1x1 | 1x1x1x1 | 1x1x1x1 | 1x1x1x1  | -    | -    | -    |
+| Spatial input size | 221x221  | 36x36    | 15x15   | 15x15   | 15x15   | 15x15    | 5x5  | 1x1  | 1x1  |
+|       |          |          |         |         |         |          |      |      |      |
+
+     Another way to represent the network archiecture is the following
+     one.
+
+     $\mbox{Input}\rightarrow
+     \left[\left[\mbox{conv}\rightarrow\mbox{max}\right]\times
+     2\rightarrow\left[\mbox{conv}\right]\times
+     2\rightarrow\left[\mbox{conv}\rightarrow\mbox{max}\right]\rightarrow
+     \left[\mbox{fc}\rightarrow\mbox{dropout}\right]\times
+     3\right]\rightarrow\mbox{Output}$.
+
+     During training they treat the above architecture as non-spatial
+     which means that it outputs feature maps of size 1x1 as opposed
+     to the inference step, which produces spatial outputs. Layers 1-5
+     are similar to Krizhevsky et al. using /relu/ non-linearities and
+     max-pooling, but with the following differences:
+
+     1. no contrast normalization is used
+     2. pooling regions are non-overlapping
+     3. their model has larger 1st and 2nd layer feature maps thanks
+        to smaller stride (2 instead of 4), due to the fact that
+        larger strides will benefit speed but will hurt accuracy.
+
+     The 3 last layers are applied in a sliding window fashion at test
+     time. These fully connected layers can also be seen as 1x1
+     convolutions in spatial setting. The authors have also released a
+     feature extractor named "OverFeat" including two models. A fast
+     one $\ref{tab:fast-model}$ and an accurate one
+     $\ref{tab:accurate-model}$.
+
+     As we already mentioned the authors use a multi-scale approach
+     for the classificaiton task where they explore the entire image
+     space by running the network at each location and at multiple
+     scales using a sliding window. This particular approach allows
+     significantly more views for voting where the result is a spatial
+     map of C-dimensional vectors at each scale. For the resolution
+     augmentation they follow the following steps:
+
+     1. They start with the unpooled layer 5 feature map for as single
+        image, at a given scale.
+
+     2. Each unpooled maps undergoes a 3x3 pooling operation
+        (non-overlapping regions) repeated 3x3 times for ($\Delta_{x},
+        Delta_{y}$) pixel offsets of {0,1,2}
+
+     3. This produces a set of pooled feature maps, replicated (3x3)
+        times for different ($Delta_{x}, Delta_{y}$) combinations
+
+     4. The classifier (layers 6,7,8) has s fixed input size of 5x5
+        and produces a C-dimensional output vector for each location
+        within the pooled maps. It is applied in a sliding-window
+        fashion to the pooled maps, yielding C-dimensional output maps
+        (for a given $\Delta_{x}, \Delta_{y}$ combination).
+
+     5. The output maps for different ($\Delta_{x}, \Delta_{y}$)
+        combinations are reshaped into as single 3D output map (two
+        spatial dimensions x C classes)
+
+     #+CAPTION: 1D illustration (to scale) of output map computation for classification
+     #+NAME: fig:output-map
+
+     [[../pdfs/S/Sermanet/2013/images/fig3.png]]
+
+      Using y-dimension from scale 2 as an example.
+      1.: 20 pixel unpooled layer 5 feature map.
+      2.: max pooling over non-overlapping 3 pixel groups,
+          using offsets of $\Delta$ = {0, 1, 2} pixels
+          (red, green, blue respectively).
+      3.: The resulting 6 pixel pooled maps, for different $\Delta$.
+      4.: 5 pixel classifier (layers 6,7) is applied in
+          sliding window fashion to pooled maps, yielding 2 pixel
+          by C maps for each $\Delta$.
+      5.: reshaped into 6 pixel by C output maps.
+
+     The above operations can be viewed as shifting the classifier’s
+     viewing window by 1 pixel through pooling layers without
+     subsampling and using skip-kernels in the following layer. Or
+     equivalently, as applying the final pooling layer and fully
+     connected stack at every possible offset, and assembling the
+     results by interleaving the outputs. The operation is repeated
+     for the horizontal flipped version of each image and the final
+     classification is produced by:
+
+     1. taking the spatial max for each class, at each scale and flip
+
+     2. averaging the resulting C-diensional vectors from different scales and flips
+
+     3. taking the top-1 or top-5 elements (depending on the
+        evaluation criterion) from the mean class vector
+
+     ConvNets and sliding window efficacy
+
+     put image here
+
+     Caption is Figure 5: The efficiency of ConvNets for
+     detection. During training, a ConvNet produces only a single
+     spatial output (top). But when applied at test time over a larger
+     image, it produces a spatial output map, e.g. 2x2 (bottom). Since
+     all layers are applied convolutionally, the extra computation
+     required for the larger image is limited to the yellow
+     regions. This diagram omits the feature dimension for simplicity.
+
+     For the localization task the authors replace the classifier
+     layers by a regression network and train it to predict object
+     bounding boxes at each spatial location and scale. Finally, they
+     combine the regression predictions together, along with the
+     classification results at each location.
+
+     For the generated predictions of object bounding boxes the
+     authors simultaneously run the classifier and teh regressor
+     network accross all locations and scales. Only the final
+     regerssion layer needs to be recomputed after computing the
+     classification network. The output of the final softmax layer for
+     a class $c$ at each location provides a score of confidence that
+     an object of class $c$ is present (though not necessarily fully
+     contained) in the corresponding field of view. Thus they can
+     assign a confidence to each bounding box. For the regression
+     training the network has 2 fully-connected hidden layrers of size
+     4096 and 1024 channels.The final output layer has 4 units which
+     specify the coordinates for the bounding box edges.
+
+     Image goes here
+
+     caption goes here Figure 6: Localization/Detection pipeline. The
+     raw classifier/detector outputs a class and a con- fidence for
+     each location (1st diagram). The resolution of these predictions
+     can be increased using the method described in section 3.3 (2nd
+     diagram). The regression then predicts the location scale of the
+     object with respect to each window (3rd diagram). These bounding
+     boxes are then merge and accumulated to a small number of objects
+     (4th diagram)
+
+     Image goes here
+
+     Figure 7: Examples of bounding boxes produced by the regression
+     network, before being com- bined into final predictions. The
+     examples shown here are at a single scale. Predictions may be
+     more optimal at other scales depending on the objects. Here, most
+     of the bounding boxes which are initially organized as a grid,
+     converge to a single location and scale. This indicates that the
+     network is very confident in the location of the object, as
+     opposed to being spread out randomly. The top left image shows
+     that it can also correctly identify multiple location if several
+     objects are present. The various aspect ratios of the predicted
+     bounding boxes shows that the network is able to cope with
+     various object poses.
+
+     They train the regression network using an $\el_{2}$ loss between
+     the predicted and true bounding box for each example having 1000
+     different versions, one for each class, they compare the
+     prediction of the regressor net at each spatial location with the
+     ground-truth bounding box, shifted into the frame of reference of
+     the regressor’s translation offset within the convolution.
+
+     Finally they combine the predicitions via a greedy merge strategy
+     applied to the regression bounding boxes using the following
+     algorithm.
+
+     1. Assign to $C_{x}$ the set of classes in the top $k$ for each
+        scale $s\in 1,\ldots,6$, found by taking the maximum detection
+        class outputs accross spatial locations for that scale.
+
+     2. Assign to $B_{s}$ the set of bounding boxes predicted by the
+        regressor network for each class in $C_{s}$, across all spatial
+        locations at scale $s$.
+
+     Image should go here
+
+     Caption on image
+
+     Application of the regression network to layer 5 features, at
+     scale 2, for example.
+     1. The input to the regressor at this scale are 6x7 pixels
+        spatially by 256 channels for each of the
+     (3x3) $\Delta_{x}$, $\Delta_{y}$ shifts.
+     2. Each unit in the 1st layer of the regression net is connected
+        to a 5x5 spatial neighborhood in the layer 5 maps, as well as
+        all 256 channels. Shifting the 5x5 neighborhood around results
+        in a map of 2x3 spatial extent, for each of the 4096 channels
+        in the layer, and for each of the (3x3) $\Delta_{x}$,
+        $\Delta_{y}$ shifts.
+     3. The 2nd regression layer has 1024 units and is fully connected
+        (i.e. the purple element only connects to the purple element
+        in (b), across all 4096 channels).
+     4. The output of the regression network is a 4-vector (specifying
+        the edges of the bounding box) for each location in the 2x3
+        map, and for each of the (3x3) $\Delta_{x}$, $\Delta_{y}$
+        shifts.
+
+     1. Assign $B\leftarrow\cup_{s}B_{s}$
+
+     2. Repeat until mergin done:
+
+     3. $(b_{1}^{*}, b_{2}^{*}) = argmin_{b_{1}\ne b_{2} \in B} match_score(b1, b2)$
+
+     4. $\mbox{if } match_score(b_{1}^{*}, b_{2}^{*}) > t, \mbox{ stop.}$
+
+     5. $\mbox{Otherwise, set} B\leftarrow B\setminus {b_{1}^{*},
+        b_{2}^{*}}\cup box_merge(b_{1}^{*}, b_{2}^{*})$
+
+    Where match_socre is the sum of the distance between centers of
+    the two bounding boxes and the inersection area of the boxes, and
+    box_merge is the average of bounding boxes' coordinates. The final
+    prediction is given by the merged bounding boxes with maximum
+    class scores and it is computed by cummulatively adding the
+    detection class outputs associated with the input windows from
+    which each bounding box that was predicted.
+
+    Regarding the detection, it is similar to classification training
+    but in a spatial manner. Multiple location of an image may be
+    trained simultaneously. The main difference with the localization
+    task, is the necessity to predict a background class when no
+    object is present. Usually, negative examples are initially taken
+    at random for training. Then the most offending negative errors
+    are added to the training set in bootstrapping passes. Independent
+    bootstrapping passes render training complicated and risk
+    potential mismatches between the negative examples collection and
+    training times. The size of bootstrapping passes needs to be tuned
+    to make sure training does not overfit on a small set. To
+    circumvent all these problems, they perform negative training on the
+    fly, by selecting a few interesting negative examples per image
+    such as random ones or most offending ones. This approach is more
+    computationally expensive, but renders the procedure much
+    simpler. And since the feature extraction is initially trained
+    with the classification task, the detection fine-tuning is not as
+    long anyway.
+
+    ~Experiments:~ Multi-view approach proposed by the authors was
+    critical to obtaining good performance. Using only a single
+    centered crop, our regressor network achieves an error rate of
+    40%. By combining regressor predictions from all spatial locations
+    at two scales, they achieve a vastly better error rate of
+    31.5%. Adding a third and fourth scale further improves
+    performance to 30.0% error.
