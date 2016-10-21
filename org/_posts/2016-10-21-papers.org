@@ -12,7 +12,6 @@ excerpt: Summary of some papers
 ---
 #+End_HTML
 
-#+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
 * Summary of papers
 ** Papers
 *** Completed
@@ -98,7 +97,7 @@ excerpt: Summary of some papers
 
 
 - Title: /OverFeat: Integrated Recognition, Localization and Detection
-  using Convolutional Networks/ cite:sermanet2013::overfeat:-integrated-reco
+  using Convolutional Networks/
 
 - Summary:
 
@@ -278,7 +277,7 @@ excerpt: Summary of some papers
         combinations are reshaped into as single 3D output map (two
         spatial dimensions x C classes)
 
-     [[../pdfs/S/Sermanet/2013/images/fig3.png]]
+     [[../../_site/assets/images/fig3.png]]
 
       Caption: 1D illustration (to scale) of output map computation for
       classificationUsing y-dimension from scale 2 as an example.  1.:
