@@ -11,6 +11,7 @@ tags: papers
 excerpt: Summary of some papers
 ---
 #+End_HTML
+
 #+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
 * Summary of papers
 ** Papers
@@ -275,21 +276,17 @@ excerpt: Summary of some papers
         combinations are reshaped into as single 3D output map (two
         spatial dimensions x C classes)
 
-     #+CAPTION: 1D illustration (to scale) of output map computation for classification
-     #+NAME: fig:output-map
-
      [[../pdfs/S/Sermanet/2013/images/fig3.png]]
 
-      Using y-dimension from scale 2 as an example.
-      1.: 20 pixel unpooled layer 5 feature map.
-      2.: max pooling over non-overlapping 3 pixel groups,
-          using offsets of $\Delta$ = {0, 1, 2} pixels
-          (red, green, blue respectively).
-      3.: The resulting 6 pixel pooled maps, for different $\Delta$.
-      4.: 5 pixel classifier (layers 6,7) is applied in
-          sliding window fashion to pooled maps, yielding 2 pixel
-          by C maps for each $\Delta$.
-      5.: reshaped into 6 pixel by C output maps.
+      Caption: 1D illustration (to scale) of output map computation for
+      classificationUsing y-dimension from scale 2 as an example.  1.:
+      20 pixel unpooled layer 5 feature map.  2.: max pooling over
+      non-overlapping 3 pixel groups, using offsets of $\Delta$ = {0,
+      1, 2} pixels (red, green, blue respectively).  3.: The resulting
+      6 pixel pooled maps, for different $\Delta$.  4.: 5 pixel
+      classifier (layers 6,7) is applied in sliding window fashion to
+      pooled maps, yielding 2 pixel by C maps for each $\Delta$.  5.:
+      reshaped into 6 pixel by C output maps.
 
      The above operations can be viewed as shifting the classifier’s
      viewing window by 1 pixel through pooling layers without
