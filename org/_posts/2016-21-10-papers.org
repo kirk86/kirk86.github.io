@@ -1,4 +1,3 @@
-#+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
 #+STARTUP: showall indent
 #+STARTUP: hidestars
 #+BEGIN_HTML
@@ -12,7 +11,7 @@ tags: papers
 excerpt: Summary of some papers
 ---
 #+End_HTML
-
+#+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
 * Summary of papers
 ** Papers
 *** Completed
