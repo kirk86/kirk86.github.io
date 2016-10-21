@@ -25,6 +25,8 @@ excerpt: Summary of some papers
 - Notes:
 
   here
+  here
+  here
 
 
 - Title: /Combining Markov Random Fields and Convolutional Neural
