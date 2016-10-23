@@ -10,6 +10,7 @@ archive: false
 excerpt: Summary of some papers
 ---
 #+End_HTML
+#+OPTIONS: toc:nil
 
 * Summary of papers
 ** Papers
