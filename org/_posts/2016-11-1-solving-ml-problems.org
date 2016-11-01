@@ -56,9 +56,7 @@ excerpt: How to solve ml problems
   - Performance (P): Classification accuracy, the number of tweets
     predicted correctly out of all tweets considered as a percentage.
 
-
   ~Assumptions~
-
 
   Create a list of assumptions about the problem and it’s
   phrasing. These may be rules of thumb and domain specific information
@@ -77,9 +75,7 @@ excerpt: How to solve ml problems
   of retweets may matter to the model.  Older tweets are less predictive
   than more recent tweets.
 
-
   ~Similar problems~
-
 
   What other problems have you seen or can you think of that are like
   the problem you are trying to solve? Other problems can inform the
@@ -174,7 +170,6 @@ excerpt: How to solve ml problems
 
    - Summary
 
-
      In this post we've discussed the value of being clear on the
      problem you are solving. You discovered a three step framework
      for defining your problem with practical tactics at at step:
@@ -183,8 +178,8 @@ excerpt: How to solve ml problems
         formally and list assumptions and similar problems.
 
      2. Why does the problem need to be solve? List your motivation
-        for solving the problem, the benefits a solution provides
-     and how the solution will be used.
+        for solving the problem, the benefits a solution provides and
+        how the solution will be used.
 
      3. How would I solve the problem? Describe how the problem would
         be solved manually to flush domain knowledge.
