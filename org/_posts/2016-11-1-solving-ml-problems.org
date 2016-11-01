@@ -22,9 +22,7 @@ excerpt: How to solve ml problems
 
 1. Defining the problem. There exist different ways to do that.
 
-
 ~Informal description~
-
 
 Describe the problem as though you were describing it to a friend or
 colleague. This can provide a great starting point for highlighting
