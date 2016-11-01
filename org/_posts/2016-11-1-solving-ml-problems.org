@@ -35,7 +35,7 @@ excerpt: How to solve ml problems
 
   - Formalism
 
-  Here's a good example from Tom Mitchell’s machine learning formalism.
+    Here's a good example from Tom Mitchell’s machine learning formalism.
 
   A computer program is said to learn from experience ~E~ with respect
   to some class of tasks ~T~ and performance measure ~P~, if its
@@ -162,7 +162,6 @@ excerpt: How to solve ml problems
    describing complex problems in why machine learning matters.
 
    - Summary
-
 
      In this post we've discussed the value of being clear on the
      problem you are solving. You discovered a three step framework
