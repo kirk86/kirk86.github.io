@@ -56,6 +56,7 @@ excerpt: How to solve ml problems
   - Performance (P): Classification accuracy, the number of tweets
     predicted correctly out of all tweets considered as a percentage.
 
+
   ~Assumptions~
 
   Create a list of assumptions about the problem and it’s
@@ -89,13 +90,10 @@ excerpt: How to solve ml problems
   uses text messages as input data and needs binary classification
   decision.
 
-
 2. Why does the the problem need to be solved?
-
 
    The second step is to think deeply about why you want or need the
    problem solved.
-
 
    - Motivation
 
@@ -141,9 +139,7 @@ excerpt: How to solve ml problems
      operationalize the solution, consider the functional and nonfunctional
      requirements you have for a solution, just like a software project.
 
-
 3. How would I solve the problem?
-
 
    In this third and final step of the problem definition, explore how
    you would solve the problem manually.
@@ -167,7 +163,6 @@ excerpt: How to solve ml problems
    We have considered a manually specified solution before when
    describing complex problems in why machine learning matters.
 
-
    - Summary
 
      In this post we've discussed the value of being clear on the
@@ -183,6 +178,5 @@ excerpt: How to solve ml problems
 
      3. How would I solve the problem? Describe how the problem would
         be solved manually to flush domain knowledge.
-
 
 [[http://machinelearningmastery.com/practical-machine-learning-problems/][   Link]]
