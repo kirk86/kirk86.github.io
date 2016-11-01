@@ -3,7 +3,7 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: "Two parables for graduate students"
+title: "How to solve ml problems"
 date: 2016-11-01
 comments: true
 archive: false
