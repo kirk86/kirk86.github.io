@@ -1,0 +1,33 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Reguralization = Robustness"
+date: 2016-11-23
+comments: true
+archive: false
+tags: reguralization = robustness
+excerpt: Reguralization = Robustness
+---
+#+End_HTML
+
+*Reguralization = Robustness*
+
+
+I've recently come across a nice [[http://hunch.net/?p=197][article]] which describes the
+relationsihp between ~reguralization~ and ~robustness~ from the
+machine learning perspective. Even though the article itself is and
+old blog post I still find valuable from my own work, and especially
+for someone who is new in the world of machine learning trying to
+understand and getter a better grasp of the field. From that artcile I
+kept out two things:
+
+
+1. reguralization $\rightarrow$ stable/stability $\rightarrow$ robust
+
+2. We cannot learn from noisy data without some form of
+   reguralization, because we end up fitting the noise. I.e. slack
+   variables in SVM, needed when data are not linearly separable. Not
+   entirely true since slack variables are still needed even when data
+   might be separable.
