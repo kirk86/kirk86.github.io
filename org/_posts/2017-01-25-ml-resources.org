@@ -6,8 +6,7 @@ layout: post
 title: "Machine learning resources to keep you busy"
 date: 2017-01-25
 comments: true
-archive: true
-tags: resources
+archive: false
 excerpt: ML resources
 ---
 #+End_HTML
