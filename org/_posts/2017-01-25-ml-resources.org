@@ -1,0 +1,15 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Machine learning resources to keep you busy"
+date: 2017-01-25
+comments: true
+archive: false
+tags: resources
+excerpt: ML resources
+---
+#+End_HTML
+
+#+INCLUDE "MLResourcesCourses.html" html
