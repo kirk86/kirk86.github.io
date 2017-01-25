@@ -14,5 +14,5 @@ excerpt: ML resources
 
 #+BEGIN_SRC sh :exports results :results value html
 #!/bin/bash
-/bin/cat ./MLResourcesCourses.html
+/bin/cat ../../MLResourcesCourses.html
 #+END_SRC
