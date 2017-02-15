@@ -119,9 +119,9 @@ How can we exploit unlabeled data for a supervised learning problem
 and how can we identify the most informative subset of examples to be
 annotated by an expert?
 
-# Project 2: Methods for Robust Feature Learning How can we learn robust
-# features that remain maximally predictive even if the distribution of
-# test data is very different from the distribution of training data?
+Project 2: Methods for Robust Feature Learning How can we learn robust
+features that remain maximally predictive even if the distribution of
+test data is very different from the distribution of training data?
 
 # Project 3: Calibrated Uncertainty Estimation How can we provide
 # reliable confidence intervals for deep neural network predictions?
