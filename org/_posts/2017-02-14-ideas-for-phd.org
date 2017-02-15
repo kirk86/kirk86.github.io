@@ -114,7 +114,7 @@ Unifying representations => starting from theorist and Bayesians
    your formulas you have to come up with weights for optimizing those
    formulas i.e. Backprop.
 
-# Different projects:
+Different projects:
 
 # Project 1: Methods for Semi-supervised Learning and Active Labeling
 # How can we exploit unlabeled data for a supervised learning problem
