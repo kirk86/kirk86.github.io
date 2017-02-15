@@ -6,8 +6,7 @@ layout: post
 title: "Ideas regarding PhD topic"
 date: 2017-02-14
 comments: true
-archive: false
-notes: true
+archive: true
 excerpt: Thoughts and notes regarding PhD topics
 ---
 #+END_HTML
@@ -115,10 +114,10 @@ Unifying representations => starting from theorist and Bayesians
 
 Different projects:
 
-# Project 1: Methods for Semi-supervised Learning and Active Labeling
-# How can we exploit unlabeled data for a supervised learning problem
-# and how can we identify the most informative subset of examples to be
-# annotated by an expert?
+Project 1: Methods for Semi-supervised Learning and Active Labeling
+How can we exploit unlabeled data for a supervised learning problem
+and how can we identify the most informative subset of examples to be
+annotated by an expert?
 
 # Project 2: Methods for Robust Feature Learning How can we learn robust
 # features that remain maximally predictive even if the distribution of
