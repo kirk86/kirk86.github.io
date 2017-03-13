@@ -1,0 +1,24 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Mathmods"
+date: 2017-03-13
+comments: true
+maths: true
+tags: maths
+excerpt: Thoughts and notes regarding the different fields for mathematics.
+---
+#+END_HTML
+
+*Major subfields of Mathematics*
+
+- Algebra: Mathmatics of arithmetics
+- Analysis: Mathematics of time, of change
+- Geometry: Mathematics of space
+- Topology: Mathematics of rough shape
+
+[[./mathmods1.png]]
+
+[[./mathmods2.png]]
