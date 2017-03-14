@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Maths
+excerpt: Suggestion on mathematical methods.
 ---
 <div class="col-sm-12">
     <div class="page-title">
@@ -11,11 +12,14 @@ title: Maths
             {% for post in site.posts %}
                 {% if post.maths %}
                 <li>
-                    <time class="timeago postlist-meta" datetime="{{ post.date |  date: "%A %-d %B %Y" }}">{{ post.date }}</time>
-                    &mdash; <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+                  <time class="timeago postlist-meta"
+                        datetime="{{ post.date |  date: "%A %-d %B %Y" }}">
+                      {{ post.date }}
+                  </time> &mdash;
+                  <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
                 </li>
                 {% endif %}
-            {% endfor %} 
+            {% endfor %}
         </ul>
     </div>
 </div>
