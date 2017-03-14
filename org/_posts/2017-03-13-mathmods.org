@@ -19,6 +19,6 @@ excerpt: Thoughts and notes regarding the different fields for mathematics.
 - Geometry: Mathematics of space
 - Topology: Mathematics of rough shape
 
-[[./mathmods1.png]]
+[[../../assets/images/mathmods1.png]]
 
 [[./mathmods2.png]]
