@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Math and Physics lectures"
+date: 2017-08-17
+comments: true
+archive: false
+tags: math-physics-lectures
+excerpt: Mathphysics lectures by Prof. Fredric Schuller
+---
+
+[These](https://www.youtube.com/watch?v=V49i_LM8B0E&list=PLPH7f_7ZlzxTi6kS4vCmv4ZKm9u8g5yic)
+great lectures on the anatomy of theoretical physics provide a thorough
+understanding of the building mathematics from the ground up. Although
+the more advanced concepts took me a while to understand. Prof. Schuller
+is great at explainig difficult concepts in this lectures series.
