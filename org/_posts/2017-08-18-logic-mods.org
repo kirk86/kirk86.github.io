@@ -1,0 +1,18 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Logic"
+date: 2017-08-18
+comments: true
+maths: true
+tags: logic
+excerpt: Logic rules
+---
+#+END_HTML
+
+*Logic Rules*
+
+- Modus Ponens: If A then B
+- Moduls Tollens: If not B then not A
