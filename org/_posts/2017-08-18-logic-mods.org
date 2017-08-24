@@ -96,7 +96,7 @@ under the functional relation $R$ is again a set.
 
 **I: Axiom of Infinity**
 
-\(\existsm (\emptyset\in m \wedge \forall x\in m((x\cup {x}\in m)))\)
+\(\exists m (\emptyset\in m \wedge \forall x\in m((x\cup {x}\in m)))\)
 
 There exists a set that contains the empty set and with every of its
 elements $y$ it also contains the set with the element $y$ (or ${y}$) as an
@@ -104,7 +104,7 @@ element.
 
 **C: Axiom of Choice**
 
-\(\forall X((\forall x\in X\forall y\in X(x=y\leftrightarrow x\cap y\ne\emptyset))\rightarrow\exists z(\forallx\in X\exists ! y y\in x\capz))\)
+\(\forall X((\forall x\in X\forall y\in X(x=y\leftrightarrow x\cap y\ne\emptyset))\rightarrow\exists z(\forall x\in X\exists ! y y\in x\cap z))\)
 
 if you have a collection $X$ of pairwise disjoint non-empty sets, then
 you get a set $z$ which contains one element from each set in the
