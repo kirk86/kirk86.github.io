@@ -33,7 +33,7 @@ excerpt: Logic rules
 
 All of modern mathematics can be grounded without making any
 conceptual assumptions except for the inclusion relation (a.k.a. the
-epsilon relation or \(\Epsilon\)–Relation) in axiomatic set
+epsilon relation or \(\EPSILON\)–Relation) in axiomatic set
 theory. To this concept are add nine axioms which allow to build up
 the machinery for the advanced mathematics that theoretical physics
 uses. To formulate these axioms propositional and predicate logic
@@ -43,7 +43,8 @@ IC F**:
 
 **Basic Existence Axioms**
 
-**E1: The Axiom on \(\Epsilon-Relation \)**
-\(\forall x \forall y (x\in y) \or \not (x\in y)\)
+**E1: The Axiom on \(\EPSILON-Relation \)**
+
+\(\forall x \forall y (x\in y) \veebar\oplus \neg \(x\in y)\)
 
 \(x\in y\) is a proposition if and only if $x$ and $y$ are both sets.
