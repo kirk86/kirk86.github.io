@@ -83,3 +83,43 @@ the elements of the elements of $x$.
 
 Let $R$ be a functional relation. Let $m$ be a set. Then the image of $m$
 under the functional relation $R$ is again a set.
+
+
+**P2: Axiom on Existence of Power Sets**
+
+\(\forall \exists p \forall y (y\in p\leftrightarrow\forall z  (z\in y\rightarrow z\in x))\)
+
+ Let $m$ be a set. There exists a set denoted $\mathbf{P}(m)$ whose elements are
+ precisely the subsets of $m$.
+
+**Further Existence/Construction Axioms**
+
+**I: Axiom of Infinity**
+
+\(\existsm (\emptyset\in m \wedge \forall x\in m((x\cup {x}\in m)))\)
+
+There exists a set that contains the empty set and with every of its
+elements $y$ it also contains the set with the element $y$ (or ${y}$) as an
+element.
+
+**C: Axiom of Choice**
+
+\(\forall X((\forall x\in X\forall y\in X(x=y\leftrightarrow x\cap y\ne\emptyset))\rightarrow\exists z(\forallx\in X\exists ! y y\in x\capz))\)
+
+if you have a collection $X$ of pairwise disjoint non-empty sets, then
+you get a set $z$ which contains one element from each set in the
+collection. [Schuller, using different formulae: Let $x$ be a set whose
+elements are non-empty and mutually disjoint, then there exists a set
+$y$ which contains exactly one element of each element of $x$.]
+
+
+**Non-Existence Axiom**
+
+
+**F: Axiom of Foundation**
+
+\(x\neq\emptyset\rightarrow\exists y(y\in x\wedge y\cap x=\emptyset)\)
+
+Every nonempty set is disjunct from one of its elements. [Schuller:
+Every non-empty set $x$ contains an element $y$ that has none of its
+elements in common with $x$.]
