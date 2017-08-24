@@ -16,3 +16,26 @@ excerpt: Logic rules
 
 - Modus Ponens: If A then B
 - Moduls Tollens: If not B then not A
+
+- 9 Axioms of set theory from Prof. Fredric Schuller
+-- E
+-- E
+-- P
+-- U
+-- R
+-- P
+-- I
+-- C
+-- F
+
+All of modern mathematics can be grounded without making any
+conceptual assumptions except for the inclusion relation (a.k.a. the
+epsilon relation or \(\epsiloin\)–Relation) in axiomatic set
+theory. To this concept are add nine axioms which allow to build up
+the machinery for the advanced mathematics that theoretical physics
+uses. To formulate these axioms propositional and predicate logic
+provide the symbolic language we use. The nine axioms can be
+abbreviated as **EE PURP
+IC F**:
+
+**Basic Existence Axioms**
