@@ -51,4 +51,21 @@ IC F**:
 
 
 **E2: Axiom of Existence of an Empty Set**
-\(\)
+
+\(\exists x \forall y: y\notin x\)
+
+There exists a set $x$ such that for all $y$ it is true that $y$ is not an
+element of $x$. That is, there exists an empty set, a set that contains
+no elements.
+
+
+**Construction Axioms**
+
+**P1: Axiom on Pair Sets**
+
+\(\foral x \forall y \exists m \forall u (u\in m\leftrightarrow u=x u=y)\)
+
+Let $x$ and $y$ be sets. Then there exists a set that contains as its
+elements precisely the sets $x$ and $y$. Or: For all $x$ and for all $y$,
+there exists a set $m$, such that for all $u$, $u$ is an element of $m$ if and
+only if $u$ is $x$ or $u$ is $y$.
