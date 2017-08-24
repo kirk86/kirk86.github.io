@@ -48,3 +48,7 @@ IC F**:
 \(\forall x \forall y (x\in y) \veebar \neg \(x\in y)\)
 
 \(x\in y\) is a proposition if and only if $x$ and $y$ are both sets.
+
+
+**E2: Axiom of Existence of an Empty Set**
+\(\)
