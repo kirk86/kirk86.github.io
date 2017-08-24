@@ -20,19 +20,27 @@ excerpt: Logic rules
 - 9 Axioms of set theory from Prof. Fredric Schuller
 -- E
 
+
 -- E
 
+
 -- P
+
 
 -- U
 
+
 -- R
+
 
 -- P
 
+
 -- I
 
+
 -- C
+
 
 -- F
 
