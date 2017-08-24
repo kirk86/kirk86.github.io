@@ -45,7 +45,7 @@ IC F**:
 
 **E1: The Axiom on \(\epsilon-Relation \)**
 
-\(\forall x \forall y (x\in y) \veebar \neg \(x\in y)\)
+\(\forall x \forall y (x\in y) \veebar \neg (x\in y)\)
 
 \(x\in y\) is a proposition if and only if $x$ and $y$ are both sets.
 
@@ -63,9 +63,23 @@ no elements.
 
 **P1: Axiom on Pair Sets**
 
-\(\foral x \forall y \exists m \forall u (u\in m\leftrightarrow u=x u=y)\)
+\(\forall x \forall y \exists m \forall u (u\in m\leftrightarrow u=x,  u=y)\)
 
 Let $x$ and $y$ be sets. Then there exists a set that contains as its
 elements precisely the sets $x$ and $y$. Or: For all $x$ and for all $y$,
 there exists a set $m$, such that for all $u$, $u$ is an element of $m$ if and
 only if $u$ is $x$ or $u$ is $y$.
+
+**U: Axiom on Union Sets**
+
+Let $x$ be a set. Then there exists a set $u$ whose elements are precisely
+the elements of the elements of $x$.
+
+\(\forall x \exists y \forall c (c\in y \leftrightarrow\exists z (c\in z \wedge z\in x))\)
+
+**R: Axiom of Replacement**
+
+\(\exists x\forall y \in a(\exists z  A(y, z)\rightarrow\exists z\in x A(y, z) )\)
+
+Let $R$ be a functional relation. Let $m$ be a set. Then the image of $m$
+under the functional relation $R$ is again a set.
