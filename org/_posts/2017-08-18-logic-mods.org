@@ -123,3 +123,32 @@ $y$ which contains exactly one element of each element of $x$.]
 Every nonempty set is disjunct from one of its elements. [Schuller:
 Every non-empty set $x$ contains an element $y$ that has none of its
 elements in common with $x$.]
+
+
+Differential geometry works with space, and space is made of sets
+of points. So to study these things, we first will need to look at
+what sets are. But set theory itself cannot be the absolute foundation.
+ Try to define a set, for example as a
+collection of elements, we would need some other concepts
+(which presumably we cannot assume at this foundational level); for
+example, how do we define a “collection” and an “element”? The way we
+will get around this is by constructing set theory on the basis of
+axioms rather than on such definitions. But in order to formulate
+these axioms, we first need a language, in this case, of propositional
+and predicate logic.  [Note, while it may seem that Schuller will
+define the terms or concepts in propositional and predicate logic, he
+in fact uses a logical operator, the biconditional, which is
+understood merely in terms of its truth functionality, and what is
+being biconditionally combined are most basically just mechanically
+operable symbols.]
+
+What could the first definition be? For a definition you need notions
+that you already have in order to define a new notion. But if you do
+not have any notion yet, how would you start? The trick is to start
+axiomatically, and so we will have to write out axiomatic set
+theory. But that then raises the question, in what language would you
+possibly do that? So, actually before we come to set theory, we need
+another building block down here, and that would be logic. And we will
+deal with propositional and predicate logic first. That will define
+our language. Then we will be able to write down the axioms of set
+theory. (quoting Schuller, 0.08.30 - 0.09.15)
