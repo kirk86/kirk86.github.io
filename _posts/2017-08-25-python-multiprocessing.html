@@ -98,3 +98,90 @@ object, which would require iterating over all of <code>Pool</code>. With
 built-in chunking functionality, which will make your code perform
 noticeably better if arguement list is very large.
 </p>
+
+<p>
+Here is a final table summarizing all of those properties and diffferencies:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Multi-args</th>
+<th scope="col" class="org-left">Concurrence</th>
+<th scope="col" class="org-left">Blocking</th>
+<th scope="col" class="org-left">Ordered-results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">map</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">no</td>
+<td class="org-left">yes</td>
+<td class="org-left">yes</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">map<sub>async</sub></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">no</td>
+<td class="org-left">yes</td>
+<td class="org-left">no</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">apply</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">yes</td>
+<td class="org-left">no</td>
+<td class="org-left">yes</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">apply<sub>async</sub></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">yes</td>
+<td class="org-left">yes</td>
+<td class="org-left">no</td>
+<td class="org-left">no</td>
+</tr>
+
+<tr>
+<td class="org-left">imap</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">no</td>
+<td class="org-left">yes</td>
+<td class="org-left">yes</td>
+<td class="org-left">yes</td>
+</tr>
+
+<tr>
+<td class="org-left">imap<sub>async</sub></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">no</td>
+<td class="org-left">yes</td>
+<td class="org-left">no</td>
+<td class="org-left">no</td>
+</tr>
+</tbody>
+</table>

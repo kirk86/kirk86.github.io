@@ -84,3 +84,14 @@ object, which would require iterating over all of ~Pool~. With
 ~async_result.get()~ - no iteration required.  ~map_async~ has
 built-in chunking functionality, which will make your code perform
 noticeably better if arguement list is very large.
+
+Here is a final table summarizing all of those properties and diffferencies:
+
+|             |   | Multi-args | Concurrence | Blocking | Ordered-results |
+|-------------+---+------------+-------------+----------+-----------------|
+| map         |   | no         | yes         | yes      | yes             |
+| map_async   |   | no         | yes         | no       | yes             |
+| apply       |   | yes        | no          | yes      | no              |
+| apply_async |   | yes        | yes         | no       | no              |
+| imap        |   | no         | yes         | yes      | yes             |
+| imap_async  |   | no         | yes         | no       | no              |
