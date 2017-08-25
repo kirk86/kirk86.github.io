@@ -19,12 +19,12 @@ package offers the ability to work with multiple threads and if you
 wish with multiplce cores. First I'll try to cover the multiple core
 scenario and explain the difference between ~map, map_async~, ~imap,
 imap_unorderd~, ~apply, apply_async~. In a later blog post I'll try to
-cover the multithreaded scenario.
+cover the multithreaded scenario. First I'll start with
+~map/map_async~ and ~imap/imap_unorderd~.
 
-First I'll start with ~map/map_async~ and ~imap, imap_unorderd~.
 ~map~ operates on function that accepts only one arguement, it is
 concurrent, it blocks your code, meaning nothing else can be executed
-until its finished and finally it returns yours results in an ordered
+until its finished and finally it returns your results in an ordered
 manner. ~map~ consumes your iterable by converting the iterable to a
 list assuming it isn't already, breaking it into chunks, and
 sending those chunks to the worker processes in the ~Pool~. Breaking the
@@ -34,7 +34,7 @@ iterable is large. However, turning the iterable into a list in order
 to chunk it can have a very high memory cost, since the entire list
 will need to be kept in memory.
 
-~map_async~ on the other hand can operate on function
+~map_async~ on the other hand can operate on a function
 accepting multiple arguements it is not concurrent, it allows excution
 of code while it is still running, and finally it doesn't return your
 results in an ordered manner.
@@ -70,3 +70,17 @@ To summarize the key differences between ~imap/imap_unordered~ and
 
 - 1. The way they consume the iterable you pass to them.
 - 2. The way they return the result back to you.
+
+~apply~ sends a single task off to a worker process, and then blocks
+until it's complete. ~apply_async~ sends a single task off to a work
+process, and then immediately returns an AsyncResult object, which can
+be used to wait for the task to finish and retrieve the
+result. ~apply~ is implemented by simply calling
+~apply_async(...).get()~. With ~apply_async~, if an exception occurs
+inside of your calling function, you won't know about it unless you
+explicitly call ~Pool['process_x'].get()~ on the failing ~AsyncResult~
+object, which would require iterating over all of ~Pool~. With
+~map_async the exception will be raised if you call
+~async_result.get()~ - no iteration required.  ~map_async~ has
+built-in chunking functionality, which will make your code perform
+noticeably better if arguement list is very large.
