@@ -9,7 +9,76 @@ excerpt: Multiprocessing in python
 ---
 
 <p>
-In this blog post I'll try to cover the difference between the functionality
-found in the different functions that the `multiprocessing` package offers
-in python.
+In this blog post I'll try to cover the difference between the
+functionality found in the different functions that the
+<code>multiprocessing</code> package offers in python. The <code>multiprocessing</code>
+package offers the ability to work with multiple threads and if you
+wish with multiplce cores. First I'll try to cover the multiple core
+scenario and explain the difference between <code>map, map_async</code>, <code>imap,
+imap_unorderd</code>, <code>apply, apply_async</code>. In a later blog post I'll try to
+cover the multithreaded scenario.
 </p>
+
+<p>
+First I'll start with <code>map/map_async</code> and <code>imap, imap_unorderd</code>.
+<code>map</code> operates on function that accepts only one arguement, it is
+concurrent, it blocks your code, meaning nothing else can be executed
+until its finished and finally it returns yours results in an ordered
+manner. <code>map</code> consumes your iterable by converting the iterable to a
+list assuming it isn't already, breaking it into chunks, and
+sending those chunks to the worker processes in the <code>Pool</code>. Breaking the
+iterable into chunks performs better than passing each item in the
+iterable between processes one item at a time - particularly if the
+iterable is large. However, turning the iterable into a list in order
+to chunk it can have a very high memory cost, since the entire list
+will need to be kept in memory.
+</p>
+
+<p>
+<code>map_async</code> on the other hand can operate on function
+accepting multiple arguements it is not concurrent, it allows excution
+of code while it is still running, and finally it doesn't return your
+results in an ordered manner.
+</p>
+
+<p>
+<code>imap</code> doesn't turn the iterable you give it into a list, nor does break
+it into chunks by default. It will iterate over the iterable one
+element at a time, and send them each to a worker process. This means
+you don't take the memory hit of converting the whole iterable to a
+list, but it also means the performance is slower for large iterables,
+because of the lack of chunking. This can be mitigated by passing a
+<code>chunksize</code> argument larger than default of 1, however.
+</p>
+
+<p>
+The other major difference between <code>imap/imap_unordered</code> and
+<code>map/map_async</code>, is that with <code>imap/imap_unordered</code>, you can start
+receiving results from workers as soon as they're ready, rather than
+having to wait for all of them to be finished. With <code>map_async</code>, an
+<code>AsyncResult</code> is returned right away, but you can't actually retrieve
+results from that object until all of them have been processed, at
+which points it returns the same list that <code>map</code> does, basically <code>map</code>
+is actually implemented internally as <code>map_async(...).get()</code>. There's
+no way to get partial results, you either have the entire result, or
+nothing.
+</p>
+
+
+<p>
+<code>imap</code> and <code>imap_unordered</code> both return iterables right away. With <code>imap</code>,
+the results will be yielded from the iterable as soon as they're
+ready, while still preserving the ordering of the input iterable. With
+<code>imap_unordered</code>, results will be yielded as soon as they're ready,
+regardless of the order of the input iterable.
+</p>
+
+<p>
+To summarize the key differences between <code>imap/imap_unordered</code> and
+<code>map/map_async</code> are:
+</p>
+
+<ul class="org-ul">
+<li>1. The way they consume the iterable you pass to them.</li>
+<li>2. The way they return the result back to you.</li>
+</ul>
