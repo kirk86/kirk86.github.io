@@ -1,0 +1,17 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Multiprocessing in python"
+date: 2017-08-25
+comments: true
+archive: false
+tags: multiprocessing-python
+excerpt: Multiprocessing in python
+---
+#+End_HTML
+
+In this blog post I'll try to cover the difference between the functionality
+found in the different functions that the `multiprocessing` package offers
+in python.
