@@ -1,0 +1,16 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Optimization"
+date: 2017-08-30
+comments: true
+maths: true
+tags: maths
+excerpt: Notes regarding the optimization process in machine learning.
+---
+#+END_HTML
+
+[[../../../assets/images/notes/optimization_1.jpg]]
+[[../../../assets/images/notes/optimization_2.jpg]]
