@@ -1,0 +1,15 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Extending classification by casting it to a NN"
+date: 2017-08-30
+comments: true
+maths: true
+tags: maths
+excerpt: Notes regarding extending classification by casting to NN.
+---
+#+END_HTML
+
+[[../../../assets/images/notes/casting2nn.jpg]]
