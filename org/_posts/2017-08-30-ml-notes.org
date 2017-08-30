@@ -14,4 +14,4 @@ excerpt: Notes regarding the different aspects of machine learning.
 
 [[../../../assets/images/notes/Notes_1.jpg]]
 
-[[../../../assets/images/notes/Notes_2.jpg]]
+[[../../../assets/images/notes/notes.jpg]]
