@@ -1,0 +1,15 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Backpropagation"
+date: 2017-08-30
+comments: true
+maths: true
+tags: maths
+excerpt: Notes regarding the backpropagation algorithm.
+---
+#+END_HTML
+
+[[../../../assets/images/notes/backprop.jpg]]
