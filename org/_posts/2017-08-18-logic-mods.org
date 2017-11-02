@@ -152,3 +152,22 @@ another building block down here, and that would be logic. And we will
 deal with propositional and predicate logic first. That will define
 our language. Then we will be able to write down the axioms of set
 theory. (quoting Schuller, 0.08.30 - 0.09.15)
+
+**Relations over a set**
+
+If $X = Y$ then we simply say that the binary relation if over $X$, or
+that is an ~endorelation~ over $X$. In CS, such a relation is called a
+homogeneous (binary) relation. Some types of ~endorelations~ are
+widely studied in graph theory, where they are known simple as
+directed graphs permitting loops.
+
+The set of binary relations $\mathbf{\mbox{Rel}}(X)$ on a set $X$ is
+the set $2^{X\times X}$ which is a Boolean algebra augmented with the
+~inovlution~ of mapping of a relation to its ~inverse~ relation.
+
+Some important properties that a binary relation $R$ over as set $X$
+may have are:
+
+- reflexive: $\forall x\in X$ it holds that $xRx$. For example
+  "greater than or equal to" ($\ge$) is a reflexive relation but
+  "greater than" (>) is not.
