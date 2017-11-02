@@ -155,7 +155,7 @@ theory. (quoting Schuller, 0.08.30 - 0.09.15)
 
 **Relations over a set**
 
-If $X = Y$ then we simply say that the binary relation if over $X$, or
+If $X = Y$ then we simply say that the binary relation is over $X$, or
 that is an ~endorelation~ over $X$. In CS, such a relation is called a
 homogeneous (binary) relation. Some types of ~endorelations~ are
 widely studied in graph theory, where they are known simple as
@@ -168,6 +168,102 @@ the set $2^{X\times X}$ which is a Boolean algebra augmented with the
 Some important properties that a binary relation $R$ over as set $X$
 may have are:
 
-- reflexive: $\forall x\in X$ it holds that $xRx$. For example
+- ~reflexive~: $\forall x\in X$ it holds that $xRx$. For example
   "greater than or equal to" ($\ge$) is a reflexive relation but
   "greater than" (>) is not.
+
+- ~irreflexive~ (or ~strict~): $\forall x\in X$ it holds that ~not~
+  $xRx$. For example, $>$ is an irreflexive relation, but $\ge$ is
+  not.
+
+- ~coreflexive relation~: $\forall x\wedge y\in X$ it holds that if
+  $xRy$ then $x=y$. An example of a ~coreflexive~ relation is the
+  relation on integers in which each odd number is related to itself
+  and there are no other relations. The equality relation is the only
+  example of a both reflexive and coreflexive relation, and any
+  coreflexive relation is a subset of teh identity relation.
+
+- ~symmetric~: $\forall x\wedge y\in X$ it holds that if $xRy$ then
+  $yRx$. "Is a blood relative of" is a symmetric relation, because $x$
+  is a blood relative of $y\rightleftarrow y$ if a blood relative of
+  $x$
+
+- ~antisymmetric~: $\forall x\wedge y\in X$, if $xRy$ and $yRx$ then
+  $x=y$. For example, $\ge$ is ~anti-symmetric~; so is $>$, but
+  vacuously (the condition in the definition is always false).
+
+- ~asymmetric~: $\forall x\wedge y\in X$, if $xRy$ then ~not~ $yRx$. A
+  relation is ~asymmetic~ if and only if it is ~both anti-symmetric
+  and irreflexive~. For example, $>$ is asymmetic, but $\ge$ is not.
+
+- ~transitive~: $\forall x, y\wedge z\in X$ it holds taht if $xRy$ and
+  $yRz$ then $xRz$. For example, "is ancestor of" is transitive, while
+  "is parent of" is not. A transitive relation is irreflexive
+  $\rightleftarrow$ it is asymmetric.
+
+- ~total~: $\forall x\wedge y\in X$ it holds that $xRy$ or $yRz$ (or
+  both) then $xRz$. This definition of ~total~ is different from ~left
+  total~ in the previous section. For example, $\ge$ is a total
+  relation.
+
+- ~trichotomous~: $\for all x\wedge y\in X$ exactly one of $xRy$,
+  $yRx$ or $x=y$ holds. For example, $>$ is a trichotomous relation,
+  while the relation "divides" on natural numbers is not.
+
+- ~Right Euclidean~: $\for all x, y\wedge z\in X$ it holds that if
+  $yRx$ and $zRx$. then $yRz$
+
+- ~Left Euclidean~: $\forall x, y\wedge z\in X$ it holds that if $yRx$
+  and $zRx$, then $yRz$.
+
+- ~Euclidean~: A Euclidean relation is both left and right
+  Euclidean. Equality is a Euclidean relation because if $x=y\wedge
+  x=z$, then $y=z$.
+
+- ~serial~: $\forall x\in X\exists y: xRy$, "Is greater than" is a
+  serial relation on the integers. But it is not a serial relation on
+  the positive integers, because there is no $y$ in the positive
+  integers such that 1>y. However, "is less than" is a serial relation
+  on the positive integers, the rational numbers and the real
+  numbers. Every reflexive relation is serial: for a given $x$, choose
+  $y=x$. A serial relation can be equivalently characterized as every
+  element having a non-empty successor neighborhood (see the previous
+  section for the definition of this notion). Similarly an inverse
+  serial relation is a relation in which every element has non-empty
+  predecessor neighborhood.
+
+- ~set-like (or local)~: $\forall x\in X$, the class of all $y$ such
+  that $yRx$ is a set. (This makes sense only if relations on proper
+  classes are allowed.) The usual ordering $<$ on the class of ordinal
+  numbers is set-like, while its inverse $>$ is not.
+
+A relation that is reflexive, symmetric, and transitive is called an
+~equivalence relation~. A relation that is symmetric, transitive, and
+serial is also reflexive. A relation that is only symmetric and
+transitive (without necessarily being reflexive) is called a ~partial
+equivalence relation~.
+
+A relation that is reflexive, antisymmetric, and transitive is called
+a ~partial order~. A partial order that is total is called a ~total
+order~, simple order, linear order, or a chain.[25] A linear order
+where every nonempty subset has a ~least element~ is called a
+~well-order~.
+
+~Binary endorelations by property~
+
+|                      | reflexivity  | symmetry      | transitivity | symbol                     | example       |
+|----------------------+--------------+---------------+--------------+----------------------------+---------------|
+| directed graph       |              |               |              | $\rightarrow$              |               |
+| undirected graph     | $X$          | $\checkmark$  |              |                            |               |
+| tournament           | $X$          | antisymmetric |              |                            | pecking order |
+| dependency           | $\checkmark$ | $\checkmark$  |              |                            |               |
+| strict weak order    | irreflexive  | antisymmetric | $\checkmark$ | $<$                        |               |
+| total preorder       | $\checkmark$ |               | $\checkmark$ | $le$                       |               |
+| preorder             | $\checkmark$ |               | $\checkmark$ | $\le$                      | preference    |
+| partial order        | $\checkmark$ | antisymmetric | $\checkmark$ | $\le$                      | subset        |
+| partial equivalence  |              | $\checkmark$  | $\checkmark$ |                            |               |
+| equivalence relation | $\checkmark$ | $\checkmark$  | $\checkmark$ | $-,=,\approx,\cong,\equiv$ | equality      |
+| strict partial order | $X$          | $X$           | $\checkmark$ | $<$                        | proper subset |
+
+
+**Operations on Binary Relations**
