@@ -270,7 +270,7 @@ coreflexive relation is a subset of teh identity relation.</li>
 
 <li><code>symmetric</code>: \(\forall x\wedge y\in X\) it holds that if \(xRy\) then
 \(yRx\). "Is a blood relative of" is a symmetric relation, because \(x\)
-is a blood relative of \(y\rightleftarrow y\) if a blood relative of
+is a blood relative of \(y\leftrightarrow y\) if a blood relative of
 \(x\)</li>
 
 <li><code>antisymmetric</code>: \(\forall x\wedge y\in X\), if \(xRy\) and \(yRx\) then
@@ -284,7 +284,7 @@ relation is <code>asymmetic</code> if and only if it is <code>both anti-symmetri
 <li><code>transitive</code>: \(\forall x, y\wedge z\in X\) it holds taht if \(xRy\) and
 \(yRz\) then \(xRz\). For example, "is ancestor of" is transitive, while
 "is parent of" is not. A transitive relation is irreflexive
-\(\rightleftarrow\) it is asymmetric.</li>
+\(\leftrightarrow\) it is asymmetric.</li>
 
 <li><code>total</code>: \(\forall x\wedge y\in X\) it holds that \(xRy\) or \(yRz\) (or
 both) then \(xRz\). This definition of <code>total</code> is different from <code>left
@@ -531,7 +531,7 @@ relation over \(X\):
 </p>
 
 <ul class="org-ul">
-<li><code>Reflexive closure</code>: $R<sup>=</sup>, defined as \(R^{=} = (x, x) | x\in X\cup R\) or the</li>
+<li><code>Reflexive closure</code>: \(R^{=}\), defined as \(R^{=} = (x, x) | x\in X\cup R\) or the</li>
 </ul>
 <p>
 smallest reflexive relation over \(X\) containing \(R\). This can be
@@ -556,11 +556,11 @@ all transitive relations containing \(R\).
 </p>
 
 <ul class="org-ul">
-<li><code>Reflexive transitive closure</code>: $R<sup>*</sup>,</li>
+<li><code>Reflexive transitive closure</code>: \(R^{*}\),</li>
 </ul>
 <p>
-defined as $R<sup>*</sup> = (R<sup>+</sup>)<sup>=</sup>, the smallest preorder containing \(R\).
-Reflexive transitive symmetric closure: $R<sup>&equiv;</sup>, defined as the smallest
+defined as \(R^{*} = (R^{+})^{=}\), the smallest preorder containing \(R\).
+Reflexive transitive symmetric closure: \(R^{\equiv}\), defined as the smallest
 equivalence relation over \(X\) containing \(R\).
 </p>
 

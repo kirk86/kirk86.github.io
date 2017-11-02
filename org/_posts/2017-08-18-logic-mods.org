@@ -185,7 +185,7 @@ may have are:
 
 - ~symmetric~: $\forall x\wedge y\in X$ it holds that if $xRy$ then
   $yRx$. "Is a blood relative of" is a symmetric relation, because $x$
-  is a blood relative of $y\rightleftarrow y$ if a blood relative of
+  is a blood relative of $y\leftrightarrow y$ if a blood relative of
   $x$
 
 - ~antisymmetric~: $\forall x\wedge y\in X$, if $xRy$ and $yRx$ then
@@ -199,7 +199,7 @@ may have are:
 - ~transitive~: $\forall x, y\wedge z\in X$ it holds taht if $xRy$ and
   $yRz$ then $xRz$. For example, "is ancestor of" is transitive, while
   "is parent of" is not. A transitive relation is irreflexive
-  $\rightleftarrow$ it is asymmetric.
+  $\leftrightarrow$ it is asymmetric.
 
 - ~total~: $\forall x\wedge y\in X$ it holds that $xRy$ or $yRz$ (or
   both) then $xRz$. This definition of ~total~ is different from ~left
@@ -302,7 +302,7 @@ less than" ($<$) is the inverse of "is greater than" ($>$).  If $R$ is a
 binary relation over $X$, then each of the following is a binary
 relation over $X$:
 
-- ~Reflexive closure~: $R^{=}, defined as $R^{=} = (x, x) | x\in X\cup R$ or the
+- ~Reflexive closure~: $R^{=}$, defined as $R^{=} = (x, x) | x\in X\cup R$ or the
 smallest reflexive relation over $X$ containing $R$. This can be
 proven to be equal to the intersection of all reflexive relations
 containing $R$.
@@ -315,9 +315,9 @@ or the largest irreflexive relation over $X$ contained in $R$.
 containing $R$. This can be seen to be equal to the intersection of
 all transitive relations containing $R$.
 
-- ~Reflexive transitive closure~: $R^{*},
-defined as $R^{*} = (R^{+})^{=}, the smallest preorder containing $R$.
-Reflexive transitive symmetric closure: $R^{\equiv}, defined as the smallest
+- ~Reflexive transitive closure~: $R^{*}$,
+defined as $R^{*} = (R^{+})^{=}$, the smallest preorder containing $R$.
+Reflexive transitive symmetric closure: $R^{\equiv}$, defined as the smallest
 equivalence relation over $X$ containing $R$.
 
 **Complement**
