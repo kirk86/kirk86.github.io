@@ -295,7 +295,7 @@ contained in $\ge$.
 If $R$ is a binary relation over $X$ and $Y$, then the following is a binary
 relation over $Y$ and $X$:
 
-- ~Inverse or converse~: $R^{-1}, defined as R^{-1} = (y, x) | (x, y)\in
+- ~Inverse or converse~: $R^{-1}$, defined as $R^{-1} = (y, x) | (x, y)\in
 R$. A binary relation over a set is equal to its inverse if and only
 if it is symmetric. See also duality (order theory). For example, "is
 less than" ($<$) is the inverse of "is greater than" ($>$).  If $R$ is a
@@ -310,7 +310,7 @@ containing $R$.
 - ~Reflexive reduction~: $R^{\ne}$, defined as $R^{\ne} = R\ (x, x) | x\in X$
 or the largest irreflexive relation over $X$ contained in $R$.
 
-- ~Transitive closure~: $R^{+}, defined as the smallest transitive
+- ~Transitive closure~: $R^{+}$, defined as the smallest transitive
   relation over $X$
 containing $R$. This can be seen to be equal to the intersection of
 all transitive relations containing $R$.
