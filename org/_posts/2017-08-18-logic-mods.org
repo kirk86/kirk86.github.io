@@ -307,7 +307,7 @@ smallest reflexive relation over $X$ containing $R$. This can be
 proven to be equal to the intersection of all reflexive relations
 containing $R$.
 
-- ~Reflexive reduction~: $R^{\ne}$, defined as $R^{\ne} = R\(x, x) | x\in X$
+- ~Reflexive reduction~: $R^{\ne}$, defined as $R^{\ne} = R\ (x, x) | x\in X$
 or the largest irreflexive relation over $X$ contained in $R$.
 
 - ~Transitive closure~: $R^{+}, defined as the smallest transitive
