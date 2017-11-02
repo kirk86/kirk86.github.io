@@ -471,7 +471,162 @@ where every nonempty subset has a <code>least element</code> is called a
 </tbody>
 </table>
 
-
 <p>
 <b><b>Operations on Binary Relations</b></b>
+</p>
+
+<p>
+If \(R, S\) are binary relations over \(X and Y\), then each of the
+following is a binary relation over \(X\) and \(Y\):
+</p>
+
+<ul class="org-ul">
+<li><code>Union</code>: \(R\cup S\subseteq X × Y\), defined as $R&cup; S = { (x, y) | (x, y)&isin; R or (x,</li>
+</ul>
+<p>
+y)&isin; S }$. For example, \(\ge\) is the union of \(>\) and \(=\).
+</p>
+
+<ul class="org-ul">
+<li><code>Intersection</code>: \(R\cap S\subseteq X × Y\), defined as \(R\cap S =
+  { (x, y) | (x, y)\in R and (x, y)\in S }\).</li>
+</ul>
+<p>
+If \(R\) is a binary relation over \(X\) and \(Y\), and \(S\) is a binary
+relation over \(Y\) and \(Z\), then the following is a binary relation
+over \(X\) and \(Z\):
+</p>
+
+<ul class="org-ul">
+<li><code>Composition</code>: \(S\circ R\), also denoted \(R; S (or R\circ S)\),
+defined as $S&circ; R =</li>
+</ul>
+<p>
+{ (x, z) | &exist; y&isin; Y$, such that \((x, y)\in R\wedge (y, z)\in
+S }\). The order of \(R\) and \(S\) in the notation \(S\circ R\), used here agrees
+with the standard notational order for composition of functions. For
+example, the composition "is mother of" \(\circ\) "is parent of" yields "is
+maternal grandparent of", while the composition "is parent of" \(\circ\) "is
+mother of" yields "is grandmother of".  A relation \(R\) on sets \(X\) and \(Y\)
+is said to be contained in a relation \(S\) on \(X\) and \(Y\) if \(R\) is a subset of
+\(S\), that is, if \(xRy\) always implies \(xSy\). In this case, if \(R\) and \(S\)
+disagree, \(R\) is also said to be smaller than \(S\). For example, \(>\) is
+contained in \(\ge\).
+</p>
+
+<p>
+If \(R\) is a binary relation over \(X\) and \(Y\), then the following is a binary
+relation over \(Y\) and \(X\):
+</p>
+
+<ul class="org-ul">
+<li><code>Inverse or converse</code>: $R<sup>-1</sup>, defined as R<sup>-1</sup> = { (y, x) | (x, y)&isin;</li>
+</ul>
+<p>
+R }$. A binary relation over a set is equal to its inverse if and only
+if it is symmetric. See also duality (order theory). For example, "is
+less than" (\(<\)) is the inverse of "is greater than" (\(>\)).  If \(R\) is a
+binary relation over \(X\), then each of the following is a binary
+relation over \(X\):
+</p>
+
+<ul class="org-ul">
+<li><code>Reflexive closure</code>: $R<sup>=</sup>, defined as \(R^{=} = { (x, x) | x\in X }
+  \cup R\) or the</li>
+</ul>
+<p>
+smallest reflexive relation over \(X\) containing \(R\). This can be
+proven to be equal to the intersection of all reflexive relations
+containing \(R\).  Reflexive reduction: \(R^{\ne}\), defined as \(R^{\ne} =
+R\ { (x, x) | x\in X }\) or the largest irreflexive relation over \(X\)
+contained in \(R\).
+</p>
+
+<ul class="org-ul">
+<li><code>Transitive closure</code>: $R<sup>+</sup>, defined as the smallest transitive
+relation over \(X\)</li>
+</ul>
+<p>
+containing \(R\). This can be seen to be equal to the intersection of
+all transitive relations containing $R%.
+</p>
+
+<ul class="org-ul">
+<li><code>Reflexive transitive closure</code>: $R<sup>*</sup>,</li>
+</ul>
+<p>
+defined as $R<sup>*</sup> = (R<sup>+</sup>)<sup>=</sup>, the smallest preorder containing \(R\).
+Reflexive transitive symmetric closure: $R<sup>&equiv;</sup>, defined as the smallest
+equivalence relation over \(X\) containing \(R\).
+</p>
+
+<p>
+<b><b>Complement</b></b>
+</p>
+
+<p>
+If \(R\) is a binary relation over \(X\) and \(Y\), then the following too:
+</p>
+
+<p>
+The complement \(S\) is defined as \(xSy\) if not \(xRy\). For example, on
+real numbers, \(\le\) is the complement of \(>\).  The complement of the
+inverse is the inverse of the complement.
+</p>
+
+<p>
+If \(X=Y\), the complement has the following properties:
+</p>
+
+<p>
+If a relation is symmetric, the complement is too.  The complement of
+a reflexive relation is irreflexive and vice versa.  The complement of
+a strict weak order is a total preorder and vice versa.  The
+complement of the inverse has these same properties.
+</p>
+
+<p>
+<b><b>Restriction</b></b>
+</p>
+
+<p>
+The restriction of a binary relation on a set \(X\) to a
+subset \(S\) is the set of all pairs \((x, y)\) in the relation for which \(x\)
+and \(y\) are in \(S\).
+</p>
+
+<p>
+If a relation is reflexive, irreflexive, symmetric, antisymmetric,
+asymmetric, transitive, total, trichotomous, a partial order, total
+order, strict weak order, total preorder (weak order), or an
+equivalence relation, its restrictions are too.
+</p>
+
+<p>
+However, the transitive closure of a restriction is a subset of the
+restriction of the transitive closure, i.e., in general not equal. For
+example, restricting the relation "x is parent of y" to females yields
+the relation "x is mother of the woman y"; its transitive closure
+doesn't relate a woman with her paternal grandmother. On the other
+hand, the transitive closure of "is parent of" is "is ancestor of";
+its restriction to females does relate a woman with her paternal
+grandmother.
+</p>
+
+<p>
+Also, the various concepts of completeness (not to be confused with
+being "total") do not carry over to restrictions. For example, on the
+set of real numbers a property of the relation "\(\le\)" is that every
+non-empty subset \(S\) of \(R\) with an upper bound in \(R\) has a least upper
+bound (also called supremum) in \(R\). However, for a set of rational
+numbers this supremum is not necessarily rational, so the same
+property does not hold on the restriction of the relation "\(\le\)" to the
+set of rational numbers.
+</p>
+
+<p>
+The left-restriction (right-restriction, respectively) of a binary
+relation between $X4 and \(Y\) to a subset \(S\) of its domain (codomain) is the
+set of all pairs \((x, y)\) in the relation for which \(x(y)\) is an element
+of \(S\).
 </p>
