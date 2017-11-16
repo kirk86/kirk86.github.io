@@ -6,9 +6,9 @@ layout: post
 title: "Statistical modeling summarization"
 date: 2017-11-16
 comments: true
-archive: true
+archive: false
 tags: statistical-models
-excerpt: Summarization of statistical models by Vincent Granville
+excerpt: Summarization of statistical models by Vincent Granville [[https://www.datasciencecentral.com/profiles/blogs/top-20-uses-of-statistical-modeling][blogpost]]
 ---
 #+END_HTML
 
