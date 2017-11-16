@@ -258,7 +258,7 @@ where every nonempty subset has a ~least element~ is called a
 | tournament           | $X$          | antisymmetric |              |                            | pecking order |
 | dependency           | $\checkmark$ | $\checkmark$  |              |                            |               |
 | strict weak order    | irreflexive  | antisymmetric | $\checkmark$ | $<$                        |               |
-| total preorder       | $\checkmark$ |               | $\checkmark$ | $le$                       |               |
+| total preorder       | $\checkmark$ |               | $\checkmark$ | $\le$                      |               |
 | preorder             | $\checkmark$ |               | $\checkmark$ | $\le$                      | preference    |
 | partial order        | $\checkmark$ | antisymmetric | $\checkmark$ | $\le$                      | subset        |
 | partial equivalence  |              | $\checkmark$  | $\checkmark$ |                            |               |
@@ -270,11 +270,12 @@ where every nonempty subset has a ~least element~ is called a
 If $R, S$ are binary relations over $X and Y$, then each of the
 following is a binary relation over $X$ and $Y$:
 
-- ~Union~: $R\cup S\subseteq X × Y$, defined as $R\cup S = (x, y) | (x, y)\in R or (x,
-y)\in S$. For example, $\ge$ is the union of $>$ and $=$.
+- ~Union~: $R\cup S\subseteq X × Y$, defined as
+$R\cup S = (x, y) | (x, y)\in R or (x, y)\in S$.
+For example, $ \ge $ is the union of $ > $ and $ = $.
 
-- ~Intersection~: $R\cap S\subseteq X × Y$, defined as $R\cap S =
-  { (x, y) | (x, y)\in R and (x, y)\in S }$.
+- ~Intersection~: $R\cap S\subseteq X × Y$, defined as
+ $R\cap S = (x, y) | (x, y)\in R and (x, y)\in S $.
 If $R$ is a binary relation over $X$ and $Y$, and $S$ is a binary
 relation over $Y$ and $Z$, then the following is a binary relation
 over $X$ and $Z$:
