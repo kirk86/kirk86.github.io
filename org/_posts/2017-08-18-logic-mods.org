@@ -270,8 +270,8 @@ where every nonempty subset has a ~least element~ is called a
 If $R, S$ are binary relations over $X and Y$, then each of the
 following is a binary relation over $X$ and $Y$:
 
-- ~Union~: $R\cup S\subseteq X × Y$, defined as $R\cup S = \{ (x, y) | (x, y)\in R or (x,
-y)\in S \}$. For example, $\ge$ is the union of $>$ and $=$.
+- ~Union~: $R\cup S\subseteq X × Y$, defined as $R\cup S = (x, y) | (x, y)\in R or (x,
+y)\in S$. For example, $\ge$ is the union of $>$ and $=$.
 
 - ~Intersection~: $R\cap S\subseteq X × Y$, defined as $R\cap S =
   { (x, y) | (x, y)\in R and (x, y)\in S }$.
