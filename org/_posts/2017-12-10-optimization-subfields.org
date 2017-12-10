@@ -1,0 +1,15 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Subfields of deterministic optimization with a single objective function"
+date: 2017-12-10
+comments: true
+maths: true
+tags: maths
+excerpt: Subfields of deterministic optimization with a single objective function.
+---
+#+END_HTML
+
+[[../../../assets/images/optim-subfields.png]]
