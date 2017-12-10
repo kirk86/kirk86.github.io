@@ -12,4 +12,4 @@ excerpt: Subfields of deterministic optimization with a single objective functio
 ---
 #+END_HTML
 
-[[../../../assets/images/optim-subfields.png]]
+[[../../../assets/images/notes/optim-subfields.png]]
