@@ -38,6 +38,30 @@ assignment problem. Commonly, when speaking of the assignment
 problem without any additional qualification, then the linear
 assignment problem is meant.
 
+*In other words*
+
+The credit assignment problem concerns determining how the success of
+a system’s overall performance is due to the various contributions of
+the system’s components (Minsky, 1963).  “In playing a complex game
+such as chess or checkers, or in writing a computer program, one has a
+definite success criterion – the game is won or lost. But in the
+course of play, each ultimate success (or failure) is associated with
+a vast number of internal decisions. If the run is successful, how can
+we assign credit for the success among the multitude of decisions?”
+(p. 432). This kind of problem was important to the decline of ~Old
+Connectionism~, and the birth of ~New Connectionism~.  The credit
+assignment problem that faced ~Old Connectionism~ was its inability to
+assign the appropriate credit – or more to the point, the blame -- to
+each hidden unit for its contribution to output unit error.  Failure
+to solve this problem prevented ~Old Connectionism~ from discovering
+methods to make their most powerful networks belong to the domain of
+empiricism, and led to its demise (Papert, 1988).  ~New Connectionism~
+arose when this problem was solved, permitting multi-layered networks
+to be trained (Rumelhart, Hinton, & Williams, 1986).  For instance,
+the backpropagation of error algorithm defines hidden unit error as
+the total weighted error signal coming from output units through
+connections between output units and a hidden unit.
+
 *Alogrithms and generalizations*
 
 The Hungarian algorithm is one of many algorithms that have been
