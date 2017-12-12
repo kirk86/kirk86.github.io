@@ -334,3 +334,38 @@ differences, especially in interpretation:
   explicitly include such a parameter against some other class that
   doesn't. The difference lies in the machinery applied to reach
   the same conclusion.
+
+
+*Key Themes*
+
+Several themes that recur accross the different types of deep learning.
+
+- Dynamic Programming can help to facilitate credit assignment. In
+  supervised learning backpropagation itself can be viewed as a
+  dynamic programming-derived method. Dynamic programming can also
+  help to reduce problem depth in traditional reinforcement learning,
+  and dynamic programming algorithms are essential for systems that
+  combine concepts of NNs ad graphical models, such as Hidden Markov
+  Models (HMMs).
+
+- Unsupervised learning can facilitate both supervised and
+  reinforcement learning by first encoding essential features of
+  inputs in a way that describes the original data in a less redundant
+  or more compact way. These codes become the new inputs for
+  supervised or reinforcement learning.
+
+- Many methods learn hierarchies of more and more abstract data
+  representations – continuously learning concepts by combining
+  previously learnt concepts.
+
+- "In the NN case, the Minimum Description Length principle suggest
+  that a low NN weight complexity corresponds to high NN probability
+  in the Bayesian view, and to high generalization performance,
+  without overfitting the training data. Many methods have been
+  proposed for regularizing NNs, that is, searching for
+  solution-computing but simple, low-complexity supervised learning
+  NNs."
+
+- GPUs! GPUs excel at the fast matrix and vector multiplications
+  required for NN training, where they can speed up learning by a
+  factor of 50 and more.
