@@ -1,0 +1,135 @@
+---
+layout: post
+title: "Machine learning tips"
+date: 2018-01-08
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Machine learning tips and tricks.
+---
+
+<p>
+<b>No Free Lunch Theorem</b>
+Any 2 algorithms are equivalent when their performance is averaged
+across all possible problems.
+</p>
+
+<p>
+<b>Bias-Variance tradeoff</b>
+Bias = \(\mathbb{E}[\hat{\beta} - \beta]\)
+</p>
+
+<p>
+\(\beta\) = estimated parameter
+</p>
+
+<p>
+Error of the model. Difference between the expected prediction
+accuracy and the true prediction.
+</p>
+
+
+<p>
+<b>Variance</b> = \(\mathbf{E}[(\hat{\beta} - \mathbb{E}[\hat{\beta})^{2}]\)
+</p>
+
+<p>
+\(\hat{\beta}\) = estimator
+</p>
+
+<p>
+\(\mathbb{E}[\hat{\beta}]\) = expected value
+</p>
+
+<p>
+Variability/sensitivity of model's predictions if we repeat the
+learning process many times with small perturbations in the training
+data.
+</p>
+
+
+<p>
+<b>Number of hidden layers - rule of thumb</b>
+</p>
+
+<p>
+\(N_{h} = \frac{N_{s}}{[a(N_{i} + N_{o})]}\)
+</p>
+
+<p>
+\(N_{i}\) = number of input neurons
+\(N_{o}\) = number of output neurons
+\(N_{s}\) = number of samples in training data
+\(a\) = arbitary scaling factor, usually 2-10
+</p>
+
+
+<table id="orgeb452b1" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>node</b></td>
+<td class="org-left"><b>label</b></td>
+<td class="org-left"><b>shape</b></td>
+<td class="org-left"><b>fillcolor</b></td>
+</tr>
+
+<tr>
+<td class="org-left">S<sub>start</sub></td>
+<td class="org-left">observed: data y</td>
+<td class="org-left">ellipse</td>
+<td class="org-left">green</td>
+</tr>
+
+<tr>
+<td class="org-left">S<sub>end</sub></td>
+<td class="org-left">ununobserved: model parameters &theta;</td>
+<td class="org-left">ellipse</td>
+<td class="org-left">red</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">from</th>
+<th scope="col" class="org-left">to</th>
+<th scope="col" class="org-left">label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">S<sub>start</sub></td>
+<td class="org-left">S<sub>end</sub></td>
+<td class="org-left">statistical inference</td>
+</tr>
+
+<tr>
+<td class="org-left">S<sub>end</sub></td>
+<td class="org-left">S<sub>start</sub></td>
+<td class="org-left">probability</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,59 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Machine learning tips"
+date: 2018-01-08
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Machine learning tips and tricks.
+---
+#+END_HTML
+
+*No Free Lunch Theorem*
+Any 2 algorithms are equivalent when their performance is averaged
+across all possible problems.
+
+*Bias-Variance tradeoff*
+Bias = $\mathbb{E}[\hat{\beta} - \beta]$
+
+$\beta$ = estimated parameter
+
+Error of the model. Difference between the expected prediction
+accuracy and the true prediction.
+
+
+*Variance* = $\mathbf{E}[(\hat{\beta} - \mathbb{E}[\hat{\beta})^{2}]$
+
+$\hat{\beta}$ = estimator
+
+$\mathbb{E}[\hat{\beta}]$ = expected value
+
+Variability/sensitivity of model's predictions if we repeat the
+learning process many times with small perturbations in the training
+data.
+
+
+*Number of hidden layers - rule of thumb*
+
+$N_{h} = \frac{N_{s}}{[a(N_{i} + N_{o})]}$
+
+$N_{i}$ = number of input neurons
+$N_{o}$ = number of output neurons
+$N_{s}$ = number of samples in training data
+$a$ = arbitary scaling factor, usually 2-10
+
+
+#+name: probability-statistical inferece
+| *node*  | *label*                               | *shape* | *fillcolor* |
+| S_start | observed: data y                      | ellipse | green       |
+| S_end   | ununobserved: model parameters \theta | ellipse | red         |
+
+
+| from    | to      | label                 |
+|---------+---------+-----------------------|
+| S_start | S_end   | statistical inference |
+| S_end   | S_start | probability           |
