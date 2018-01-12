@@ -22,3 +22,14 @@ excerpt: Five tribes of machine learning.
 | Evolutionaries |   | Evolutionary biology |   | Genetic programming     |
 | Bayesians      |   | Statistics           |   | Probabilistic inference |
 | Annalogizers   |   | Psychology           |   | Kernel machines         |
+
+
+*How do computers discover new knowledge?*
+
+1. Fill in graps in existing knowledge
+2. Emulate the brain
+3. Simulate evolution
+4. Systematically reduce uncertainty
+5. Notice similarities between old and new
+
+[[https://learning.acm.org/webinar_pdfs/PedroDomingos_FTFML_WebinarSlides.pdf][Slides]]
