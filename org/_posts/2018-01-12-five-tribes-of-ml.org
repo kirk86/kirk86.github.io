@@ -1,0 +1,24 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Five tribes of Machine Learning"
+date: 2018-01-12
+comments: true
+archive: true
+notes: true
+tags: notes
+excerpt: Five tribes of machine learning.
+---
+#+END_HTML
+
+*Five tribes of machine learning*
+
+| Tribe          |   | Origins              |   | Master Algorithm        |
+|----------------+---+----------------------+---+-------------------------|
+| Symbolists     |   | Logic, philosophy    |   | Inverse deduction       |
+| Connectionists |   | Neuroscience         |   | Backpropagation         |
+| Evolutionaries |   | Evolutionary biology |   | Genetic programming     |
+| Bayesians      |   | Statistics           |   | Probabilistic inference |
+| Annalogizers   |   | Psychology           |   | Kernel machines         |
