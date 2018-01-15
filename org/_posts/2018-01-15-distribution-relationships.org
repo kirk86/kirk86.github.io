@@ -12,7 +12,7 @@ excerpt: Relationships among univeriate probability distributions.
 ---
 #+END_HTML
 
-[[../../../assets/images/notes/relationships_univariates_distributions.jpg]]
+[[../../../assets/images/notes/relationships_univariate_distributions.jpg]]
 [[../../../assets/images/notes/ProbOnto2.5.jpg]]
 
 [[http://www.math.wm.edu/~leemis/chart/UDR/about.html][Nice website with even better visuals and explanations]]
