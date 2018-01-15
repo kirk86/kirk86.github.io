@@ -1,0 +1,22 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Relationships among different probability distributions"
+date: 2018-01-15
+comments: true
+maths: true
+tags: maths
+excerpt: Relationships among univeriate probability distributions.
+---
+#+END_HTML
+
+[[../../../assets/images/notes/relationship-distributions.jpg]]
+[[../../../assets/images/notes/ProbOnto2.5.jpg]]
+
+[[http://www.math.wm.edu/~leemis/chart/UDR/about.html][Nice website with even better visuals and explanations]]
+
+[[http://www.math.wm.edu/~leemis/chart/UDR/UDR.html][Distributions]]
+
+[[https://en.wikipedia.org/wiki/Relationships_among_probability_distributions][Wikipedia article]]
