@@ -17,18 +17,17 @@ excerpt: Problem solving strategies
 
 1.) Analyze the problem:
 
-Analyze the characteristics of the inputs and the desired outputs
+Analyze the characteristics of the inputs and the desired outputs.
 
 2.) Define the problem using mathematical notation:
 
 Write down the characteristics of the inputs and the desired outputs
 and the relationship between them.
 
-3.) Develop and algorithm to solve the problem:
+3.) Develop an algorithm to solve the problem:
 
 Given the inputs the algorithm produces outputs that satisfy the
 problem definition. Usually involves computing some kind of difference
 or error.
-
 
 4.) Measure and evaluate the performance of the algorithm.
