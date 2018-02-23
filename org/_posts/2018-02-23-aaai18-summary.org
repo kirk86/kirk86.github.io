@@ -29,7 +29,7 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Reinforcement  Learning  (ML)(PS)(RU)
 -  Search and Constraint Satisfaction (SCS)(HS)
 -  *What's  Hot  Talk:*
--- **What's Hot in ICAPS, SoCS, SAT, CP, IJCAI, and AAMAS**
+- ~What's Hot in ICAPS, SoCS, SAT, CP, IJCAI, and AAMAS~
 -  Security, Trust and Privacy (APP)(ML)(HAC)(NLPML)(HAI)(MLA)
 -  Deep Learning and Bayesian Methods (ML)(NLPML)(AIW)
 -  Learning Theory (ML)
@@ -38,8 +38,8 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Search and Machine Learning (ML)(HSO)(SCS)
 -  Learning and Stochastic Processes (ML)(MLA)(APP)(RU)
 -  *AAAI-­18 Senior Member Track: Blue Sky Papers*
--- Engineering  Pro-­Sociality with Autonomous Agent(Ana Paiva, Fernando P. Santos, Francisco C. Santos)
--- Learning Fast and Slow: Levels of Learning in General Autonomous Intelligent Agents(John E. Laird, Shiwali Mohan)
+- ~Engineering  Pro-­Sociality with Autonomous Agent(Ana Paiva, Fernando P. Santos, Francisco C. Santos)~
+- ~Learning Fast and Slow: Levels of Learning in General Autonomous Intelligent Agents(John E. Laird, Shiwali Mohan)~
 -- Imagination Machines: A New Challenge for Artificial Intelligence(Sridhar Mahadevan)
 -- AI Meets Chemistry (Akihiro Kishimoto, Beat Buesser, Adi Botea)
 -- Clustering-­ What Both Theoreticians and Practitioners Are Doing Wrong (Shai Ben-­David)
