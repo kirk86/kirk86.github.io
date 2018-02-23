@@ -30,7 +30,7 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Search and Constraint Satisfaction (SCS)(HS)
 -  *What's  Hot  Talk:*
 - ~What's Hot in ICAPS, SoCS, SAT, CP, IJCAI, and AAMAS~
-[[../../../assets/images/notes/aamas.jpg]]
+[[../../../assets/images/notes/aamas.png]]
 -  Security, Trust and Privacy (APP)(ML)(HAC)(NLPML)(HAI)(MLA)
 -  Deep Learning and Bayesian Methods (ML)(NLPML)(AIW)
 -  Learning Theory (ML)
