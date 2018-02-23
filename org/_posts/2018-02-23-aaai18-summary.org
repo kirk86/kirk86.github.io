@@ -22,8 +22,8 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Language and Learning (NLPML)(NLPTM)(KRR)(NLPKR)
 -  Policy Learning (ML)(PS)(RU)
 -  Knowledge Representation and Reasoning (KR)
--  Classic Paper Award Talk:
--- PROMPT: Algorithm and Tool for Automated Ontology Merging and Alignment
+-  *Classic Paper Award Talk:*
+-  ~PROMPT: Algorithm and Tool for Automated Ontology Merging and Alignment~
 -  Machine Learning Applications (MLA)(APP)
 -  Machine Learning and Graphical Models (ML)(RU)(NLPML)
 -  Reinforcement  Learning  (ML)(PS)(RU)
