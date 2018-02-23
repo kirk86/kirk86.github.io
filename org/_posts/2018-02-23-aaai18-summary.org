@@ -7,7 +7,7 @@ title: "Short Summary of AAAI-18"
 date: 2018-02-23
 comments: true
 archive: false
-tags: AAAI-18
+tags: aaai-18
 excerpt: Summary of AAAI-18
 ---
 #+END_HTML
