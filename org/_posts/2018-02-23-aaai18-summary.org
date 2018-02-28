@@ -70,6 +70,7 @@ categories* for AAAI-18 were:
 [[../../../assets/images/notes/cp/19.jpg]]
 [[../../../assets/images/notes/cp/20.jpg]]
 - ~What's Hot in ICAPS~
+  lsdjflasjdfjasldjflasjldfjalskjfldsafsaljlkajsldf
 [[../../../assets/images/notes/icaps/0.jpg]]
 [[../../../assets/images/notes/icaps/1.jpg]]
 [[../../../assets/images/notes/icaps/2.jpg]]
