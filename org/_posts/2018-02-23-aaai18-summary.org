@@ -40,6 +40,14 @@ categories* for AAAI-18 were:
 [[../../../assets/images/notes/aamas/4.jpg]]
 [[../../../assets/images/notes/aamas/5.jpg]]
 [[../../../assets/images/notes/aamas/6.jpg]]
+- ~What's Hot in SoCS~
+[[../../../assets/images/notes/socs/0.jpg]]
+[[../../../assets/images/notes/socs/1.jpg]]
+[[../../../assets/images/notes/socs/2.jpg]]
+[[../../../assets/images/notes/socs/3.jpg]]
+[[../../../assets/images/notes/socs/4.jpg]]
+[[../../../assets/images/notes/socs/5.jpg]]
+[[../../../assets/images/notes/socs/6.jpg]]
 -  Security, Trust and Privacy (APP)(ML)(HAC)(NLPML)(HAI)(MLA)
 -  Deep Learning and Bayesian Methods (ML)(NLPML)(AIW)
 -  Learning Theory (ML)
