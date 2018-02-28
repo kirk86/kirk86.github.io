@@ -12,7 +12,9 @@ excerpt: Summary of AAAI-18
 ---
 #+END_HTML
 
-This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical programme for AAAI-18 can be found [[https://aaai.org/Conferences/AAAI-18/aaai-18-technical-program/][here]]. The *main categories* for AAAI-18 were:
+This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The
+technical programme for AAAI-18 can be found [[https://aaai.org/Conferences/AAAI-18/aaai-18-technical-program/][here]]. The *main
+categories* for AAAI-18 were:
 
 -  Planning and Scheduling (PS)(HSO)
 -  Game Theory and Economics  (GTEP)
@@ -23,14 +25,21 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Policy Learning (ML)(PS)(RU)
 -  Knowledge Representation and Reasoning (KR)
 -  *Classic Paper Award Talk:*
--  ~PROMPT: Algorithm and Tool for Automated Ontology Merging and Alignment~
+-  ~PROMPT: Algorithm and Tool for Automated Ontology Merging and
+  Alignment~
 -  Machine Learning Applications (MLA)(APP)
 -  Machine Learning and Graphical Models (ML)(RU)(NLPML)
 -  Reinforcement  Learning  (ML)(PS)(RU)
 -  Search and Constraint Satisfaction (SCS)(HS)
 -  *What's  Hot  Talk:*
 - ~What's Hot in ICAPS, SoCS, SAT, CP, IJCAI, and AAMAS~
-[[../../../assets/images/notes/aamas.png]]
+- ~What's Hot in AAMAS~
+[[../../../assets/images/notes/aamas/1.jpg]]
+[[../../../assets/images/notes/aamas/2.jpg]]
+[[../../../assets/images/notes/aamas/3.jpg]]
+[[../../../assets/images/notes/aamas/4.jpg]]
+[[../../../assets/images/notes/aamas/5.jpg]]
+[[../../../assets/images/notes/aamas/6.jpg]]
 -  Security, Trust and Privacy (APP)(ML)(HAC)(NLPML)(HAI)(MLA)
 -  Deep Learning and Bayesian Methods (ML)(NLPML)(AIW)
 -  Learning Theory (ML)
@@ -39,11 +48,15 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Search and Machine Learning (ML)(HSO)(SCS)
 -  Learning and Stochastic Processes (ML)(MLA)(APP)(RU)
 -  *AAAI-­18 Senior Member Track: Blue Sky Papers*
-- ~Engineering  Pro-­Sociality with Autonomous Agent(Ana Paiva, Fernando P. Santos, Francisco C. Santos)~
-- ~Learning Fast and Slow: Levels of Learning in General Autonomous Intelligent Agents(John E. Laird, Shiwali Mohan)~
--- Imagination Machines: A New Challenge for Artificial Intelligence(Sridhar Mahadevan)
+- ~Engineering Pro-­Sociality with Autonomous Agent(Ana Paiva,
+  Fernando P. Santos, Francisco C. Santos)~
+- ~Learning Fast and Slow: Levels of Learning in General Autonomous
+  Intelligent Agents(John E. Laird, Shiwali Mohan)~
+- ~Imagination Machines: A New Challenge for Artificial
+  Intelligence(Sridhar Mahadevan)~
 - ~AI Meets Chemistry (Akihiro Kishimoto, Beat Buesser, Adi Botea)~
-- ~Clustering-­ What Both Theoreticians and Practitioners Are Doing Wrong (Shai Ben-­David)~
+- ~Clustering-­ What Both Theoreticians and Practitioners Are Doing
+  Wrong (Shai Ben-­David)~
 -  Multiagent Systems (MAS)(GTEP)
 -  Heuristic Search (HSO)(ML)(PS)
 -  Uncertainty in AI  (RU)(ML)
@@ -54,14 +67,18 @@ This year AAAI-18 was co-organized with IAAI-18 and EAAI-18. The technical progr
 -  Search, Constraint Satisfaction, and Optimization (SCS)(HSO)
 -  Machine Learning, Preferences, and Ranking (ML)
 -  *Machine Learning and Time Series (ML)(MLA)(NLPML)*
-- ~An Adversarial Hierarchical Hidden Markov Model for Human Pose Modeling and Generation~
-- ~Dynamic Optimization of Neural Network Structures Using Probabilistic Modeling~
-- ~cw2vec: Learning Chinese Word Embeddings with Stroke n-­gram Information~
+- ~An Adversarial Hierarchical Hidden Markov Model for Human Pose
+  Modeling and Generation~
+- ~Dynamic Optimization of Neural Network Structures Using
+  Probabilistic Modeling~
+- ~cw2vec: Learning Chinese Word Embeddings with Stroke n-­gram
+  Information~
 
 
 *Invited Talks*
 
-- From Naive Physics to Connotation: Learning and Reasoning about the  World using Language (Yejin Choi)
+- From Naive Physics to Connotation: Learning and Reasoning about the
+  World using Language (Yejin Choi)
 - How Machines Learn Best from Humans (Charles Isbell)
 - Probabilistic Machine Learning and AI (Zoubin Ghahramani)
 - Actual Causality: A Survey (Joe Halpern)
