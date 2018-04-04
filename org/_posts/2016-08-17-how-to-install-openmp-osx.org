@@ -3,7 +3,7 @@
 #+BEGIN_HTML
 ---
 layout: post
-title: "How to install opemp support for clang in osx 10.11 el capitan"
+title: "How to install opemp support for clang on osx 10.11 el capitan"
 date: 2016-08-17
 comments: true
 archive: true
