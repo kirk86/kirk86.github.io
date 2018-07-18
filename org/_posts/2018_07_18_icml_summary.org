@@ -1,0 +1,16 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Summary of ICML 2018 Stockholm"
+date: 2018-07-18
+comments: true
+archive: false
+tags: icml-18
+excerpt: Summary of ICML-18
+---
+#+END_HTML
+
+For a summary of interesting stuff at ICML 2018 have a look at David
+Abel's write up [[https://david-abel.github.io/blog/posts/misc/icml_2018.pdf][here]] also check out his blog [[https://david-abel.github.io/][here]].
