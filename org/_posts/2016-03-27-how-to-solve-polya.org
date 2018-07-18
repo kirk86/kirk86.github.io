@@ -17,7 +17,7 @@ heuristics and analogy and the role they played in solving problems of
 mathematical and non mathematical nature. In this journey *Polya*
 wanted to remind us that asking the right questions is even more
 important than the solution itself. According to *Polya* there are 4
-steps we should follow in order to solve our problems:
+steps we should follow in order to solve our problems: test
 
 
 |------------------------------------------+---+-------------------------------------------------------|
