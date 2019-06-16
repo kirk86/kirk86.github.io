@@ -11,7 +11,7 @@ excerpt: Summary of some papers
 ---
 #+End_HTML
 #+OPTIONS: toc:nil
-#+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
+# #+BIBLIOGRAPHY /Users/jm/Google Drive/papers/bib/references.bib plain
 
 * Summary of papers
 ** Papers
