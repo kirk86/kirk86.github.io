@@ -16,3 +16,4 @@ excerpt: Advanced Evolutionary Computation course by Luis Marti
 great lectures on advanced evolutionary computation helped me understand
 about evolutionary algorithms and genetic programming. Highly recommended
 to anyone trying to get familiar with the field of evolutionary computation.
+[[../../../assets/images/notes/evolution_process.png]]
