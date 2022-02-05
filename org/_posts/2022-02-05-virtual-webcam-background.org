@@ -30,7 +30,7 @@ running command line programs. Ok, let's start with the guide.
 
 #+HTML: <br />
 
-3. Now we need to create a virtual camera driver for processing. We need the *AkVCamManager* which you can get it from [here](https://github.com/webcamoid/akvirtualcamera/releases). Install the *akvirtualcamera-mac-9.1.0.pkg* corresponding to the latest version, as of this writing this is 9.1.0. After installation you should see the following file *AkVCamManager* under the location */Applications/AkVirtualCamera/AkVirtualCamera.plugin/Contents/Resources/AkVCamManager*.
+3. Now we need to create a virtual camera driver for processing. We need the *AkVCamManager* which you can get it from (here)[https://github.com/webcamoid/akvirtualcamera/releases]. Install the *akvirtualcamera-mac-9.1.0.pkg* corresponding to the latest version, as of this writing this is 9.1.0. After installation you should see the following file *AkVCamManager* under the location */Applications/AkVirtualCamera/AkVirtualCamera.plugin/Contents/Resources/AkVCamManager*.
 
    Since the location is a bit uncomfortable to work with we'll create a symbolic link to make our lifes a bit easier.
 
@@ -42,7 +42,7 @@ running command line programs. Ok, let's start with the guide.
 
 #+HTML: <br />
 
-4. Next we need the software to do the virtual background removal, there are plently of options on github but I used the [following](https://github.com/allo-/virtual_webcam_background.git).
+4. Next we need the software to do the virtual background removal, there are plenty of options on github but I used the (following)[https://github.com/allo-/virtual_webcam_background.git].
 
    #+BEGIN_SRC shell
     cd ~
@@ -68,11 +68,11 @@ running command line programs. Ok, let's start with the guide.
     rm virtual_webcam.py
    #+END_SRC
 
-   Copy the contents of the [file](https://gist.github.com/kirk86/73214275d9efacc6d8570c3849f880f9#file-requirements-txt) into a file named *requirements.txt* inside the directory *~/virtual_webcam_background*
+   Copy the contents of the (file)[https://gist.github.com/kirk86/73214275d9efacc6d8570c3849f880f9#file-requirements-txt] into a file named *requirements.txt* inside the directory *~/virtual_webcam_background*
 
-   Copy the contents of the [file](https://gist.github.com/kirk86/2a5b694baa20f8582da4fb168a1140e1#file-virtual_webcam-py) into a file named *virtual_webcam.py* inside the directory *~/virtual_webcam_background*
+   Copy the contents of the (file)[https://gist.github.com/kirk86/2a5b694baa20f8582da4fb168a1140e1#file-virtual_webcam-py] into a file named *virtual_webcam.py* inside the directory *~/virtual_webcam_background*
 
-   Copy the contents of teh [file](https://gist.github.com/kirk86/d2450f39768f63a676342d657e1ae864#file-run-sh) inside a file named *run.sh* inside the directory *~/virtual_webcam_background*
+   Copy the contents of teh (file)[https://gist.github.com/kirk86/d2450f39768f63a676342d657e1ae864#file-run-sh] inside a file named *run.sh* inside the directory *~/virtual_webcam_background*
 
 #+HTML: <br />
 
