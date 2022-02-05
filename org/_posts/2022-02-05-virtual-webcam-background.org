@@ -21,9 +21,153 @@ running command line programs. Ok, let's start with the guide.
 
 2. Once you have either miniconda or anaconda installed on your
    computer, start the terminal and execute the following command in
-   order to create a virtual environment.
+   order to create a virtual environment and install scipy in it.
 
    #+BEGIN_SRC shell
-     cd ~
-     conda create -n fakecam scipy
+    cd ~
+    conda create -n fakecam scipy
+   #+END_SRC
+
+#+HTML: <br />
+
+3. Now we need to create a virtual camera driver for processing. We need the *AkVCamManager* which you can get it from [here](https://github.com/webcamoid/akvirtualcamera/releases). Install the *akvirtualcamera-mac-9.1.0.pkg* corresponding to the latest version, as of this writing this is 9.1.0. After installation you should see the following file *AkVCamManager* under the location */Applications/AkVirtualCamera/AkVirtualCamera.plugin/Contents/Resources/AkVCamManager*.
+
+   Since the location is a bit uncomfortable to work with we'll create a symbolic link to make our lifes a bit easier.
+
+   #+BEGIN_SRC shell
+    ln -s /Applications/AkVirtualCamera/AkVirtualCamera.plugin/Contents/Resources/AkVCamManager /usr/local/bin/virtualcamera
+   #+END_SRC
+
+   Now in the terminal if you write *virtual* and press tab twice you'll get all options including *virtualcamera*.
+
+#+HTML: <br />
+
+4. Next we need the software to do the virtual background removal, there are plently of options on github but I used the [following](https://github.com/allo-/virtual_webcam_background.git).
+
+   #+BEGIN_SRC shell
+    cd ~
+    git clone https://github.com/allo-/virtual_webcam_background.git
+   #+END_SRC
+
+#+HTML: <br />
+
+5. Once you've downloaded the github project we need to download the actual model parameters used to perform the background removal based on a neural network.
+
+   #+BEGIN_SRC shell
+    cd ~/virtual_webcam_background
+    ./get-model.sh
+   #+END_SRC
+
+#+HTML: <br />
+
+6. Now we need to replace some files in order for the software to work on mac.
+
+   #+BEGIN_SRC shell
+    cd ~/virtual_webcam_background
+    rm requirements.txt
+    rm virtual_webcam.py
+   #+END_SRC
+
+   Copy the contents of the [file](https://gist.github.com/kirk86/73214275d9efacc6d8570c3849f880f9#file-requirements-txt) into a file named *requirements.txt* inside the directory *~/virtual_webcam_background*
+
+   Copy the contents of the [file](https://gist.github.com/kirk86/2a5b694baa20f8582da4fb168a1140e1#file-virtual_webcam-py) into a file named *virtual_webcam.py* inside the directory *~/virtual_webcam_background*
+
+   Copy the contents of teh [file](https://gist.github.com/kirk86/d2450f39768f63a676342d657e1ae864#file-run-sh) inside a file named *run.sh* inside the directory *~/virtual_webcam_background*
+
+#+HTML: <br />
+
+7. Now install the final software requirements inside the *fakecam* conda environment we created in the step 2.
+
+   #+BEGIN_SRC shell
+    cd ~/virtual_webcam_background
+    source activate fakecam
+    pip install -r requirements.txt
+   #+END_SRC
+
+#+HTML: <br />
+
+8. Finally we need to setup the config file which tells the software which device is the camera to receive input from and which is the virtual camera device in order to process and replace the background video input with a static image whose location you'll have to define.
+
+   #+BEGIN_SRC shell
+    cd ~/virtual_webcam_background
+    mv config.yaml.example config.yaml
+   #+END_SRC
+
+   The config file *config.yaml* has the following format:
+
+   #+BEGIN_SRC yaml
+     segmentation_threshold: 0.75
+     blur: 3
+     erode: 10
+     dilate: 10
+     virtual_video_device: "/dev/video0"
+     real_video_device: "/dev/video1"
+     average_masks: 3
+     mjpeg: False
+     layers:
+       - "empty": [["image", "background.jpg"]]
+       - "foreground": []
+   #+END_SRC
+
+   Which we are going to replace with the following content:
+
+   #+BEGIN_SRC yaml
+     segmentation_threshold: 0.75
+     blur: 3
+     erode: 10
+     dilate: 10
+     virtual_video_device: "FakeCam0"
+     real_video_device: 1
+     width: 640
+     height: 480
+     fps: 2
+     average_masks: 3
+     mjpeg: False
+     layers:
+       - "empty": [["image", "~/virtual_webcam_background/background.jpg"]]
+       - "foreground": []
+     model: mediapipe
+     multiplier: 0.5
+     output_stride: 16
+   #+END_SRC
+
+   The *virtual_video_device: "FakeCam0"* is the name of the virtual webcam device which will be created once we execute the *run.sh* file.
+
+   The *real_video_device: 1* is the input received from the actual webcam in our macbook pro computer. If you ask me how do you know it's *1* and not *2* or something else entirely? You can list all devices on your machine with the following command:
+
+   #+BEGIN_SRC shell
+    ffmpeg -f avfoundation -list_devices true -i ""
+   #+END_SRC
+
+   Under *AVFoundation video devices:* you'll find the corresponding numbers for each device on your computer. In my case *1* corresponds to *FaceTime HD Camera*.
+
+   You'll need *ffmpeg* to be installed on your computer first, just run the following command on your terminal.
+
+   #+BEGIN_SRC shell
+    brew install ffmpeg
+   #+END_SRC
+
+   Finally, you'll need to download an image of your choice from the web which will be used to replace your background during zoom calls. Download your preferred image inside the directory *~/virtual_webcam_background* and rename it into *background.jpg*.
+
+#+HTML: <br />
+
+9. Finally, now we are ready to run the background removal neural network, just move inside the *~/virtual_webcam_background* directory and execute the *run.sh* file.
+
+   #+BEGIN_SRC shell
+    cd ~/virtual_webcam_background
+    ./run.sh
+   #+END_SRC
+
+   Now open zoom while the program runs in the terminal and in zoom select the "Virtual Camera" in the video options.
+
+#+HTML: <br />
+
+ 10. When you're done with your zoom call and don't need the background removal anymore you can stop it by pressing *Ctrl-c* in the terminal window where the programme is running.
+
+#+HTML: <br />
+
+11. To remove any virtual camera devices just execute in a terminal windown the following command, although the *run.sh* file will do that the next time you'll need to run the background removal again for your next zoom call.
+
+   #+BEGIN_SRC shell
+    virtualcamera remove-devices
    #+END_SRC
