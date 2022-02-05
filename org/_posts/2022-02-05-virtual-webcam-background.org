@@ -1,0 +1,24 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: post
+title: "Zoom background removal for resource restricted Macbook Pro"
+date: 2022-02-05
+comments: true
+archive: false
+tags: background-removal
+excerpt: Zoom background removal
+---
+#+END_HTML
+
+In order to follow this guide you'll need some familiarity with the terminal and
+running command line programs. Ok, let's start with the guide.
+
+1. Install miniconda or anaconda on your computer.
+
+2. Once you have either miniconda or anaconda installed on your
+   computer, start the terminal and execute the following command in
+   order to create a virtual environment.
+
+       conda create -n fakecam scipy
