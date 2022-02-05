@@ -15,10 +15,11 @@ excerpt: Zoom background removal
 In order to follow this guide you'll need some familiarity with the terminal and
 running command line programs. Ok, let's start with the guide.
 
-1. Install miniconda or anaconda on your computer.
+1. Install ***miniconda*** or ***anaconda*** on your computer.
 
 2. Once you have either miniconda or anaconda installed on your
    computer, start the terminal and execute the following command in
    order to create a virtual environment.
-
-       conda create -n fakecam scipy
+   ```shell
+   conda create -n fakecam scipy
+   ```
