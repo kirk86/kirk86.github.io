@@ -185,11 +185,11 @@ Which we are going to replace with the following content:
 </div>
 
 <p>
-The <b>virtual<sub>video</sub><sub>device</sub>: "FakeCam0"</b> is the name of the virtual webcam device which will be created once we execute the <b>run.sh</b> file.
+The <b>virtual_video_device: "FakeCam0"</b> is the name of the virtual webcam device which will be created once we execute the <b>run.sh</b> file.
 </p>
 
 <p>
-The <b>real<sub>video</sub><sub>device</sub>: 1</b> is the input received from the actual webcam in our macbook pro computer. If you ask me how do you know it's <b>1</b> and not <b>2</b> or something else entirely? You can list all devices on your machine with the following command:
+The <b>real_video_device: 1</b> is the input received from the actual webcam in our macbook pro computer. If you ask me how do you know it's <b>1</b> and not <b>2</b> or something else entirely? You can list all devices on your machine with the following command:
 </p>
 
 <div class="org-src-container">
@@ -211,14 +211,14 @@ You'll need <b>ffmpeg</b> to be installed on your computer first, just run the f
 </div>
 
 <p>
-Finally, you'll need to download an image of your choice from the web which will be used to replace your background during zoom calls. Download your preferred image inside the directory <b>~/virtual<sub>webcam</sub><sub>background</sub></b> and rename it into <b>background.jpg</b>.
+Finally, you'll need to download an image of your choice from the web which will be used to replace your background during zoom calls. Download your preferred image inside the directory <b>~/virtual_webcam_background</b> and rename it into <b>background.jpg</b>.
 </p>
 </li>
 
 <br />
 
 <li><p>
-Finally, now we are ready to run the background removal neural network, just move inside the <b>~/virtual<sub>webcam</sub><sub>background</sub></b> directory and execute the <b>run.sh</b> file.
+Finally, now we are ready to run the background removal neural network, just move inside the <b>~/virtual_webcam_background</b> directory and execute the <b>run.sh</b> file.
 </p>
 
 <div class="org-src-container">
@@ -240,7 +240,7 @@ Now open zoom while the program runs in the terminal and in zoom select the "Vir
 <br />
 
 <li><p>
-To remove any virtual camera devices just execute in a terminal windown the following command, although the <b>run.sh</b> file will do that the next time you'll need to run the background removal again for your next zoom call.
+To remove any virtual camera devices just execute in a terminal window the following command, although the <b>run.sh</b> file will do that the next time you'll need to run the background removal again for your next zoom call.
 </p>
 
 <div class="org-src-container">
