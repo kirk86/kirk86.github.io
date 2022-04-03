@@ -28,4 +28,4 @@ timezone: UTC
 
 # needed to create sitemap.xml for site to appear in google
 # along with "gem: jekyll-sitemap" inside the gemfile
-plugins: - jekyll-sitemap
+plugins: jekyll-sitemap
